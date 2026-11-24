@@ -1,5 +1,29 @@
 [
  {
+  "cluster": "f37d9af93d8e4533",
+  "cves": [],
+  "excerpt": "Cybersecurity company Radware says attackers gained access to some of its customers' account details and cloud access keys through an unsecured internal Cloud WAF (Web Application Firewall) management API that was left exposed online. [...]",
+  "id": "f37d9af93d8e4533",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T17:49:05Z",
+  "source": "BleepingComputer",
+  "title": "Radware discloses breach exposing customer cloud access keys",
+  "url": "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys"
+ },
+ {
+  "cluster": "9582e29a3fdc5bee",
+  "cves": [],
+  "excerpt": "A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus. Central to the group's operations is a backdoor called KuboShell that uses the InterPlanetary File…",
+  "id": "9582e29a3fdc5bee",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T16:54:07Z",
+  "source": "The Hacker News",
+  "title": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
+  "url": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html"
+ },
+ {
   "cluster": "19d6feb307a27ec9",
   "cves": [],
   "excerpt": "The critical bugs include an authentication bypass in vCenter and flaws that could allow code execution on ESX hosts. The post VMware Updates Patch Critical ESX, vCenter Vulnerabilities appeared first on SecurityWeek .",
@@ -208,6 +232,9 @@
   "url": "https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "7b6115f8e21f6eec",
   "cves": [
    "CVE-2026-119055"
@@ -218,10 +245,15 @@
   "lang": "en",
   "published": "2026-11-24T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "Schneider Electric informou que há vulnerabilidade no produto EcoStruxure™ Power Build Rapsody, usado para criar diagramas unifilares e gerar a lista de materiais de quadros elétricos.",
   "title": "Schneider Electric EcoStruxure Power Build Rapsody software",
+  "title_pt": "Software Schneider Electric EcoStruxure Power Build Rapsody",
   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-02"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "3a8ad132bbb8c2a0",
   "cves": [
    "CVE-2026-129713"
@@ -232,10 +264,15 @@
   "lang": "en",
   "published": "2026-11-24T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "Vulnerabilidade nas versões da série Danfoss AK-SM 8xxA (até 5.4.0) pode permitir a execução arbitrária de código com privilégios de servidor web.",
   "title": "Danfoss AK-SM 8xxA Series",
+  "title_pt": "Série Danfoss AK-SM 8xxA",
   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "3ed1970e74313c87",
   "cves": [
    "CVE-2026-127280"
@@ -246,7 +283,9 @@
   "lang": "en",
   "published": "2026-11-24T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "Falha pode corromper a memória da aplicação e causar instabilidade ou crash, possibilitando execução de código arbitrário se o usuário abrir um arquivo malicioso.",
   "title": "AutomationDirect C-More EA9 Programming Software",
+  "title_pt": "Software de Programação AutomationDirect C-More EA9",
   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-01"
  },
  {
@@ -674,6 +713,9 @@
   "url": "https://www.bleepingcomputer.com/news/security/call-center-operator-gets-8-years-for-helping-scam-30-000-americans"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "7b5dacba886b8db5",
   "cves": [
    "CVE-2026-133968",
@@ -685,7 +727,9 @@
   "lang": "en",
   "published": "2026-11-23T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "CISA incluiu duas vulnerabilidades (CVE-2026-133968 e CVE-2026-134624) no catálogo KEV, com evidências de exploração ativa.",
   "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+  "title_pt": "CISA adiciona duas vulnerabilidades conhecidas exploradas ao catálogo",
   "url": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog"
  },
  {
@@ -903,6 +947,9 @@
   "url": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "7b5dacba886b8db5",
   "cves": [
    "CVE-2025-42884",
@@ -916,7 +963,9 @@
   "lang": "en",
   "published": "2026-11-20T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "CISA adicionou quatro novas vulnerabilidades, incluindo CVE-2025-42884 e CVE-2026-76466, ao catálogo KEV, baseadas em exploração confirmada.",
   "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+  "title_pt": "CISA adiciona quatro vulnerabilidades conhecidas exploradas ao catálogo",
   "url": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog"
  },
  {
@@ -1238,6 +1287,9 @@
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85846"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "31c4bb63cffd59f4",
   "cves": [
    "CVE-2026-124281",
@@ -1250,10 +1302,15 @@
   "lang": "en",
   "published": "2026-11-19T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "Vulnerabilidades podem permitir que atacante controle os freios de um trailer, altere firmware, desative luzes de freio ou outras funções críticas de segurança.",
   "title": "Elecbrakes EB2, VM1, ELBC2000",
+  "title_pt": "Elecbrakes EB2, VM1, ELBC2000",
   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "ad267eaa2b115482",
   "cves": [
    "CVE-2026-126088"
@@ -1264,10 +1321,15 @@
   "lang": "en",
   "published": "2026-11-19T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "Falha permite a criação de várias contas de administrador não autenticadas nas versões do OpenPLC Runtime até 4.2.4.",
   "title": "Autonomy Logic OpenPLC Runtime",
+  "title_pt": "Runtime OpenPLC da Autonomy Logic",
   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "bf2611689a6fa7cb",
   "cves": [
    "CVE-2026-125132"
@@ -1278,10 +1340,15 @@
   "lang": "en",
   "published": "2026-11-19T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "Vulnerabilidade pode causar negação de serviço, corrupção de memória ou divulgação de informações nas versões da libumqtt até 1.1.1.",
   "title": "libumqtt",
+  "title_pt": "Biblioteca libumqtt",
   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "7b5dacba886b8db5",
   "cves": [
    "CVE-2024-10441",
@@ -1295,7 +1362,9 @@
   "lang": "en",
   "published": "2026-11-18T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "A CISA incluiu quatro novas vulnerabilidades, incluindo CVE‑2024‑10441 no Synology DSM e CVE‑2026‑40217 na BerriAI LiteLLM, ao seu catálogo de Vulnerabilidades Conhecidas Exploradas, indicando que já há exploração ativa.",
   "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+  "title_pt": "CISA adiciona quatro vulnerabilidades conhecidas exploradas ao catálogo",
   "url": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
  },
  {
@@ -1323,6 +1392,9 @@
   "url": "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "1e3a8a0a7e3cd062",
   "cves": [
    "CVE-2026-59082"
@@ -1333,10 +1405,15 @@
   "lang": "en",
   "published": "2026-11-17T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "Foi identificada uma vulnerabilidade de execução implícita de conteúdo ativo ao abrir arquivos no Siemens SIMATIC WinCC antes da versão V8.2, que pode permitir execução arbitrária de código; a Siemens está preparando correções.",
   "title": "Siemens SIMATIC WinCC",
+  "title_pt": "Siemens SIMATIC WinCC",
   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-09"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "986d782997068f3c",
   "cves": [
    "CVE-2026-117659",
@@ -1352,10 +1429,15 @@
   "lang": "en",
   "published": "2026-11-17T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "Vulnerabilidades no Dorsett Controls InfoScan podem ser exploradas para obter informações sensíveis do sistema, acessar dados de aplicação sem autorização, recuperar credenciais armazenadas ou manipular comunicações de rede.",
   "title": "Dorsett Controls InfoScan",
+  "title_pt": "Dorsett Controls InfoScan",
   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-01"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "f61efca8f592b87c",
   "cves": [
    "CVE-2026-112136",
@@ -1367,10 +1449,15 @@
   "lang": "en",
   "published": "2026-11-17T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "O Siemens Mendix Studio Pro contém múltiplas falhas no servidor MCP que permitem que um atacante com acesso à rede interaja remotamente com o servidor ou induza o navegador do usuário a enviar solicitações não autorizadas, potencialmente expondo dados.",
   "title": "Siemens Mendix Studio Pro",
+  "title_pt": "Siemens Mendix Studio Pro",
   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-05"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "639fac0f8727e01a",
   "cves": [
    "CVE-2026-85114",
@@ -1382,10 +1469,15 @@
   "lang": "en",
   "published": "2026-11-17T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "A biblioteca cliente .NET para a API do servidor web SIMATIC S7 apresenta vulnerabilidades que podem permitir a obtenção de informações sensíveis ou gravação de arquivos arbitrários fora do diretório de download; a Siemens lançou uma nova versão corrigida.",
   "title": "Siemens .NET Client Library for SIMATIC S7 Webserver API",
+  "title_pt": "Biblioteca cliente .NET da Siemens para API do servidor web SIMATIC S7",
   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-02"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "patch",
   "cluster": "2b90ef71fb088037",
   "cves": [
    "CVE-2026-114938"
@@ -1396,10 +1488,15 @@
   "lang": "en",
   "published": "2026-11-17T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "A CISA recomenda a aplicação imediata de correção para a vulnerabilidade crítica de corrupção de memória em Java, conhecida como “Java4Shell” (CVE‑2026‑114938), que afeta o decodificador Base64 da JVM x86‑64.",
   "title": "Critical Java Vulnerability Requires Immediate Patching",
+  "title_pt": "Vulnerabilidade crítica em Java requer correção imediata",
   "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "patch",
   "cluster": "89146ff5418730c2",
   "cves": [
    "CVE-2026-111497"
@@ -1410,10 +1507,15 @@
   "lang": "en",
   "published": "2026-11-17T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "A atualização de segurança lançada pelo projeto Node.js corrige uma vulnerabilidade crítica de escrita fora dos limites no decodificador Brotli, chamada “Node2Shell” (CVE‑2026‑111497), impactando produtos de software industrial da Siemens.",
   "title": "Siemens Industrial Software Products",
+  "title_pt": "Produtos de software industrial da Siemens",
   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "7b5dacba886b8db5",
   "cves": [
    "CVE-2026-115731"
@@ -1424,10 +1526,15 @@
   "lang": "en",
   "published": "2026-11-17T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "A CISA adicionou ao catálogo KEV a vulnerabilidade de desserialização de dados não confiáveis no Perforce Puppet Enterprise (CVE‑2026‑115731), reconhecida como vetor frequente de ataques.",
   "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+  "title_pt": "CISA adiciona uma vulnerabilidade conhecida explorada ao catálogo",
   "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "3989b95c68b62c6d",
   "cves": [
    "CVE-2026-64629"
@@ -1438,10 +1545,15 @@
   "lang": "en",
   "published": "2026-11-17T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "Uma vulnerabilidade de leitura fora dos limites foi encontrada no Simcenter Femap, que pode causar falha ou execução de código arbitrário ao ler arquivos no formato X_T.",
   "title": "Siemens Simcenter Femap",
+  "title_pt": "Siemens Simcenter Femap",
   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "4a756643b0596f8c",
   "cves": [
    "CVE-2026-109097"
@@ -1452,10 +1564,15 @@
   "lang": "en",
   "published": "2026-11-17T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "Versões anteriores ao 2.3.1 do ROS# contêm vulnerabilidade de injeção de código que permite a um atacante inserir código arbitrário ao processar um arquivo de definição de mensagem manipulado.",
   "title": "Siemens ROS#",
+  "title_pt": "Siemens ROS#",
   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "5b5cf4f017dbab0e",
   "cves": [
    "CVE-2026-58114"
@@ -1466,10 +1583,15 @@
   "lang": "en",
   "published": "2026-11-17T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "Produtos da linha SIMATIC apresentam vulnerabilidade de bypass de autenticação que permite a um atacante na rede assumir a sessão de um usuário legítimo e executar código com seus privilégios.",
   "title": "Siemens SIMATIC",
+  "title_pt": "Siemens SIMATIC",
   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-08"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "89146ff5418730c2",
   "cves": [
    "CVE-2026-111497"
@@ -1480,10 +1602,15 @@
   "lang": "en",
   "published": "2026-11-17T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "Uma vulnerabilidade crítica de escrita fora dos limites no decodificador Brotli do Node.js, conhecida como “Node2Shell”, afeta softwares de automação industrial da Siemens.",
   "title": "Siemens Industrial Automation Software Products",
+  "title_pt": "Siemens Industrial Automation Software Products",
   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-03"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "89146ff5418730c2",
   "cves": [
    "CVE-2026-106175"
@@ -1494,10 +1621,15 @@
   "lang": "en",
   "published": "2026-11-17T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "Foi identificada vulnerabilidade de double free no FortiOS, impactando dispositivos RUGGEDCOM APE1808 da Siemens, e recomenda-se atualizar para a versão 7.6.9 ou superior.",
   "title": "Siemens RUGGEDCOM APE1808",
+  "title_pt": "Siemens RUGGEDCOM APE1808",
   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "fae4ec42780a6b53",
   "cves": [
    "CVE-2026-109830"
@@ -1508,10 +1640,15 @@
   "lang": "en",
   "published": "2026-11-17T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "O meta-iot2050 (versão V01.03.01) contém vulnerabilidade de injeção de comandos no utilitário de atualização de firmware, permitindo execução arbitrária como root ao manipular arquivos de configuração.",
   "title": "Siemens meta-iot2050",
+  "title_pt": "Siemens meta-iot2050",
   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "7b5dacba886b8db5",
   "cves": [
    "CVE-2026-114713",
@@ -1523,10 +1660,15 @@
   "lang": "en",
   "published": "2026-11-13T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "A CISA incluiu duas novas vulnerabilidades, CVE-2026-114713 (UnrealIRCd) e CVE-2026-123039 (Check Point), em seu catálogo de vulnerabilidades exploradas ativamente.",
   "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+  "title_pt": "CISA adiciona duas vulnerabilidades conhecidas exploradas ao catálogo",
   "url": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "89146ff5418730c2",
   "cves": [
    "CVE-2026-109618",
@@ -1538,7 +1680,9 @@
   "lang": "en",
   "published": "2026-11-12T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "Vulnerabilidades críticas de execução remota de código não autenticada, denominadas “php2shell” (CVE-2026-109618 e CVE-2026-109619), foram divulgadas e afetam produtos de automação predial e energia da Siemens.",
   "title": "Siemens Building Automation and Energy Products",
+  "title_pt": "Siemens Building Automation and Energy Products",
   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01"
  },
  {
