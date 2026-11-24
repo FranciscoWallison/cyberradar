@@ -113,7 +113,7 @@ class AIClient:
         if r.status_code == 429:
             raise RateLimited()
         if r.status_code >= 400:
-            raise RuntimeError(f"HTTP {r.status_code}")
+            raise RuntimeError(f"HTTP {r.status_code}: {error_detail(r, p.api_key)}")
         data = r.json()
         # Cloudflare às vezes embrulha em {"result": {...}}
         if "choices" not in data and isinstance(data.get("result"), dict):
@@ -123,6 +123,23 @@ class AIClient:
 
 class RateLimited(Exception):
     pass
+
+
+def error_detail(r: Any, api_key: str | None = None, limit: int = 200) -> str:
+    """Mensagem curta do corpo de erro (ex.: "model not found"), sem a chave, para o log."""
+    try:
+        data = r.json()
+    except ValueError:
+        data = r.text
+    err = (data.get("error") or data.get("errors") or data) if isinstance(data, dict) else data
+    if isinstance(err, list):
+        err = err[0] if err else ""
+    if isinstance(err, dict):
+        err = err.get("message") or json.dumps(err, ensure_ascii=False)
+    text = " ".join(str(err).split())
+    if api_key:
+        text = text.replace(api_key, "***")
+    return text[:limit] or "sem detalhe"
 
 
 FENCE_RE = re.compile(r"```(?:json)?\s*(.*?)```", re.S)

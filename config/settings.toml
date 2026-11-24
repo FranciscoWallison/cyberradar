@@ -84,7 +84,7 @@ json_mode = true
 [[ai.providers]]
 name = "openrouter"
 base_url = "https://openrouter.ai/api/v1"
-model = "openai/gpt-oss-20b:free"
+model = "nvidia/nemotron-3.5-super-vl:free"
 api_key_env = "OPENROUTER_API_KEY"
 daily_limit = 45
 json_mode = true
@@ -103,7 +103,7 @@ public_data_only = true
 name = "cloudflare"
 # {account_id} é substituído pela variável CLOUDFLARE_ACCOUNT_ID.
 base_url = "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/v1"
-model = "@cf/meta/llama-3.1-8b-instruct"
+model = "@cf/google/gemma-4-26b-a4b-it"
 api_key_env = "CLOUDFLARE_API_TOKEN"
 daily_limit = 60
 json_mode = false

@@ -1,9 +1,10 @@
 import json
 
+import httpx
 import pytest
 
 from cyberradar.ai import validate
-from cyberradar.ai.client import AIClient, extract_json
+from cyberradar.ai.client import AIClient, error_detail, extract_json
 from cyberradar.pipeline.run import enriched_records, run_all
 from cyberradar.storage import Store
 
@@ -53,6 +54,13 @@ def test_extract_json_variants():
     assert extract_json('```json\n{"a":1}\n```') == {"a": 1}
     assert extract_json('<think>hmm</think>{"a":2}') == {"a": 2}
     assert extract_json('Claro! {"a":3} espero ajudar') == {"a": 3}
+
+
+def test_error_detail_is_short_and_hides_key():
+    r = httpx.Response(401, json={"error": {"message": "Invalid API Key gsk_secret", "code": "invalid_api_key"}})
+    assert error_detail(r, "gsk_secret") == "Invalid API Key ***"
+    assert error_detail(httpx.Response(410, json={"errors": [{"code": 5028, "message": "Model is deprecated"}]})) == "Model is deprecated"
+    assert error_detail(httpx.Response(503, text="x" * 500)) == "x" * 200
 
 
 def _chat(content: dict) -> tuple[int, dict]:

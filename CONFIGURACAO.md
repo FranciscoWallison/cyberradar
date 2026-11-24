@@ -54,7 +54,7 @@ O pipeline tenta na ordem de `config/settings.toml` e pula os provedores sem cha
 | **Groq** (principal) | <https://console.groq.com/keys> | `GROQ_API_KEY` | Sem cartão |
 | **OpenRouter** | <https://openrouter.ai/settings/keys> | `OPENROUTER_API_KEY` | Modelos `:free` têm ~50 req/dia. Em *Settings → Privacy*, desative provedores que treinam com os prompts |
 | **Google Gemini** | <https://aistudio.google.com/apikey> | `GEMINI_API_KEY` | No plano grátis o Google **pode usar os prompts para treino**: só dados públicos (o projeto já respeita isso) |
-| **Cloudflare Workers AI** | Dashboard → *AI → Workers AI* (Account ID) e *My Profile → API Tokens* (token com permissão "Workers AI: Read") | `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_API_TOKEN` | 10 mil Neurons/dia |
+| **Cloudflare Workers AI** | Dashboard → *AI → Workers AI → REST API*: copie o Account ID e use *Create a Workers AI API Token* (permissões "Workers AI - Read" e "Workers AI - Edit") | `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_API_TOKEN` | 10 mil Neurons/dia |
 | **Mistral** | <https://console.mistral.ai/api-keys> | `MISTRAL_API_KEY` | Plano Experiment: **desligue o uso para treino** em *Admin → Privacy* |
 
 > Os nomes dos modelos mudam. Se aparecer erro "model not found" nos logs, troque o `model` do provedor em `config/settings.toml` por um listado no painel.
