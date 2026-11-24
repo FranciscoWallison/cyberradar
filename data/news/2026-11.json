@@ -1,5 +1,53 @@
 [
  {
+  "cluster": "19d6feb307a27ec9",
+  "cves": [],
+  "excerpt": "The critical bugs include an authentication bypass in vCenter and flaws that could allow code execution on ESX hosts. The post VMware Updates Patch Critical ESX, vCenter Vulnerabilities appeared first on SecurityWeek .",
+  "id": "19d6feb307a27ec9",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T16:32:56Z",
+  "source": "SecurityWeek",
+  "title": "VMware Updates Patch Critical ESX, vCenter Vulnerabilities",
+  "url": "https://www.securityweek.com/vmware-updates-patch-critical-esx-vcenter-vulnerabilities"
+ },
+ {
+  "cluster": "2b253047a04a8f89",
+  "cves": [],
+  "excerpt": "The ShinyHunters extortion gang claims to have returned in posts on a new data leak site after a series of arrests over the past two months targeting alleged members. [...]",
+  "id": "2b253047a04a8f89",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T16:30:19Z",
+  "source": "BleepingComputer",
+  "title": "ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof",
+  "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof"
+ },
+ {
+  "cluster": "e36f6aab2de8b96d",
+  "cves": [],
+  "excerpt": "The European Commission, the European Union's main executive body, has confirmed that attackers breached its EU Academy online learning hub and stole the personal data of an undisclosed number of users. [...]",
+  "id": "e36f6aab2de8b96d",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T16:22:44Z",
+  "source": "BleepingComputer",
+  "title": "European Commission confirms data theft in EU Academy breach",
+  "url": "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach"
+ },
+ {
+  "cluster": "67f9828a04861257",
+  "cves": [],
+  "excerpt": "Threat actors have exploited multiple vulnerabilities to compromise two dozen Check Point Security management servers in an ongoing campaign targeting 22 organizations. [...]",
+  "id": "67f9828a04861257",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T16:15:23Z",
+  "source": "BleepingComputer",
+  "title": "Hackers compromise Check Point Servers in 22 organizations",
+  "url": "https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations"
+ },
+ {
   "cluster": "aed7501519e9304f",
   "cves": [],
   "excerpt": "Law enforcement authorities from 11 countries have disrupted 57 illegal streaming services that operated hundreds of websites and drew over 7.3 million visits each year. [...]",
