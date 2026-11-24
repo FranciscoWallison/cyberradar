@@ -1,5 +1,41 @@
 [
  {
+  "cluster": "f2aff67f475403e7",
+  "cves": [],
+  "excerpt": "Rackspace is shutting down its Rackspace Spot cloud platform after a security breach allowed hackers to access customer Kubernetes clusters and secrets, giving customers until December 8 to migrate their services and download their data. [...]",
+  "id": "f2aff67f475403e7",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T21:37:30Z",
+  "source": "BleepingComputer",
+  "title": "Rackspace shuts down Spot cloud platform after security breach",
+  "url": "https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach"
+ },
+ {
+  "cluster": "ed70594772b7b3e9",
+  "cves": [],
+  "excerpt": "A newly formed data extortion group named 'Inception' has been linked to a large-scale campaign that targets single sign-on (SSO) credentials of multiple global brands and firms. [...]",
+  "id": "ed70594772b7b3e9",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T20:21:20Z",
+  "source": "BleepingComputer",
+  "title": "New Inception extortion gang launches large-scale vishing campaign",
+  "url": "https://www.bleepingcomputer.com/news/security/new-inception-extortion-gang-launches-large-scale-vishing-campaign"
+ },
+ {
+  "cluster": "bdaf2dfefc0dfe88",
+  "cves": [],
+  "excerpt": "Turnitin disclosed via a statement from its CEO, Chris Caren, that it recently detected unauthorized activity involving certain customer-facing systems. [...]",
+  "id": "bdaf2dfefc0dfe88",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T18:59:52Z",
+  "source": "BleepingComputer",
+  "title": "Turnitin discloses cyberattack affecting customer-facing systems",
+  "url": "https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems"
+ },
+ {
   "cluster": "f37d9af93d8e4533",
   "cves": [],
   "excerpt": "Cybersecurity company Radware says attackers gained access to some of its customers' account details and cloud access keys through an unsecured internal Cloud WAF (Web Application Firewall) management API that was left exposed online. [...]",
@@ -70,6 +106,25 @@
   "source": "BleepingComputer",
   "title": "Hackers compromise Check Point Servers in 22 organizations",
   "url": "https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations"
+ },
+ {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
+  "cluster": "d3fd9ed59ab31855",
+  "cves": [
+   "CVE-2026-112732"
+  ],
+  "excerpt": "Information published. This CVE was addressed by updates that were released in November 2026, but the CVE was inadvertently omitted from the November 2026 Security Updates. This is an informational change only. Customers who have already installed the November 2026 updates do…",
+  "id": "4cb11ce00bb42993",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-24T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "summary_pt": "A vulnerabilidade CVE‑2026‑112732 que permite execução remota de código no Microsoft Office Visio foi corrigida em atualizações de novembro de 2026, embora tenha sido inicialmente omitida do catálogo de patches.",
+  "title": "CVE-2026-112732 Microsoft Office Visio Remote Code Execution Vulnerability",
+  "title_pt": "Vulnerabilidade de Execução Remota de Código no Microsoft Office Visio (CVE‑2026‑112732)",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-112732"
  },
  {
   "cluster": "aed7501519e9304f",
@@ -156,6 +211,9 @@
   "url": "https://www.securityweek.com/anthropic-expands-enterprise-safeguards-for-detecting-ai-misuse"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "patch",
   "cluster": "aa014f4b55f462a9",
   "cves": [
    "CVE-2026-123903"
@@ -166,7 +224,9 @@
   "lang": "en",
   "published": "2026-11-24T13:28:26Z",
   "source": "The Hacker News",
+  "summary_pt": "A Broadcom lançou patches para 23 vulnerabilidades em produtos VMware, destacando uma falha crítica de bypass de autenticação (CVE‑2026‑123903) com pontuação 9.8, que já foi explorada em ataque zero‑day.",
   "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
+  "title_pt": "VMware vCenter sofre nova falha crítica de bypass de autenticação (nota 9.8) após exploração zero‑day",
   "url": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html"
  },
  {
@@ -206,6 +266,9 @@
   "url": "https://www.securityweek.com/openai-cisco-unveil-open-source-tool-to-shield-unpatched-linux-systems"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "pesquisa",
   "cluster": "372382395c6e6dd9",
   "cves": [
    "CVE-2026-87268"
@@ -216,7 +279,9 @@
   "lang": "en",
   "published": "2026-11-24T12:02:00Z",
   "source": "The Hacker News",
+  "summary_pt": "Um pesquisador do Google Project Zero revelou que uma modificação de um bit em arquivos .NET pode enganar o mecanismo de Integridade de Código do Windows, permitindo que código não confiável seja executado.",
   "title": "Google Researcher Shows How a Single Bit Change in .NET Files Bypassed Windows Code Integrity",
+  "title_pt": "Pesquisador do Google demonstra como alteração de um único bit em arquivos .NET contorna a Integridade de Código do Windows",
   "url": "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html"
  },
  {
@@ -361,6 +426,9 @@
   "url": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "7b5dacba886b8db5",
   "cves": [
    "CVE-2026-134624"
@@ -371,7 +439,9 @@
   "lang": "en",
   "published": "2026-11-24T06:02:45Z",
   "source": "The Hacker News",
+  "summary_pt": "A CISA incluiu em seu catálogo KEV duas vulnerabilidades críticas, uma no N‑able MailAssure e outra no MONAI Label, que já estão sendo ativamente exploradas por hackers e agentes de IA.",
   "title": "Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day",
+  "title_pt": "Hackers exploram falha no N‑able MailAssure enquanto agentes de IA exploram zero‑day no MONAI Label",
   "url": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html"
  },
  {
@@ -447,6 +517,9 @@
   "url": "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "2791e2d7d3dd68df",
   "cves": [
    "CVE-2026-69291"
@@ -457,10 +530,15 @@
   "lang": "en",
   "published": "2026-11-23T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento desta vulnerabilidade, informando que a alteração é apenas informativa.",
   "title": "CVE-2026-69291 Windows Volume Manager Extension Driver Remote Code Execution Vulnerability",
+  "title_pt": "CVE-2026-69291 Vulnerabilidade de Execução Remota de Código no Driver de Extensão do Gerenciador de Volume do Windows",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69291"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "75e5560e770eebff",
   "cves": [
    "CVE-2026-78462"
@@ -471,10 +549,15 @@
   "lang": "en",
   "published": "2026-11-23T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento desta vulnerabilidade, informando que a alteração é apenas informativa.",
   "title": "CVE-2026-78462 Visual Studio Code Security Feature Bypass Vulnerability",
+  "title_pt": "CVE-2026-78462 Vulnerabilidade de Bypass de Recurso de Segurança no Visual Studio Code",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78462"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "39462054894aa9f3",
   "cves": [
    "CVE-2026-72965"
@@ -485,10 +568,15 @@
   "lang": "en",
   "published": "2026-11-23T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento desta vulnerabilidade, informando que a alteração é apenas informativa.",
   "title": "CVE-2026-72965 Windows WebClient Service Elevation of Privilege Vulnerability",
+  "title_pt": "CVE-2026-72965 Vulnerabilidade de Elevação de Privilégio no Serviço WebClient do Windows",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-72965"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "d3fd9ed59ab31855",
   "cves": [
    "CVE-2026-87697"
@@ -499,10 +587,15 @@
   "lang": "en",
   "published": "2026-11-23T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento desta vulnerabilidade, informando que a alteração é apenas informativa.",
   "title": "CVE-2026-87697 .NET Remote Code Execution Vulnerability",
+  "title_pt": "CVE-2026-87697 Vulnerabilidade de Execução Remota de Código no .NET",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87697"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "39462054894aa9f3",
   "cves": [
    "CVE-2026-70175"
@@ -513,10 +606,15 @@
   "lang": "en",
   "published": "2026-11-23T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento desta vulnerabilidade, informando que a alteração é apenas informativa.",
   "title": "CVE-2026-70175 ASP.NET Core Elevation of Privilege Vulnerability",
+  "title_pt": "CVE-2026-70175 Vulnerabilidade de Elevação de Privilégio no ASP.NET Core",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70175"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "d3fd9ed59ab31855",
   "cves": [
    "CVE-2026-70197"
@@ -527,10 +625,15 @@
   "lang": "en",
   "published": "2026-11-23T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento desta vulnerabilidade, informando que a alteração é apenas informativa.",
   "title": "CVE-2026-70197 .NET and Visual Studio Remote Code Execution Vulnerability",
+  "title_pt": "CVE-2026-70197 Vulnerabilidade de Execução Remota de Código no .NET e no Visual Studio",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70197"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "39462054894aa9f3",
   "cves": [
    "CVE-2026-96225"
@@ -541,10 +644,15 @@
   "lang": "en",
   "published": "2026-11-23T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento desta vulnerabilidade, informando que a alteração é apenas informativa.",
   "title": "CVE-2026-96225 .NET Elevation of Privilege Vulnerability",
+  "title_pt": "CVE-2026-96225 Vulnerabilidade de Elevação de Privilégio no .NET",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96225"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "39462054894aa9f3",
   "cves": [
    "CVE-2026-96233"
@@ -555,10 +663,15 @@
   "lang": "en",
   "published": "2026-11-23T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento desta vulnerabilidade, informando que a alteração é apenas informativa.",
   "title": "CVE-2026-96233 ASP.NET Core Denial of Service Vulnerability",
+  "title_pt": "CVE-2026-96233 Vulnerabilidade de Negação de Serviço no ASP.NET Core",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96233"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "39462054894aa9f3",
   "cves": [
    "CVE-2026-109481"
@@ -569,10 +682,15 @@
   "lang": "en",
   "published": "2026-11-23T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento da vulnerabilidade, indicando que se trata apenas de uma mudança informativa.",
   "title": "CVE-2026-109481 ASP.NET Core Elevation of Privilege Vulnerability",
+  "title_pt": "CVE-2026-109481 Vulnerabilidade de Elevação de Privilégio no ASP.NET Core",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109481"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "3b0882abb60ec56c",
   "cves": [
    "CVE-2026-119848"
@@ -583,7 +701,9 @@
   "lang": "en",
   "published": "2026-11-23T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft registrou uma atualização informativa sobre o reconhecimento desta vulnerabilidade.",
   "title": "CVE-2026-119848 Windows Message Queuing Denial of Service Vulnerability",
+  "title_pt": "CVE-2026-119848 Vulnerabilidade de Negação de Serviço no Windows Message Queuing",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119848"
  },
  {
@@ -659,6 +779,9 @@
   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-fix-for-windows-11-bluetooth-audio-quality-drops"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "fa4289a3f22edc8c",
   "cves": [
    "CVE-2026-134814"
@@ -669,10 +792,15 @@
   "lang": "en",
   "published": "2026-11-23T13:22:20Z",
   "source": "The Hacker News",
+  "summary_pt": "Uma falha crítica foi divulgada na biblioteca binary-parser, permitindo que um atacante que controla definições de parser execute código arbitrário.",
   "title": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
+  "title_pt": "Falha Crítica no binary-parser Permite Injeção de JavaScript via Definições de Parser Maliciosas",
   "url": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "2da724996ccb9ddb",
   "cves": [
    "CVE-2026-84869"
@@ -683,10 +811,15 @@
   "lang": "en",
   "published": "2026-11-23T12:41:04Z",
   "source": "The Hacker News",
+  "summary_pt": "Atores de ameaça estão explorando uma falha agora corrigida no ConnectWise ScreenConnect (CVE-2026-84869) que permite a transferência e execução de código em servidores de provedores de serviços gerenciados.",
   "title": "Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning",
+  "title_pt": "Hackers Exploram Falha Crítica no ScreenConnect para Sequestro de PCs de Técnicos MSP sem Aviso",
   "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "7b5dacba886b8db5",
   "cves": [
    "CVE-2026-134624"
@@ -697,7 +830,9 @@
   "lang": "en",
   "published": "2026-11-23T12:28:09Z",
   "source": "The Hacker News",
+  "summary_pt": "A N-able divulgou uma falha crítica de SSRF (CVE-2026-134624) descoberta ao investigar a violação de seu serviço de filtragem de e‑mail Mail Assure.",
   "title": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
+  "title_pt": "N-able Revela Vulnerabilidade Crítica no Mail Assure Encontrada Durante Investigação de Brecha",
   "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html"
  },
  {
@@ -733,6 +868,9 @@
   "url": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "659149ed49d822a8",
   "cves": [
    "CVE-2026-131914"
@@ -743,7 +881,9 @@
   "lang": "en",
   "published": "2026-11-23T09:11:56Z",
   "source": "The Hacker News",
+  "summary_pt": "Pesquisadores alertam para a descontinuação de uso da biblioteca legada Idunno.AntiCsrf após descoberta de vulnerabilidade crítica que já está sendo explorada em produção.",
   "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
+  "title_pt": "Hackers Exploram Falha Crítica em Biblioteca Anti-CSRF do ASP.NET que Permite RCE Não Autenticado",
   "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html"
  },
  {
@@ -843,6 +983,9 @@
   "url": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "3b426a1ae4872b68",
   "cves": [
    "CVE-2026-129975"
@@ -853,7 +996,9 @@
   "lang": "en",
   "published": "2026-11-21T11:05:53Z",
   "source": "The Hacker News",
+  "summary_pt": "Um bug de memória crítico no GPGME pode ser acionado por chaves OpenPGP com IDs de usuário excessivamente longos, possibilitando roubo de dados de aplicações afetadas.",
   "title": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
+  "title_pt": "GnuPG Alerta sobre Falha Crítica no GPGME que Pode Expor Dados de Aplicações via Chaves OpenPGP Maliciosas",
   "url": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html"
  },
  {
@@ -881,6 +1026,9 @@
   "url": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "apt-espionagem",
   "cluster": "7b5dacba886b8db5",
   "cves": [
    "CVE-2026-129448"
@@ -891,7 +1039,9 @@
   "lang": "en",
   "published": "2026-11-21T08:49:13Z",
   "source": "The Hacker News",
+  "summary_pt": "A CISA adicionou quatro vulnerabilidades em Apache Roller, Cisco Expressway, SAP NetWeaver e VMware vCenter à lista KEV, apontando exploração ativa em campanhas de espionagem.",
   "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+  "title_pt": "Hackers Exploram Falhas Críticas na VMware, Cisco e Apache enquanto Surgem Ataques de Espionagem",
   "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html"
  },
  {
@@ -1686,6 +1836,9 @@
   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "89146ff5418730c2",
   "cves": [
    "CVE-2026-111497"
@@ -1696,10 +1849,15 @@
   "lang": "en",
   "published": "2026-11-12T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "A Palo Alto Networks divulgou detalhes de uma vulnerabilidade no PAN‑OS, conhecida como Node2Shell, que afeta dispositivos industriais da linha Siemens RUGGEDCOM APE1808, recomendando que clientes verifiquem e apliquem correções.",
   "title": "Siemens RUGGEDCOM APE1808",
+  "title_pt": "Siemens RUGGEDCOM APE1808",
   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-04"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "89146ff5418730c2",
   "cves": [
    "CVE-2026-111497"
@@ -1710,10 +1868,15 @@
   "lang": "en",
   "published": "2026-11-12T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "O projeto Node.js lançou atualizações de segurança para corrigir a vulnerabilidade crítica “Node2Shell” (CVE‑2026‑111497) no decodificador Brotli, que também impacta produtos Siemens Desigo e Gridscale.",
   "title": "Siemens Desigo, Gridscale",
+  "title_pt": "Siemens Desigo, Gridscale",
   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "89146ff5418730c2",
   "cves": [
    "CVE-2026-109618",
@@ -1725,10 +1888,15 @@
   "lang": "en",
   "published": "2026-11-12T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "A Palo Alto Networks divulgou informações sobre vulnerabilidades no PAN‑OS associadas ao PHP2Shell, que afetam os dispositivos Siemens RUGGEDCOM APE1808, orientando clientes a aplicar as correções recomendadas.",
   "title": "Siemens RUGGEDCOM APE1808",
+  "title_pt": "Siemens RUGGEDCOM APE1808",
   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "89146ff5418730c2",
   "cves": [
    "CVE-2026-111497"
@@ -1739,7 +1907,9 @@
   "lang": "en",
   "published": "2026-11-12T12:00:00Z",
   "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "A Siemens está avaliando o impacto da vulnerabilidade Node2Shell (CVE‑2026‑111497) em seu produto Industrial Edge Management, indicando que instalações sem aplicações de gerenciamento não requerem ação.",
   "title": "Siemens Industrial Edge Management",
+  "title_pt": "Siemens Industrial Edge Management",
   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03"
  },
  {

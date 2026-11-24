@@ -1,0 +1,74 @@
+{
+ "affected": [],
+ "aliases": [],
+ "cvss": [
+  {
+   "assigner": "GitHub (GHSA)",
+   "baseScore": 8.1,
+   "severity": null,
+   "type": "Secondary",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+   "version": "3.1"
+  }
+ ],
+ "cwe": [
+  "CWE-78"
+ ],
+ "description_official": "### Duplicate Advisory\nThis advisory has been withdrawn because it is a duplicate of GHSA-g9x9-q7qj-6mv5. This link is maintained to preserve external references.\n\n### Original Description\n\nAVideo through 29.0 contains an OS command injection vulnerability in the ffmpeg.json.php endpoint where notifyCode and callback parameters are concatenated into a shell command without escaping. Attackers who can craft a valid encrypted payload can inject arbitrary shell metacharacters into these fields to execute OS commands as the web-server user.",
+ "exploitation": {
+  "publicExploit": false
+ },
+ "ghsa_severity": "CRITICAL",
+ "id": "GHSA-jrxj-9mhw-55wc",
+ "lastModified": "2026-11-24T20:52:51Z",
+ "packages": [
+  {
+   "ecosystem": "composer",
+   "name": "wwbn/avideo",
+   "patched": "29.1.0",
+   "vulnerable": "< 29.1.0"
+  }
+ ],
+ "published": "2026-07-16T15:33:10Z",
+ "references": [
+  {
+   "kind": "analysis",
+   "tags": [],
+   "url": "https://github.com/WWBN/AVideo/security/advisories/GHSA-g9x9-q7qj-6mv5"
+  },
+  {
+   "kind": "analysis",
+   "tags": [],
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63305"
+  },
+  {
+   "kind": "analysis",
+   "tags": [],
+   "url": "https://www.vulncheck.com/advisories/avideo-through-os-command-injection-via-ffmpeg-json-php"
+  },
+  {
+   "kind": "analysis",
+   "tags": [],
+   "url": "https://github.com/WWBN/AVideo/commit/56cd4e90983bbd8f800f42be29718f7ee2ca3a5a"
+  },
+  {
+   "kind": "analysis",
+   "tags": [],
+   "url": "https://github.com/WWBN/AVideo/releases/tag/v29.1.0"
+  },
+  {
+   "kind": "analysis",
+   "tags": [],
+   "url": "https://github.com/advisories/GHSA-jrxj-9mhw-55wc"
+  }
+ ],
+ "sources": [
+  {
+   "kind": "official",
+   "license": "CC-BY-4.0",
+   "name": "GitHub Advisory Database",
+   "url": "https://github.com/advisories/GHSA-jrxj-9mhw-55wc"
+  }
+ ],
+ "title": "Duplicate Advisory: AVideo API FFmpeg process permits OS command injection via notifyCode/callback"
+}
