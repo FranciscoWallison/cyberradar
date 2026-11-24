@@ -1,6 +1,6 @@
 # Dependências de execução (versões fixadas; atualize via Dependabot).
 httpx==0.28.1
-feedparser==6.0.11
+feedparser==6.0.14
 jinja2==3.1.6
 markdown==3.7
 jsonschema==4.23.0
