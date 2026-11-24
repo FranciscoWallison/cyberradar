@@ -1,5 +1,6 @@
 # Toda terça: gera o rascunho do "caso da semana" com IA e abre um Pull Request para revisão humana.
 # Requer: Settings → Actions → General → "Allow GitHub Actions to create and approve pull requests".
+# Repositório novo sem nenhuma execução agendada? Um commit que altere este arquivo registra o cron de novo.
 name: learning-draft
 
 on:

@@ -1,6 +1,7 @@
 # Coleta → IA → alertas → commit dos dados → build → deploy no GitHub Pages.
 # Roda de hora em hora (minuto 17, fora do pico do :00) e às segundas gera o boletim semanal.
 # Para pausar sem apagar: Settings → Secrets and variables → Actions → Variables → PIPELINE_ENABLED = false
+# Repositório novo sem nenhuma execução agendada? Um commit que altere este arquivo registra o cron de novo.
 name: pipeline
 
 on:
