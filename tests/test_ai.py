@@ -33,6 +33,7 @@ def test_valid_output_passes():
     lambda d: d.update(summary_simple="Relacionada à CVE-2024-0001."),                # CVE inventada
     lambda d: d.update(technical_explanation="Veja https://evil.example/x"),          # URL inventada
     lambda d: d.update(technical_explanation="Tem CVSS 7.2 segundo o fabricante."),    # nota divergente
+    lambda d: d.update(technical_explanation="CVSS v3.1 com nota base 7.2."),          # versão + nota divergente
     lambda d: d.update(recommendations=[]),                                            # sem recomendação
     lambda d: d.update(summary_simple=""),
 ])
@@ -41,6 +42,18 @@ def test_hallucinations_rejected(mutate):
     mutate(bad)
     with pytest.raises(validate.ValidationError):
         validate.validate_cve_analysis(bad, REC)
+
+
+@pytest.mark.parametrize("text", [
+    "Vetor CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H, nota 9.8.",   # vetor citado
+    "Recebeu CVSS v3.1 de 9.8 (crítica).",                             # versão antes da nota
+    "Segundo o CVSS 3.1, a falha é crítica.",                          # só a versão
+    "Pelo CVSS 3.1 e EPSS 0.9, é urgente.",                             # EPSS logo depois da versão
+])
+def test_cvss_version_and_vector_are_not_scores(text):
+    d = json.loads(json.dumps(GOOD))
+    d["technical_explanation"] = text
+    validate.validate_cve_analysis(d, REC)
 
 
 def test_invented_source_url_is_dropped():

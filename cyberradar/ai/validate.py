@@ -7,6 +7,9 @@ from typing import Any
 from ..collectors import find_cves
 
 URL_RE = re.compile(r"https?://[^\s\"'<>)]+")
+# Vetor ("CVSS:3.1/AV:N/...") não é nota; a versão pode vir antes da nota ("CVSS v3.1 de 9.8").
+CVSS_VECTOR_RE = re.compile(r"CVSS:\d\.\d/\S+", re.I)
+CVSS_SCORE_RE = re.compile(r"CVSS[^0-9]{0,15}(\d{1,2}[.,]\d)(?:(?:(?!EPSS)[^0-9]){0,30}(\d{1,2}[.,]\d))?", re.I)
 KINDS = {"prevention", "mitigation", "remediation"}
 CVE_CATEGORIES = {"web", "rede", "nuvem", "sistema-operacional", "navegador", "iot-ot", "supply-chain", "identidade",
                   "email", "virtualizacao", "mobile", "banco-de-dados", "outro"}
@@ -64,9 +67,12 @@ def validate_cve_analysis(out: Any, rec: dict[str, Any]) -> dict[str, Any]:
             raise ValidationError("URL não presente nos dados")
     # 3) Scores numéricos citados devem bater com os dados (ex.: "CVSS 9.8").
     known_scores = {f"{c['baseScore']:.1f}" for c in rec.get("cvss", [])}
-    for m in re.finditer(r"CVSS[^0-9]{0,15}(\d{1,2}[.,]\d)", blob, re.I):
-        if m.group(1).replace(",", ".") not in known_scores:
-            raise ValidationError("CVSS citado não confere")
+    known_versions = {str(c.get("version", "")) for c in rec.get("cvss", [])}
+    for m in CVSS_SCORE_RE.finditer(CVSS_VECTOR_RE.sub(" ", blob)):
+        first, second = (g.replace(",", ".") if g else None for g in m.groups())
+        score = second if first in known_versions and second else first
+        if score not in known_scores and score not in known_versions:
+            raise ValidationError(f"CVSS citado não confere: {' '.join(m.group(0).split())[:60]!r}")
     return res
 
 
