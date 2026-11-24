@@ -1,0 +1,1577 @@
+[
+ {
+  "cluster": "aed7501519e9304f",
+  "cves": [],
+  "excerpt": "Law enforcement authorities from 11 countries have disrupted 57 illegal streaming services that operated hundreds of websites and drew over 7.3 million visits each year. [...]",
+  "id": "aed7501519e9304f",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T15:10:10Z",
+  "source": "BleepingComputer",
+  "title": "Police disrupt 57 illegal streaming services with 7.3 million visits",
+  "url": "https://www.bleepingcomputer.com/news/security/police-disrupt-57-illegal-streaming-services-with-73-million-visits"
+ },
+ {
+  "cluster": "3fd6fb22513b5c1d",
+  "cves": [],
+  "excerpt": "AI-driven development is adding complexity to software supply chains, leaving security teams overwhelmed by vulnerabilities that may pose little actual risk. RapidFort explains how runtime visibility, container hardening, and automated remediation can reduce vulnerability noise…",
+  "id": "3fd6fb22513b5c1d",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T15:01:11Z",
+  "source": "BleepingComputer",
+  "title": "From Vulnerability Noise to Resilience: Rethinking Security in the AI Era",
+  "url": "https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era"
+ },
+ {
+  "cluster": "83b3c7e4cb54cd10",
+  "cves": [],
+  "excerpt": "Names and email addresses of EU Academy users were exposed in the AI-assisted cyberattack the European Commission detected in October. The post European Commission Uncovers Data Breach in Cyberattack Investigation appeared first on SecurityWeek .",
+  "id": "83b3c7e4cb54cd10",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T14:49:59Z",
+  "source": "SecurityWeek",
+  "title": "European Commission Uncovers Data Breach in Cyberattack Investigation",
+  "url": "https://www.securityweek.com/european-commission-uncovers-data-breach-in-cyberattack-investigation"
+ },
+ {
+  "cluster": "af1c110fcab14c58",
+  "cves": [],
+  "excerpt": "The attacks were launched from 99 IP addresses and targeted organizations across multiple industries and countries. The post Check Point Security Management Servers Hacked in AI-Assisted Campaign appeared first on SecurityWeek .",
+  "id": "af1c110fcab14c58",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T14:21:56Z",
+  "source": "SecurityWeek",
+  "title": "Check Point Security Management Servers Hacked in AI-Assisted Campaign",
+  "url": "https://www.securityweek.com/check-point-security-management-servers-hacked-in-ai-assisted-campaign"
+ },
+ {
+  "cluster": "555a417fb4d59953",
+  "cves": [],
+  "excerpt": "McDonald's Japan, the fast-food giant's Japanese subsidiary, has disclosed a data breach after attackers accessed a database containing sensitive information for users of the company's official smartphone app. [...]",
+  "id": "555a417fb4d59953",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T14:09:37Z",
+  "source": "BleepingComputer",
+  "title": "McDonald's Japan data breach exposes customer location information",
+  "url": "https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information"
+ },
+ {
+  "cluster": "cdf911afcab4ff07",
+  "cves": [],
+  "excerpt": "OpenAI and Cisco launched an open-source Linux security tool named Shirudo that deploys temporary runtime protections to block vulnerability exploitation while administrators prepare and roll out patches, without restarting services. [...]",
+  "id": "cdf911afcab4ff07",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T13:34:23Z",
+  "source": "BleepingComputer",
+  "title": "New Shirudo tool uses AI to shield unpatched Linux systems from exploits",
+  "url": "https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits"
+ },
+ {
+  "cluster": "fefaab8ea1884f0a",
+  "cves": [],
+  "excerpt": "EFS helps zero-retention customers spot Claude misuse spread across many requests while keeping conversation data in their own cloud. The post Anthropic Expands Enterprise Safeguards for Detecting AI Misuse appeared first on SecurityWeek .",
+  "id": "fefaab8ea1884f0a",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T13:30:23Z",
+  "source": "SecurityWeek",
+  "title": "Anthropic Expands Enterprise Safeguards for Detecting AI Misuse",
+  "url": "https://www.securityweek.com/anthropic-expands-enterprise-safeguards-for-detecting-ai-misuse"
+ },
+ {
+  "cluster": "aa014f4b55f462a9",
+  "cves": [
+   "CVE-2026-123903"
+  ],
+  "excerpt": "Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication. The critical vulnerability, tracked as CVE-2026-123903, is rated 9.8…",
+  "id": "aa014f4b55f462a9",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T13:28:26Z",
+  "source": "The Hacker News",
+  "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
+  "url": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html"
+ },
+ {
+  "cluster": "c4ed564253ff3bb5",
+  "cves": [],
+  "excerpt": "A threat cluster previously assessed to be affiliated with the ShinyHunters extortion crew may have rebranded and continued operations under a new name called INCEPTION, according to Okta's Threat Intelligence team. The cluster, dubbed O-UNC-053, is characterized by the use of…",
+  "id": "c4ed564253ff3bb5",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T13:28:21Z",
+  "source": "The Hacker News",
+  "title": "Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
+  "url": "https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html"
+ },
+ {
+  "cluster": "88d6d55f0b06ce11",
+  "cves": [],
+  "excerpt": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it. In March 2026, the hackers who hijacked Trivy, a widely used open-source security…",
+  "id": "88d6d55f0b06ce11",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T12:42:09Z",
+  "source": "The Hacker News",
+  "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
+  "url": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html"
+ },
+ {
+  "cluster": "f18b8762d1b5a04c",
+  "cves": [],
+  "excerpt": "OpenAI and Cisco’s Shirudo uses AI-generated shields to block Linux exploits while patches are prepared, but it’s not yet production-ready. The post OpenAI, Cisco Unveil Open Source Tool to Shield Unpatched Linux Systems appeared first on SecurityWeek .",
+  "id": "f18b8762d1b5a04c",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T12:20:41Z",
+  "source": "SecurityWeek",
+  "title": "OpenAI, Cisco Unveil Open Source Tool to Shield Unpatched Linux Systems",
+  "url": "https://www.securityweek.com/openai-cisco-unveil-open-source-tool-to-shield-unpatched-linux-systems"
+ },
+ {
+  "cluster": "372382395c6e6dd9",
+  "cves": [
+   "CVE-2026-87268"
+  ],
+  "excerpt": "A quirk in how the .NET Framework loads a program file let a local attacker run untrusted code past two separate protections on Windows built to block it, Google Project Zero researcher James Forshaw showed in a write-up published yesterday. The same loading behavior bypassed…",
+  "id": "372382395c6e6dd9",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T12:02:00Z",
+  "source": "The Hacker News",
+  "title": "Google Researcher Shows How a Single Bit Change in .NET Files Bypassed Windows Code Integrity",
+  "url": "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html"
+ },
+ {
+  "cluster": "446e0a68acf81067",
+  "cves": [],
+  "excerpt": "What if your biggest SOC budget problem isn't how much you spend, but how much analyst time you lose? According to ANY.RUN's estimates, SOC teams could recover 450 analyst hours per 1,000 investigated alerts through faster threat analysis and IOC research. That's a significant…",
+  "id": "446e0a68acf81067",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T12:01:54Z",
+  "source": "The Hacker News",
+  "title": "2027 SOC Budget Reset: 5 Priorities to Cut Costs and Reduce Cyber Risk",
+  "url": "https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html"
+ },
+ {
+  "cluster": "7b6115f8e21f6eec",
+  "cves": [
+   "CVE-2026-119055"
+  ],
+  "excerpt": "View CSAF Summary Schneider Electric is aware of a vulnerability in its EcoStruxure™ Power Build Rapsody product. The EcoStruxure™ Power Build Rapsody is used to enter or import the single line diagram, to get the extensive bill of material of your switchboard, including all…",
+  "id": "7b6115f8e21f6eec",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-24T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "Schneider Electric EcoStruxure Power Build Rapsody software",
+  "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-02"
+ },
+ {
+  "cluster": "3a8ad132bbb8c2a0",
+  "cves": [
+   "CVE-2026-129713"
+  ],
+  "excerpt": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code with webserver privileges. The following versions of Danfoss AK-SM 8xxA Series are affected: AK-SM8xxA <=5.4.0 (CVE-2026-129713) CVSS Vendor Equipment v3 9.8 Danfoss…",
+  "id": "3a8ad132bbb8c2a0",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-24T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "Danfoss AK-SM 8xxA Series",
+  "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03"
+ },
+ {
+  "cluster": "3ed1970e74313c87",
+  "cves": [
+   "CVE-2026-127280"
+  ],
+  "excerpt": "View CSAF Summary Successful exploitation of this vulnerability could allow attackers to corrupt application memory and cause instability or a crash, potentially leading to arbitrary code execution, if a user is convinced to open a malicious file. The following versions of…",
+  "id": "3ed1970e74313c87",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-24T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "AutomationDirect C-More EA9 Programming Software",
+  "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-01"
+ },
+ {
+  "cluster": "11d7d6584ec1d002",
+  "cves": [],
+  "excerpt": "Hackers stole personal information from the company’s customer portal and supplier relationship management platform. The post 1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO appeared first on SecurityWeek .",
+  "id": "44c31e75758bd3cb",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T11:50:21Z",
+  "source": "SecurityWeek",
+  "title": "1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO",
+  "url": "https://www.securityweek.com/1-5-million-impacted-by-data-breach-at-south-korean-electric-company-kepco"
+ },
+ {
+  "cluster": "47c6e40ac66c9d3b",
+  "cves": [],
+  "excerpt": "Norway's National Security Authority (NSM) has disclosed that it became aware of a security vulnerability in Microsoft's Azure API Management (APIM) that has affected multiple businesses in the country, including energy companies Equinor and Skagerak Energi. \"An unknown actor…",
+  "id": "47c6e40ac66c9d3b",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T10:44:49Z",
+  "source": "The Hacker News",
+  "title": "Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
+  "url": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html"
+ },
+ {
+  "cluster": "8e94987797ee0959",
+  "cves": [],
+  "excerpt": "Critical Bluetooth flaws in Elecbrakes controllers could let nearby attackers force trailer braking, potentially causing accidents. The post Elecbrakes Bluetooth Vulnerabilities Expose Trailers to Forced Braking appeared first on SecurityWeek .",
+  "id": "8e94987797ee0959",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T10:44:44Z",
+  "source": "SecurityWeek",
+  "title": "Elecbrakes Bluetooth Vulnerabilities Expose Trailers to Forced Braking",
+  "url": "https://www.securityweek.com/elecbrakes-bluetooth-vulnerabilities-expose-trailers-to-forced-braking"
+ },
+ {
+  "cluster": "13aac15fdd3f1ab0",
+  "cves": [],
+  "excerpt": "The company told the ASX that a cybersecurity incident at its Wyoming uranium project would temporarily affect operations. The post Peninsula Energy Halts Trading After Cyber Incident Hits US Uranium Mine appeared first on SecurityWeek .",
+  "id": "13aac15fdd3f1ab0",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T10:35:04Z",
+  "source": "SecurityWeek",
+  "title": "Peninsula Energy Halts Trading After Cyber Incident Hits US Uranium Mine",
+  "url": "https://www.securityweek.com/peninsula-energy-halts-trading-after-cyber-incident-hits-us-uranium-mine"
+ },
+ {
+  "cluster": "63045753ac008998",
+  "cves": [],
+  "excerpt": "A flaw in WHMCS's shopping cart, the billing and automation platform many web hosting companies use to run their businesses, could allow anyone on the internet to retrieve customer records and administrator password hashes from an installation's database. No login is needed. The…",
+  "id": "63045753ac008998",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T08:34:20Z",
+  "source": "The Hacker News",
+  "title": "WHMCS SQL Injection Could Expose Customer Data and Admin Password Hashes without Login",
+  "url": "https://thehackernews.com/2026/11/whmcs-sql-injection-flaw-could-expose.html"
+ },
+ {
+  "cluster": "b0d72916ebeceea8",
+  "cves": [],
+  "excerpt": "OpenAI and Cisco have teamed up to launch Shirudo (meaning \"shield\" in Japanese), an open-source Linux runtime that allows artificial intelligence (AI) agents to defend systems without downtime. \"It lets agents write dynamic eBPF controls to shield systems from exploits, giving…",
+  "id": "b0d72916ebeceea8",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T06:02:57Z",
+  "source": "The Hacker News",
+  "title": "OpenAI and Cisco Unveil AI-Assisted Linux Security Tool to Block Exploits Before Patching",
+  "url": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html"
+ },
+ {
+  "cluster": "7b5dacba886b8db5",
+  "cves": [
+   "CVE-2026-134624"
+  ],
+  "excerpt": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added two flaws impacting N-able MailAssure and MONAI Label to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The critical vulnerabilities are listed below -…",
+  "id": "d70285cdacc0c3a7",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T06:02:45Z",
+  "source": "The Hacker News",
+  "title": "Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day",
+  "url": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html"
+ },
+ {
+  "cluster": "11d7d6584ec1d002",
+  "cves": [],
+  "excerpt": "A threat actor breached the internal network of Korea Electric Power Corporation (KEPCO) and accessed two systems containing customer, employee, and contractor data. [...]",
+  "id": "11d7d6584ec1d002",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-23T20:54:51Z",
+  "source": "BleepingComputer",
+  "title": "South Korea’s power giant KEPCO confirms data breach impacting 1.5 million",
+  "url": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million"
+ },
+ {
+  "cluster": "e95e27eb950ea737",
+  "cves": [],
+  "excerpt": "OpenRouter removed three AI providers from its platform after discovering that they had violated their stated data-handling policies and exposed sensitive data. [...]",
+  "id": "e95e27eb950ea737",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-23T20:00:20Z",
+  "source": "BleepingComputer",
+  "title": "OpenRouter drops AI providers over leaked prompts and secrets",
+  "url": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets"
+ },
+ {
+  "cluster": "a0de9d3c092a62fb",
+  "cves": [],
+  "excerpt": "Microsoft is warning customers that a security vulnerability in Azure API Management (APIM) Classic tiers was exploited to steal stored API credentials, with Norwegian authorities linking the flaw to cyberattacks against energy companies. [...]",
+  "id": "a0de9d3c092a62fb",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-23T19:42:20Z",
+  "source": "BleepingComputer",
+  "title": "Microsoft Azure flaw exploited to steal customers' API credentials",
+  "url": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials"
+ },
+ {
+  "cluster": "6fd89acf9e3aa36a",
+  "cves": [],
+  "excerpt": "LaLiga, Spain's top men's football league, disclosed a data breach that exposed personal information belonging to users of its services and those of some affiliated clubs. [...]",
+  "id": "6fd89acf9e3aa36a",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-23T18:38:40Z",
+  "source": "BleepingComputer",
+  "title": "Spanish LaLiga confirms hackers stole soccer fans’ personal data",
+  "url": "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data"
+ },
+ {
+  "cluster": "5495a06dee26529f",
+  "cves": [],
+  "excerpt": "The China-aligned threat actor known as Webworm is suspected to be using a custom version of the open-source SoftEther VPN Bridge tool in an attempt to remove recognizable detection fingerprints, while disguising it as network-monitoring software to establish covert remote…",
+  "id": "5495a06dee26529f",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-23T17:45:15Z",
+  "source": "The Hacker News",
+  "title": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
+  "url": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html"
+ },
+ {
+  "cluster": "36c59e697c49ac4d",
+  "cves": [],
+  "excerpt": "A cyberattack disrupted operations at B2B top-up solutions provider GlobeTopper, causing an estimated $2.5 million in lost revenue, while the attacker redeemed digital gift cards worth $70,000. [...]",
+  "id": "36c59e697c49ac4d",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-23T16:50:01Z",
+  "source": "BleepingComputer",
+  "title": "GlobeTopper loses $2.5 million after hackers steal $70k in gift cards",
+  "url": "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards"
+ },
+ {
+  "cluster": "2791e2d7d3dd68df",
+  "cves": [
+   "CVE-2026-69291"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "2791e2d7d3dd68df",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-23T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-69291 Windows Volume Manager Extension Driver Remote Code Execution Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69291"
+ },
+ {
+  "cluster": "75e5560e770eebff",
+  "cves": [
+   "CVE-2026-78462"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "75e5560e770eebff",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-23T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-78462 Visual Studio Code Security Feature Bypass Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78462"
+ },
+ {
+  "cluster": "39462054894aa9f3",
+  "cves": [
+   "CVE-2026-72965"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "6da159190d9ae2f5",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-23T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-72965 Windows WebClient Service Elevation of Privilege Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-72965"
+ },
+ {
+  "cluster": "d3fd9ed59ab31855",
+  "cves": [
+   "CVE-2026-87697"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "9bc4f8ff154626a8",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-23T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-87697 .NET Remote Code Execution Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87697"
+ },
+ {
+  "cluster": "39462054894aa9f3",
+  "cves": [
+   "CVE-2026-70175"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "84c049a701a58ce6",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-23T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-70175 ASP.NET Core Elevation of Privilege Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70175"
+ },
+ {
+  "cluster": "d3fd9ed59ab31855",
+  "cves": [
+   "CVE-2026-70197"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "6b3df675437a412e",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-23T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-70197 .NET and Visual Studio Remote Code Execution Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70197"
+ },
+ {
+  "cluster": "39462054894aa9f3",
+  "cves": [
+   "CVE-2026-96225"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "61439d1877a220e9",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-23T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-96225 .NET Elevation of Privilege Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96225"
+ },
+ {
+  "cluster": "39462054894aa9f3",
+  "cves": [
+   "CVE-2026-96233"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "e1dc0f8d1a5374ad",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-23T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-96233 ASP.NET Core Denial of Service Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96233"
+ },
+ {
+  "cluster": "39462054894aa9f3",
+  "cves": [
+   "CVE-2026-109481"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "8500dc289bf758bd",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-23T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-109481 ASP.NET Core Elevation of Privilege Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109481"
+ },
+ {
+  "cluster": "3b0882abb60ec56c",
+  "cves": [
+   "CVE-2026-119848"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "88f367374481cc94",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-23T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-119848 Windows Message Queuing Denial of Service Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119848"
+ },
+ {
+  "cluster": "dc0bf632906413a2",
+  "cves": [],
+  "excerpt": "Microsoft closed an Azure API Management flaw exploited to target secrets at Norwegian energy companies, with other sectors also affected. The post Azure Flaw Exploited to Target Secrets at Norwegian Energy Firms appeared first on SecurityWeek .",
+  "id": "dc0bf632906413a2",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-23T15:47:40Z",
+  "source": "SecurityWeek",
+  "title": "Azure Flaw Exploited to Target Secrets at Norwegian Energy Firms",
+  "url": "https://www.securityweek.com/azure-flaw-exploited-to-target-secrets-at-norwegian-energy-firms"
+ },
+ {
+  "cluster": "a75fd36abba00688",
+  "cves": [],
+  "excerpt": "A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open. This week's stories show how quickly…",
+  "id": "a75fd36abba00688",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-23T15:10:48Z",
+  "source": "The Hacker News",
+  "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
+  "url": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html"
+ },
+ {
+  "cluster": "e41ccef1ec479ff7",
+  "cves": [],
+  "excerpt": "The company has restored access to the affected services and continues to monitor the affected environments. The post N-able Patches Critical Flaw Discovered After Mail Assure Cyberattack appeared first on SecurityWeek .",
+  "id": "e41ccef1ec479ff7",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-23T15:06:49Z",
+  "source": "SecurityWeek",
+  "title": "N-able Patches Critical Flaw Discovered After Mail Assure Cyberattack",
+  "url": "https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack"
+ },
+ {
+  "cluster": "c17e236901f89624",
+  "cves": [],
+  "excerpt": "AI agents operate across multiple platforms, creating security gaps when no single vendor can see or control their actions. Token Security examines the shared responsibility problem and explains how organizations can better manage agent identities, permissions, and…",
+  "id": "c17e236901f89624",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-23T15:00:10Z",
+  "source": "BleepingComputer",
+  "title": "AI Agents Are Creating a Shared Responsibility Gap",
+  "url": "https://www.bleepingcomputer.com/news/security/ai-agents-are-creating-a-shared-responsibility-gap"
+ },
+ {
+  "cluster": "666c9425a09bfe91",
+  "cves": [],
+  "excerpt": "If a session overwrite operation is interrupted, an attacker who controls the fresh data could trigger data deserialization and RCE. The post phpAfterShell Vulnerability Revives PHP2Shell’s Attack Path appeared first on SecurityWeek .",
+  "id": "666c9425a09bfe91",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-23T13:58:07Z",
+  "source": "SecurityWeek",
+  "title": "phpAfterShell Vulnerability Revives PHP2Shell’s Attack Path",
+  "url": "https://www.securityweek.com/phpaftershell-vulnerability-revives-php2shells-attack-path"
+ },
+ {
+  "cluster": "7e0ab8486aa30ee5",
+  "cves": [],
+  "excerpt": "Microsoft is working to fix a long-standing Windows issue that has been causing significant audio quality drops for Bluetooth headphone users. [...]",
+  "id": "7e0ab8486aa30ee5",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-23T13:28:45Z",
+  "source": "BleepingComputer",
+  "title": "Microsoft testing fix for Windows 11 Bluetooth audio quality drops",
+  "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-fix-for-windows-11-bluetooth-audio-quality-drops"
+ },
+ {
+  "cluster": "fa4289a3f22edc8c",
+  "cves": [
+   "CVE-2026-134814"
+  ],
+  "excerpt": "A critical security flaw has been disclosed in the popular binary-parser library that could allow an attacker who controls parser definitions to execute arbitrary code. The vulnerability, tracked as CVE-2026-134814 (CVSS score: 9.2 / 8.1), is a case of code injection impacting…",
+  "id": "fa4289a3f22edc8c",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-23T13:22:20Z",
+  "source": "The Hacker News",
+  "title": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
+  "url": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html"
+ },
+ {
+  "cluster": "2da724996ccb9ddb",
+  "cves": [
+   "CVE-2026-84869"
+  ],
+  "excerpt": "Threat actors are exploiting a now-patched security flaw in ConnectWise ScreenConnect to target managed service provider (MSP) servers. The activity revolves around CVE-2026-84869 (CVSS score: 9.9), a critical ScreenConnect client flaw that allows a guest to transfer and execute…",
+  "id": "2da724996ccb9ddb",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-23T12:41:04Z",
+  "source": "The Hacker News",
+  "title": "Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning",
+  "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html"
+ },
+ {
+  "cluster": "7b5dacba886b8db5",
+  "cves": [
+   "CVE-2026-134624"
+  ],
+  "excerpt": "N-able yesterday disclosed a critical flaw it found while investigating the breach of its Mail Assure and SpamExperts Hosted Cloud, an email filtering service it runs for managed service providers. The bug, tracked as CVE-2026-134624, is a server-side request forgery (SSRF)…",
+  "id": "89ef724f9ef49976",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-23T12:28:09Z",
+  "source": "The Hacker News",
+  "title": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
+  "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html"
+ },
+ {
+  "cluster": "1162383657bf3738",
+  "cves": [],
+  "excerpt": "A Peruvian call center operator was sentenced to eight years in prison for helping steal millions of dollars from over 30,000 Spanish-speaking US residents in a years-long government-impersonation fraud scheme. [...]",
+  "id": "1162383657bf3738",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-23T12:02:23Z",
+  "source": "BleepingComputer",
+  "title": "Call center operator gets 8 years for helping scam 30,000 Americans",
+  "url": "https://www.bleepingcomputer.com/news/security/call-center-operator-gets-8-years-for-helping-scam-30-000-americans"
+ },
+ {
+  "cluster": "7b5dacba886b8db5",
+  "cves": [
+   "CVE-2026-133968",
+   "CVE-2026-134624"
+  ],
+  "excerpt": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-133968 Project MONAI MONAI Label Path Traversal Vulnerability CVE-2026-134624 N-able Mail Assure (SpamExperts) Server-Side Request…",
+  "id": "75ea09ea3e752e02",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-23T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+  "url": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+ },
+ {
+  "cluster": "659149ed49d822a8",
+  "cves": [
+   "CVE-2026-131914"
+  ],
+  "excerpt": "Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf (\"Idunno.AntiCsrf.dll\") following the discovery of a critical vulnerability that has been exploited in the wild. The vulnerability, tracked as…",
+  "id": "659149ed49d822a8",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-23T09:11:56Z",
+  "source": "The Hacker News",
+  "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
+  "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html"
+ },
+ {
+  "cluster": "1c9fa573637bd95c",
+  "cves": [],
+  "excerpt": "Microsoft confirmed printing issues on systems running Forcepoint DLP software after installing the KB5132043 November 2026 Windows 11 hotpatch. [...]",
+  "id": "1c9fa573637bd95c",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-23T09:11:15Z",
+  "source": "BleepingComputer",
+  "title": "Microsoft confirms Windows printing issues affecting Forcepoint users",
+  "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch"
+ },
+ {
+  "cluster": "86d05566c7a214bc",
+  "cves": [],
+  "excerpt": "Hackers exploited a vulnerability in GL.iNet's GoodCloud remote management service to install malware on some customer routers and KVM devices, the maker of travel routers and remote-access KVM hardware said in a security notice updated today. The company identified and fixed…",
+  "id": "8dee64bf666c5ac0",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-23T09:04:08Z",
+  "source": "The Hacker News",
+  "title": "Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices",
+  "url": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html"
+ },
+ {
+  "cluster": "3077523564b045f2",
+  "cves": [],
+  "excerpt": "The Indian Computer Emergency Response Team (CERT-In) has warned that threat actors are carrying out artificial intelligence (AI)-assisted cyber attacks targeting information and communication technology (ICT) assets in the country. This unsanctioned activity has resulted in…",
+  "id": "3077523564b045f2",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-23T08:24:15Z",
+  "source": "The Hacker News",
+  "title": "AI-Assisted Cyber Attacks Trigger Unauthorized Payments at Indian Banks and Fintech Firms",
+  "url": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html"
+ },
+ {
+  "cluster": "66af9006c5e3cf3f",
+  "cves": [],
+  "excerpt": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers are now exploiting a recently patched critical Cisco Expressway vulnerability in the wild. [...]",
+  "id": "66af9006c5e3cf3f",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-23T07:44:19Z",
+  "source": "BleepingComputer",
+  "title": "CISA flags critical Cisco RCE flaw as actively exploited in attacks",
+  "url": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited"
+ },
+ {
+  "cluster": "86d05566c7a214bc",
+  "cves": [],
+  "excerpt": "GL.iNet has confirmed that hackers exploited a vulnerability in its cloud remote management services to install custom malware on customers' routers and KVM devices, with some affected users reporting backdoors and reverse shells giving remote access to infected devices. [...]",
+  "id": "86d05566c7a214bc",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-22T18:45:37Z",
+  "source": "BleepingComputer",
+  "title": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
+  "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices"
+ },
+ {
+  "cluster": "6d087c898942cc0c",
+  "cves": [],
+  "excerpt": "Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week. Some of the stolen requests were flagged as Zero Data Retention, the setting that is…",
+  "id": "6d087c898942cc0c",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-22T05:06:55Z",
+  "source": "The Hacker News",
+  "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
+  "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html"
+ },
+ {
+  "cluster": "a3c63e958cb92eef",
+  "cves": [],
+  "excerpt": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it. Ghostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other…",
+  "id": "a3c63e958cb92eef",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-22T05:03:41Z",
+  "source": "The Hacker News",
+  "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
+  "url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html"
+ },
+ {
+  "cluster": "059e30cfca7341a0",
+  "cves": [],
+  "excerpt": "A malicious webpage could extract a Meta Muse user's private conversations and stored memories from the assistant without triggering any approval prompt, researchers have shown. The same attack could be extended to reach the credentials Muse stores for the user's connected…",
+  "id": "059e30cfca7341a0",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-21T11:53:07Z",
+  "source": "The Hacker News",
+  "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
+  "url": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html"
+ },
+ {
+  "cluster": "3b426a1ae4872b68",
+  "cves": [
+   "CVE-2026-129975"
+  ],
+  "excerpt": "A malicious OpenPGP key with an unusually long user ID can trigger a critical memory bug in GPGME, the standard library that programs use to work with GnuPG. The GnuPG project warned yesterday that the flaw could be used to steal data from affected applications and has released…",
+  "id": "3b426a1ae4872b68",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-21T11:05:53Z",
+  "source": "The Hacker News",
+  "title": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
+  "url": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html"
+ },
+ {
+  "cluster": "31de93106fde76af",
+  "cves": [],
+  "excerpt": "Suspected China-linked hackers used autonomous AI agents to find a previously unknown flaw in MONAI Label, an open-source medical imaging server, and gain root access to a university server, Amazon Threat Intelligence said this week. The flaw allows an attacker with no account…",
+  "id": "31de93106fde76af",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-21T11:03:17Z",
+  "source": "The Hacker News",
+  "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
+  "url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html"
+ },
+ {
+  "cluster": "c5410e0ea07b3ca7",
+  "cves": [],
+  "excerpt": "Signal has announced that it will restrict screenshots by default to stop artificial intelligence (AI) agents from reading private chats on Android and iOS devices, but conceded that the protection is \"incomplete.\" The feature applies to agentic systems built into iOS 27 and on…",
+  "id": "c5410e0ea07b3ca7",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-21T08:49:20Z",
+  "source": "The Hacker News",
+  "title": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
+  "url": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html"
+ },
+ {
+  "cluster": "7b5dacba886b8db5",
+  "cves": [
+   "CVE-2026-129448"
+  ],
+  "excerpt": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added four flaws impacting Apache Roller, Cisco Expressway, SAP NetWeaver, and Broadcom VMware vCenter to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation. The…",
+  "id": "552b60cb29a0722a",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-21T08:49:13Z",
+  "source": "The Hacker News",
+  "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+  "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html"
+ },
+ {
+  "cluster": "10886014bf917685",
+  "cves": [],
+  "excerpt": "The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use \"advanced cryptographic tools\" to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found the company was simply…",
+  "id": "10886014bf917685",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-21T00:36:39Z",
+  "source": "Krebs on Security",
+  "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
+  "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud"
+ },
+ {
+  "cluster": "b44c0a854e15b185",
+  "cves": [
+   "CVE-2026-23871"
+  ],
+  "excerpt": "Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages. The vulnerability, tracked as CVE-2026-23871 (CVSS score: 3.5), has been described as a case of…",
+  "id": "b44c0a854e15b185",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-20T17:57:20Z",
+  "source": "The Hacker News",
+  "title": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
+  "url": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html"
+ },
+ {
+  "cluster": "0b4042589720c604",
+  "cves": [],
+  "excerpt": "Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model (LLM) integration for victim management and control at scale. Dutch mobile security company ThreatFabric said it discovered the…",
+  "id": "0b4042589720c604",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-20T16:58:16Z",
+  "source": "The Hacker News",
+  "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
+  "url": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html"
+ },
+ {
+  "cluster": "c7b209f2aed89407",
+  "cves": [
+   "CVE-2026-99312"
+  ],
+  "excerpt": "A flaw in KVM, the hypervisor built into the Linux kernel, let researchers read about 127 GB of a cloud server's memory from inside a virtual machine of their own on DigitalOcean. On a shared server, that memory can include other customers' virtual machines. The flaw, tracked as…",
+  "id": "c7b209f2aed89407",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-20T12:20:00Z",
+  "source": "The Hacker News",
+  "title": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
+  "url": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html"
+ },
+ {
+  "cluster": "7b5dacba886b8db5",
+  "cves": [
+   "CVE-2025-42884",
+   "CVE-2026-76466",
+   "CVE-2026-123890",
+   "CVE-2026-129448"
+  ],
+  "excerpt": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2025-42884 SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability CVE-2026-76466 Cisco Expressway…",
+  "id": "b22eec5809ce5c9c",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-20T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+  "url": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+ },
+ {
+  "cluster": "b18719ed382d67da",
+  "cves": [],
+  "excerpt": "Security leaders are about to hand AI agents a lot more authority. In a recent a16z survey of CISOs at organizations with more than 1,000 employees, 36% said they are comfortable today letting AI agents act autonomously on low-risk security actions. In 12 months from now, 60%…",
+  "id": "b18719ed382d67da",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-20T12:00:00Z",
+  "source": "The Hacker News",
+  "title": "The Path to AI Autonomy in the SOC",
+  "url": "https://thehackernews.com/2026/11/the-path-to-ai-autonomy-in-soc.html"
+ },
+ {
+  "cluster": "823ccfebdf7ab435",
+  "cves": [],
+  "excerpt": "SonicWall has urged all customers still running Generation 6 firewalls to retire and replace them immediately and stop exposing the devices on the internet edge, citing security risks fueled by AI-assisted attacks. \"Attackers now use automation and AI to find and exploit…",
+  "id": "823ccfebdf7ab435",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-20T10:38:22Z",
+  "source": "The Hacker News",
+  "title": "SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws",
+  "url": "https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html"
+ },
+ {
+  "cluster": "7b5dacba886b8db5",
+  "cves": [
+   "CVE-2026-76466"
+  ],
+  "excerpt": "Threat actors have been observed exploiting a recently disclosed critical security flaw in Cisco Expressway to breach a Russian organization shortly after the public release of a proof-of-concept (PoC) exploit. The activity involves the exploitation of CVE-2026-76466 (CVSS…",
+  "id": "c99f552cbbef77a0",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-20T10:32:50Z",
+  "source": "The Hacker News",
+  "title": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
+  "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html"
+ },
+ {
+  "cluster": "cc0e8ba3fbf777d5",
+  "cves": [
+   "CVE-2024-7533"
+  ],
+  "excerpt": "Information published.",
+  "id": "16269e357f18ef2f",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-20T09:06:50Z",
+  "source": "Microsoft Security Response Center",
+  "title": "Chromium: CVE-2024-7533 Use after free in Sharing",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-7532"
+ },
+ {
+  "cluster": "cc0e8ba3fbf777d5",
+  "cves": [
+   "CVE-2023-1531"
+  ],
+  "excerpt": "Information published.",
+  "id": "cc0e8ba3fbf777d5",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-20T09:05:37Z",
+  "source": "Microsoft Security Response Center",
+  "title": "Chromium: CVE-2023-1531 Use after free in ANGLE",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-1531"
+ },
+ {
+  "cluster": "28a52ce8afc34b91",
+  "cves": [
+   "CVE-2026-105584"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "28a52ce8afc34b91",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-19T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-105584 Windows Inventory Backup Information Disclosure Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105584"
+ },
+ {
+  "cluster": "82c26b576f6fc72b",
+  "cves": [
+   "CVE-2026-95874"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "82c26b576f6fc72b",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-19T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-95874 Xbox Gaming Services Elevation of Privilege Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95874"
+ },
+ {
+  "cluster": "39462054894aa9f3",
+  "cves": [
+   "CVE-2026-95989"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "39462054894aa9f3",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-19T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-95989 vhdmp.sys Elevation of Privilege Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95989"
+ },
+ {
+  "cluster": "3b0882abb60ec56c",
+  "cves": [
+   "CVE-2026-96082"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "3b0882abb60ec56c",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-19T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-96082 Windows Kerberos Denial of Service Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96082"
+ },
+ {
+  "cluster": "8421e487cff8489e",
+  "cves": [
+   "CVE-2026-113817"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "8421e487cff8489e",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-19T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-113817 Windows Devices Human Interface Elevation of Privilege Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-113817"
+ },
+ {
+  "cluster": "25d65b7a80ba6be4",
+  "cves": [
+   "CVE-2026-121669"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "25d65b7a80ba6be4",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-19T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-121669 PowerShell Information Disclosure Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-121669"
+ },
+ {
+  "cluster": "d3fd9ed59ab31855",
+  "cves": [
+   "CVE-2026-118302"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "d3fd9ed59ab31855",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-19T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-118302 Microsoft Office Excel Remote Code Execution Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118302"
+ },
+ {
+  "cluster": "d3fd9ed59ab31855",
+  "cves": [
+   "CVE-2026-69370"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "94216a32dc2b33b2",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-19T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-69370 Visual Studio Code Remote Code Execution Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69370"
+ },
+ {
+  "cluster": "39462054894aa9f3",
+  "cves": [
+   "CVE-2026-69918"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "c2e86c60298ae8c7",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-19T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-69918 Windows Core Messaging Elevation of Privilege Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69918"
+ },
+ {
+  "cluster": "39462054894aa9f3",
+  "cves": [
+   "CVE-2026-70223"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "9f1e929e1ddda980",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-19T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-70223 Windows Console Driver Elevation of Privilege Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70223"
+ },
+ {
+  "cluster": "59d4eedd365fa04d",
+  "cves": [
+   "CVE-2026-83722"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "59d4eedd365fa04d",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-19T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-83722 Microsoft Local Security Authority (LSA) Server Elevation of Privilege Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83722"
+ },
+ {
+  "cluster": "1ade92a7e8ff7f2e",
+  "cves": [
+   "CVE-2026-83753"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "1ade92a7e8ff7f2e",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-19T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-83753 Windows Camera Frame Server Monitor Elevation of Privilege Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83753"
+ },
+ {
+  "cluster": "605d38a62a8cad44",
+  "cves": [
+   "CVE-2026-83760"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "605d38a62a8cad44",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-19T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-83760 Microsoft Bluetooth Driver Information Disclosure Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83760"
+ },
+ {
+  "cluster": "bc06551d117a2c58",
+  "cves": [
+   "CVE-2026-84015"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "bc06551d117a2c58",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-19T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-84015 Remote Access Point-to-Point Protocol (PPP) EAP-TLS Remote Code Execution Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84015"
+ },
+ {
+  "cluster": "39462054894aa9f3",
+  "cves": [
+   "CVE-2026-84016"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "91416fed0c692466",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-19T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-84016 Windows EAPHost Service Elevation of Privilege Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84016"
+ },
+ {
+  "cluster": "39462054894aa9f3",
+  "cves": [
+   "CVE-2026-84020"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "afd14836da018dd4",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-19T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-84020 Windows Routing and Remote Access Service (RRAS) Elevation of Privilege Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84020"
+ },
+ {
+  "cluster": "39462054894aa9f3",
+  "cves": [
+   "CVE-2026-85794"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "c53b994004c013e2",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-19T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-85794 Windows Routing and Remote Access Service (RRAS) Information Disclosure Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85794"
+ },
+ {
+  "cluster": "b3a86c55538daf7b",
+  "cves": [
+   "CVE-2026-85846"
+  ],
+  "excerpt": "Updated an acknowledgement. This is an informational change only.",
+  "id": "b3a86c55538daf7b",
+  "kind": "vendor",
+  "lang": "en",
+  "published": "2026-11-19T16:00:00Z",
+  "source": "Microsoft Security Response Center",
+  "title": "CVE-2026-85846 Web Account Manager Elevation of Privilege Vulnerability",
+  "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85846"
+ },
+ {
+  "cluster": "31c4bb63cffd59f4",
+  "cves": [
+   "CVE-2026-124281",
+   "CVE-2026-125273",
+   "CVE-2026-96805"
+  ],
+  "excerpt": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to gain control of the brakes of a trailer, modify the firmware, disable the brake lights, modify the brake conditions or disable other critical safety features. The following versions of…",
+  "id": "31c4bb63cffd59f4",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-19T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "Elecbrakes EB2, VM1, ELBC2000",
+  "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02"
+ },
+ {
+  "cluster": "ad267eaa2b115482",
+  "cves": [
+   "CVE-2026-126088"
+  ],
+  "excerpt": "View CSAF Summary Successful exploitation of this vulnerability could allow several unauthenticated admin accounts to be created. The following versions of Autonomy Logic OpenPLC Runtime are affected: OpenPLC Runtime <=4.2.4 (CVE-2026-126088) CVSS Vendor Equipment v3 8.1…",
+  "id": "ad267eaa2b115482",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-19T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "Autonomy Logic OpenPLC Runtime",
+  "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01"
+ },
+ {
+  "cluster": "bf2611689a6fa7cb",
+  "cves": [
+   "CVE-2026-125132"
+  ],
+  "excerpt": "View CSAF Summary Successful exploitation of this vulnerability could allow a remote attacker to cause a denial of service, memory corruption, or information disclosure. The following versions of libumqtt are affected: libumqtt <=1.1.1 (CVE-2026-125132) CVSS Vendor Equipment v3…",
+  "id": "bf2611689a6fa7cb",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-19T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "libumqtt",
+  "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03"
+ },
+ {
+  "cluster": "7b5dacba886b8db5",
+  "cves": [
+   "CVE-2024-10441",
+   "CVE-2026-40217",
+   "CVE-2026-90436",
+   "CVE-2026-90817"
+  ],
+  "excerpt": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2024-10441 Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability CVE-2026-40217 BerriAI LiteLLM…",
+  "id": "2bf6e3b53184cd10",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-18T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+  "url": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+ },
+ {
+  "cluster": "572b7212343397c3",
+  "cves": [],
+  "excerpt": "At least 178 top web destinations unwittingly served a variety of malware exploits against visitors over the past 24 hours thanks to a security vulnerability involving Optimizely, a company that helps websites customize user experiences and test out new features. Experts say the…",
+  "id": "572b7212343397c3",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-18T02:52:04Z",
+  "source": "Krebs on Security",
+  "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
+  "url": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites"
+ },
+ {
+  "cluster": "c68cb5d11f8dc619",
+  "cves": [],
+  "excerpt": "In the Codename MDASH pilot, GitHub and Microsoft turned thousands of raw AI findings into 99 checked, private reports with suggested fixes for six widely used open source projects. Maintainers have already fixed more than half. The post Maintainers don’t need more AI bug…",
+  "id": "c68cb5d11f8dc619",
+  "kind": "analysis",
+  "lang": "en",
+  "published": "2026-11-17T18:29:29Z",
+  "source": "GitHub Security Lab",
+  "title": "Maintainers don’t need more AI bug reports. They need fixes.",
+  "url": "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes"
+ },
+ {
+  "cluster": "1e3a8a0a7e3cd062",
+  "cves": [
+   "CVE-2026-59082"
+  ],
+  "excerpt": "View CSAF Summary Graphics Designer of SIMATIC WinCC before V8.2 contains an implicit active content execution vulnerability upon opening files, which could allow an attacker to cause arbitrary code execution on the device. Siemens is preparing fixes and recommends specific…",
+  "id": "1e3a8a0a7e3cd062",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-17T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "Siemens SIMATIC WinCC",
+  "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-09"
+ },
+ {
+  "cluster": "986d782997068f3c",
+  "cves": [
+   "CVE-2026-117659",
+   "CVE-2026-120157",
+   "CVE-2026-120255",
+   "CVE-2026-120260",
+   "CVE-2026-120271",
+   "CVE-2026-120298"
+  ],
+  "excerpt": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to retrieve sensitive system information, access application data without authorization, recover stored credentials, or intercept and manipulate network communications. The following…",
+  "id": "986d782997068f3c",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-17T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "Dorsett Controls InfoScan",
+  "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-01"
+ },
+ {
+  "cluster": "f61efca8f592b87c",
+  "cves": [
+   "CVE-2026-112136",
+   "CVE-2026-112137"
+  ],
+  "excerpt": "View CSAF Summary Mendix Studio Pro contains multiple vulnerabilities in the MCP Server, that could allow an attacker with network access to interact with the server remotely or trick a user's browser into sending unauthorized requests, potentially leading to unauthorized data…",
+  "id": "f61efca8f592b87c",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-17T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "Siemens Mendix Studio Pro",
+  "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-05"
+ },
+ {
+  "cluster": "639fac0f8727e01a",
+  "cves": [
+   "CVE-2026-85114",
+   "CVE-2026-85115"
+  ],
+  "excerpt": "View CSAF Summary .NET Client Library for SIMATIC S7 Webserver API contains multiple vulnerabilities that could allow an attacker to obtain sensitive information or write arbitrary files outside the intended download directory. Siemens has released a new version for .NET Client…",
+  "id": "639fac0f8727e01a",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-17T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "Siemens .NET Client Library for SIMATIC S7 Webserver API",
+  "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-02"
+ },
+ {
+  "cluster": "2b90ef71fb088037",
+  "cves": [
+   "CVE-2026-114938"
+  ],
+  "excerpt": "Purpose CISA strongly urges organizations to immediately patch the recently disclosed Oracle Java vulnerability CVE-2026-114938 . This critical memory-corruption vulnerability, known as “Java4Shell,” affects the Base64 decoder of the x86-64 HotSpot Java Virtual Machine (JVM),…",
+  "id": "2b90ef71fb088037",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-17T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "Critical Java Vulnerability Requires Immediate Patching",
+  "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching"
+ },
+ {
+  "cluster": "89146ff5418730c2",
+  "cves": [
+   "CVE-2026-111497"
+  ],
+  "excerpt": "View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write…",
+  "id": "91475641f52fb30d",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-17T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "Siemens Industrial Software Products",
+  "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04"
+ },
+ {
+  "cluster": "7b5dacba886b8db5",
+  "cves": [
+   "CVE-2026-115731"
+  ],
+  "excerpt": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-115731 Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability This type of vulnerability is a frequent attack vector…",
+  "id": "37902359fb183e15",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-17T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+  "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog"
+ },
+ {
+  "cluster": "3989b95c68b62c6d",
+  "cves": [
+   "CVE-2026-64629"
+  ],
+  "excerpt": "View CSAF Summary Simcenter Femap is affected by an out of bounds read vulnerability that could be triggered when the application reads files in X_T format. This could allow an attacker to crash the application or execute arbitrary code. Siemens has released a new version for…",
+  "id": "3989b95c68b62c6d",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-17T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "Siemens Simcenter Femap",
+  "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10"
+ },
+ {
+  "cluster": "4a756643b0596f8c",
+  "cves": [
+   "CVE-2026-109097"
+  ],
+  "excerpt": "View CSAF Summary ROS# before version 2.3.1 contains a code injection vulnerability that could allow an attacker that is able to pass a crafted message definition file to the user to inject arbitrary code into the generated program. Siemens has released a new version for ROS#…",
+  "id": "4a756643b0596f8c",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-17T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "Siemens ROS#",
+  "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06"
+ },
+ {
+  "cluster": "5b5cf4f017dbab0e",
+  "cves": [
+   "CVE-2026-58114"
+  ],
+  "excerpt": "View CSAF Summary The products listed below contain an authentication bypass vulnerability that could allow an on-path attacker to take over the session of a legitimate user and execute arbitrary code with the privileges of the victim user. Siemens is preparing fixes and…",
+  "id": "5b5cf4f017dbab0e",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-17T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "Siemens SIMATIC",
+  "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-08"
+ },
+ {
+  "cluster": "89146ff5418730c2",
+  "cves": [
+   "CVE-2026-111497"
+  ],
+  "excerpt": "View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write…",
+  "id": "3b573666de1648f8",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-17T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "Siemens Industrial Automation Software Products",
+  "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-03"
+ },
+ {
+  "cluster": "89146ff5418730c2",
+  "cves": [
+   "CVE-2026-106175"
+  ],
+  "excerpt": "View CSAF Summary Fortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens recommends to update Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure.…",
+  "id": "b408794a3196e1df",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-17T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "Siemens RUGGEDCOM APE1808",
+  "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07"
+ },
+ {
+  "cluster": "fae4ec42780a6b53",
+  "cves": [
+   "CVE-2026-109830"
+  ],
+  "excerpt": "View CSAF Summary meta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could allow an attacker which is able to manipulate a configuration file to have arbitrary commands run as root.…",
+  "id": "fae4ec42780a6b53",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-17T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "Siemens meta-iot2050",
+  "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11"
+ },
+ {
+  "cluster": "7b5dacba886b8db5",
+  "cves": [
+   "CVE-2026-114713",
+   "CVE-2026-123039"
+  ],
+  "excerpt": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-114713 UnrealIRCd Improper Neutralization of Delimiters Vulnerability CVE-2026-123039 Check Point Multiple Products Incorrect…",
+  "id": "7b5dacba886b8db5",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-13T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+  "url": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+ },
+ {
+  "cluster": "89146ff5418730c2",
+  "cves": [
+   "CVE-2026-109618",
+   "CVE-2026-109619"
+  ],
+  "excerpt": "View CSAF Summary On October 21, 2026, the PHP project and security researchers disclosed two critical, unauthenticated remote code execution vulnerabilities in the core PHP language runtime known as \"php2shell\" (tracked as CVE-2026-109618 and CVE-2026-109619). This advisory…",
+  "id": "89146ff5418730c2",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-12T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "Siemens Building Automation and Energy Products",
+  "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01"
+ },
+ {
+  "cluster": "89146ff5418730c2",
+  "cves": [
+   "CVE-2026-111497"
+  ],
+  "excerpt": "View CSAF Summary Palo Alto Networks has published information on a vulnerability in PAN-OS related to the Node2Shell vulnerability. This advisory lists the related Siemens Industrial products affected by this vulnerability. Customers are advised to consult and implement the…",
+  "id": "652c8f30b0994d6c",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-12T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "Siemens RUGGEDCOM APE1808",
+  "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-04"
+ },
+ {
+  "cluster": "89146ff5418730c2",
+  "cves": [
+   "CVE-2026-111497"
+  ],
+  "excerpt": "View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write…",
+  "id": "f45d3069b40c902e",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-12T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "Siemens Desigo, Gridscale",
+  "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02"
+ },
+ {
+  "cluster": "89146ff5418730c2",
+  "cves": [
+   "CVE-2026-109618",
+   "CVE-2026-109619"
+  ],
+  "excerpt": "View CSAF Summary Palo Alto Networks has published information on vulnerabilities in PAN-OS related to PHP2Shell vulnerabilities. This advisory lists the related Siemens Industrial products affected by these vulnerabilities. Customers are advised to consult and implement the…",
+  "id": "057c02b04cc39ce1",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-12T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "Siemens RUGGEDCOM APE1808",
+  "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05"
+ },
+ {
+  "cluster": "89146ff5418730c2",
+  "cves": [
+   "CVE-2026-111497"
+  ],
+  "excerpt": "View CSAF Summary Siemens is currently assessing the impact of Node2Shell (CVE-2026-111497) on Industrial Edge. Please check your Industrial Edge Management (IEM) setup: - No Management Applications installed: No action is required. Although the affected Brotli library is…",
+  "id": "ff020ded0d332431",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-12T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "title": "Siemens Industrial Edge Management",
+  "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03"
+ },
+ {
+  "cluster": "d329703bdbf516bf",
+  "cves": [],
+  "excerpt": "The cybercrime group Qilin has emerged as the world's most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone. But even top Russian hackers make operational security mistakes, and the administrator of Qilin has made a…",
+  "id": "d329703bdbf516bf",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-11T18:06:01Z",
+  "source": "Krebs on Security",
+  "title": "Who Runs the Ransomware Group Qilin?",
+  "url": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin"
+ },
+ {
+  "cluster": "56e8f28d1062a8e8",
+  "cves": [],
+  "excerpt": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month's Patch Tuesday addresses 63 critical flaws -- including a zero-day in Microsoft Outlook -- and…",
+  "id": "56e8f28d1062a8e8",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-10T21:55:03Z",
+  "source": "Krebs on Security",
+  "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
+  "url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities"
+ }
+]

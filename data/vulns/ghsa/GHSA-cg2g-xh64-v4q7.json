@@ -1,0 +1,69 @@
+{
+ "affected": [],
+ "aliases": [],
+ "cvss": [
+  {
+   "assigner": "GitHub (GHSA)",
+   "baseScore": 2.3,
+   "severity": null,
+   "type": "Secondary",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N",
+   "version": "4.0"
+  }
+ ],
+ "cwe": [
+  "CWE-79"
+ ],
+ "description_official": "## Summary\n\nWhen DOMPurify is configured with `SAFE_FOR_TEMPLATES: true` together with a DOM-returning mode (`RETURN_DOM: true`, `RETURN_DOM_FRAGMENT: true`, or `IN_PLACE: true`), template expressions such as `{{...}}`, `${...}`, and `<%...%>` survive sanitization inside the text content of an attached shadow root. The post-walk safety net `_scrubTemplateExpressions` (`src/purify.ts:1717`) was extended to recurse into `<template>.content`, but it never recurses into attached shadow roots. An attacker who can supply a DOM node carrying a shadow root (the `IN_PLACE` and shadow-aware `RETURN_DOM` surfaces) can split an expression across text nodes separated by disallowed elements; after those elements are removed the fragments become adjacent and serialize into a complete expression that a downstream template engine will evaluate.\n\n## Root Cause\n\n`SAFE_FOR_TEMPLATES` neutralizes template expressions through two mechanisms: a per-text-node strip during the main walk (`_stripTemplateExpressions`, applied in `_sanitizeElements` at `src/purify.ts:2246`), and a final post-walk pass (`_scrubTemplateExpressions`, `src/purify.ts:1717`) that normalizes adjacent text nodes and re-strips expressions that only form after merging. The per-node strip cannot catch an expression that is split into individual fragments, because each fragment fails the delimiter regexes. The post-walk pass is the only mechanism that would catch the merged form, but it is structurally unable to reach shadow root content.\n\n```text\n_scrubTemplateExpressions (src/purify.ts:1717-1751):\n  - node.normalize() at line 1718 does not merge text nodes inside shadow roots (DOM spec).\n  - NodeIterator at lines 1723-1731 does not descend into shadow trees (DOM spec).\n  - Explicit recursion at lines 1743-1750 enters <template>.content only, via\n    querySelectorAll('template'); there is no equivalent recursion into attached\n    shadow roots.\nShadow roots are sanitized earlier by _sanitizeShadowDOM (src/purify.ts:2710), which\napplies the per-node strip but never performs the post-walk normalize-and-rescrub.\n```\n\nShadow root text nodes are therefore sanitized only per-node and never re-examined as a merged unit.\n\n## Impact\n\nAn attacker who controls DOM-node input containing an attached shadow root can inject template expressions that survive sanitization and are later evaluated by the application's template engine. In client-side contexts this yields cross-site scripting; in a server-side template context it can escalate to template injection. Exploitation requires non-default application configuration: the application must enable `SAFE_FOR_TEMPLATES` and a DOM-returning mode, pass a DOM node that already has an attached shadow root, and feed the sanitized shadow root content into a template evaluator. The shadow root does not have to be built programmatically with `attachShadow`: in engines that support declarative shadow DOM, attacker-supplied markup containing `<template shadowrootmode=\"open\">` parsed through `setHTMLUnsafe` or `Document.parseHTMLUnsafe` produces the same attached shadow root, so a plain HTML string reaches the gap once the application is configured this way. Demonstrated capability is injection of a complete, attacker-chosen expression into post-sanitization shadow root content; the resulting script execution and any confidentiality or integrity consequence depend on the downstream engine's evaluation context.\n\n## Proof of Concept\n\n```text\nPreconditions:\n  - DOMPurify built from the affected source (dist/purify.js or an ESM/CJS bundle).\n  - A browser (or DOM implementation) with shadow DOM support.\n  - Application constructs a DOM node with an attached shadow root before sanitizing,\n    and later evaluates the shadow root's text content as a template.\n```\n\nBuild a host element whose shadow root holds a template expression split across text nodes separated by disallowed elements, then sanitize in place with `SAFE_FOR_TEMPLATES`:\n\n```javascript\nconst host = docum",
+ "exploitation": {
+  "publicExploit": false
+ },
+ "ghsa_severity": "LOW",
+ "id": "GHSA-cg2g-xh64-v4q7",
+ "lastModified": "2026-11-19T00:03:19Z",
+ "packages": [
+  {
+   "ecosystem": "npm",
+   "name": "dompurify",
+   "patched": "3.4.17",
+   "vulnerable": ">= 3.4.4, <= 3.4.16"
+  }
+ ],
+ "published": "2026-10-22T16:25:31Z",
+ "references": [
+  {
+   "kind": "analysis",
+   "tags": [],
+   "url": "https://github.com/cure53/DOMPurify/security/advisories/GHSA-cg2g-xh64-v4q7"
+  },
+  {
+   "kind": "analysis",
+   "tags": [],
+   "url": "https://github.com/cure53/DOMPurify/pull/1672"
+  },
+  {
+   "kind": "analysis",
+   "tags": [],
+   "url": "https://github.com/cure53/DOMPurify/commit/a77a3e78b59f72fa4d1c83f22e121ad9cc7d3575"
+  },
+  {
+   "kind": "analysis",
+   "tags": [],
+   "url": "https://github.com/cure53/DOMPurify/releases/tag/3.4.17"
+  },
+  {
+   "kind": "analysis",
+   "tags": [],
+   "url": "https://github.com/advisories/GHSA-cg2g-xh64-v4q7"
+  }
+ ],
+ "sources": [
+  {
+   "kind": "official",
+   "license": "CC-BY-4.0",
+   "name": "GitHub Advisory Database",
+   "url": "https://github.com/advisories/GHSA-cg2g-xh64-v4q7"
+  }
+ ],
+ "title": "DOMPurify SAFE_FOR_TEMPLATES bypass: split template expressions survive in attached shadow root content on DOM output modes"
+}
