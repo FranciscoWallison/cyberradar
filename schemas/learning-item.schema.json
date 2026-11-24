@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/learning-item.schema.json",
+  "title": "LearningItem",
+  "description": "Exercício ou flashcard original. Mapeado a objetivos de certificação apenas como referência de cobertura.",
+  "type": "object",
+  "required": ["id", "type", "prompt", "explanation", "objectives", "status"],
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "enum": ["flashcard", "multiple_choice", "true_false", "ordering", "matching", "find_the_error", "scenario"] },
+    "prompt": { "type": "string" },
+    "options": { "type": "array", "items": { "type": "string" } },
+    "answer": { "description": "Índice, lista de índices ou texto, conforme o tipo." },
+    "explanation": { "type": "string" },
+    "difficulty": { "type": "integer", "minimum": 1, "maximum": 5 },
+    "objectives": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["exam", "code"],
+        "properties": {
+          "exam": { "type": "string", "examples": ["ISC2-CC", "SY0-701"] },
+          "code": { "type": "string", "examples": ["2.4"] }
+        }
+      }
+    },
+    "related": {
+      "type": "object",
+      "properties": {
+        "cve": { "type": "array", "items": { "type": "string" } },
+        "encyclopedia": { "type": "array", "items": { "type": "string" } },
+        "attack": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "sources": { "type": "array", "items": { "type": "string", "format": "uri" } },
+    "origin": { "enum": ["human", "ai_draft_human_reviewed"] },
+    "status": { "enum": ["draft", "in_review", "published", "retired"] },
+    "stats": {
+      "type": "object",
+      "properties": {
+        "attempts": { "type": "integer" },
+        "correctRate": { "type": "number" },
+        "discrimination": { "type": "number" }
+      }
+    }
+  }
+}

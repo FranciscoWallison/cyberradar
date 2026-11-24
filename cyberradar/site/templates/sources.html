@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Fontes e licenças</h1>
+<p>Última execução do pipeline: {{ last_run.finished|datetime_br if last_run.finished else 'ainda não executado' }}.</p>
+<h2>Status das fontes</h2>
+<div class="tablewrap"><table class="t"><thead><tr><th>Fonte</th><th>Último sucesso</th><th>Falhas seguidas</th></tr></thead><tbody>
+{% for name, st in status|dictsort %}<tr><td>{{ name }}</td><td>{{ st.last_ok|datetime_br if st.last_ok else '—' }}</td>
+  <td>{% if st.failures %}<span class="sev sev-high">{{ st.failures }}</span>{% else %}0{% endif %}</td></tr>
+{% else %}<tr><td colspan="3">Sem execuções registradas.</td></tr>{% endfor %}
+</tbody></table></div>
+<h2>Dados estruturados</h2>
+<ul>
+  <li><a href="https://nvd.nist.gov/">NVD</a> (NIST) — <em>This product uses the NVD API but is not endorsed or certified by the NVD.</em></li>
+  <li><a href="https://www.cve.org/">CVE Program</a> — CVE® é marca registrada da The MITRE Corporation; uso conforme os CVE Terms of Use.</li>
+  <li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">CISA KEV</a> — via <a href="https://github.com/cisagov/kev-data">cisagov/kev-data</a> (CC0).</li>
+  <li><a href="https://www.first.org/epss/">EPSS — FIRST.org</a>.</li>
+  <li><a href="https://github.com/advisories">GitHub Advisory Database</a> — CC-BY 4.0.</li>
+  <li><a href="https://github.com/projectdiscovery/nuclei-templates">Nuclei templates</a> (MIT) e <a href="https://github.com/rapid7/metasploit-framework">Metasploit Framework</a> (BSD-3) — usados apenas como sinal de existência de ferramenta pública.</li>
+</ul>
+<h2>Feeds de notícias e avisos</h2>
+<p class="small muted">Exibimos apenas título, trecho curto e link. Os direitos dos textos pertencem aos respectivos veículos.</p>
+<ul>{% for f in feeds if f.enabled is not defined or f.enabled %}<li><span class="badge k-{{ f.kind }}">{{ kind_label.get(f.kind, f.kind) }}</span> {{ f.name }}</li>{% endfor %}</ul>
+<h2>Inteligência artificial</h2>
+<p>Resumos e traduções marcados com <span class="badge k-ai">IA</span> são gerados por modelos de linguagem a partir dos dados oficiais
+  e validados automaticamente (sem CVEs, links ou notas CVSS que não estejam na fonte). Ainda assim podem conter erros.</p>
+{% endblock %}

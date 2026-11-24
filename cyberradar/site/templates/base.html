@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self';">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>{{ title }} · {{ site.title }}</title>
+<meta name="description" content="{{ description or site.tagline }}">
+<link rel="stylesheet" href="{{ base }}/static/css/style.css">
+<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ base }}/feed.xml">
+<link rel="alternate" type="application/feed+json" title="{{ site.title }}" href="{{ base }}/feed.json">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%230e7c66'/%3E%3Ccircle cx='8' cy='8' r='3' fill='white'/%3E%3C/svg%3E">
+{% block head %}{% endblock %}
+</head>
+<body data-base="{{ base }}">
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="{{ base }}/">{{ site.title }}</a>
+    <nav aria-label="Principal">
+      <a href="{{ base }}/cves/">Vulnerabilidades</a>
+      <a href="{{ base }}/noticias/">Notícias</a>
+      <a href="{{ base }}/relatorios/">Boletins</a>
+      <a href="{{ base }}/enciclopedia/">Enciclopédia</a>
+      <a href="{{ base }}/aprender/">Aprender</a>
+      <a href="{{ base }}/busca/">Busca</a>
+    </nav>
+  </div>
+</header>
+<main id="conteudo" class="wrap" {% block mainattrs %}{% endblock %}>
+{% block content %}{% endblock %}
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <p><strong>{{ site.title }}</strong> — {{ site.tagline }}. Atualizado em {{ now.strftime('%d/%m/%Y %H:%M') }} UTC.</p>
+    <p class="legend">Selos: <span class="badge k-official">Oficial</span> dados de órgãos e fabricantes ·
+      <span class="badge k-news">Imprensa</span> notícias de terceiros (título, trecho e link) ·
+      <span class="badge k-ai">IA</span> texto gerado por IA a partir dos dados oficiais — confira sempre a fonte.</p>
+    <p class="small">This product uses the NVD API but is not endorsed or certified by the NVD. CVE® e MITRE ATT&amp;CK® são marcas da The MITRE Corporation.
+      GitHub Advisory Database sob CC-BY 4.0. EPSS por FIRST.org. CISA KEV sob CC0. Não afiliado a nenhum fabricante ou certificadora.
+      <a href="{{ base }}/fontes/">Fontes e licenças</a> · <a href="{{ base }}/sobre/">Metodologia</a> · <a href="{{ base }}/feed.xml">RSS</a></p>
+  </div>
+</footer>
+<script src="{{ base }}/static/js/app.js" defer></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

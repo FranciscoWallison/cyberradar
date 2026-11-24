@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block content %}
+<article class="cve" data-pagefind-body>
+  <p class="crumbs"><a href="{{ base }}/cves/">Vulnerabilidades</a> / {{ r.id }}</p>
+  <h1>{{ r.id }}{% if r.kev %} <span class="badge k-kev">Explorada ativamente (KEV)</span>{% endif %}</h1>
+  {% if r.title %}<p class="lead">{{ r.title }}</p>{% endif %}
+  <div class="facts">
+    <div><span class="lbl">Severidade</span>{{ m.sevbadge(r._cvss) }}
+      {% if r._cvss %}<span class="small muted">v{{ r._cvss.version }} · atribuído por {{ r._cvss.assigner or 'não informado' }}</span>{% endif %}</div>
+    <div><span class="lbl">EPSS (30 dias)</span>{% if r.epss %}<strong>{{ r.epss.score|pct }}</strong> <span class="small muted">percentil {{ '%.0f'|format(r.epss.percentile * 100) }} · {{ r.epss.date }}</span>{% else %}não informado{% endif %}</div>
+    <div><span class="lbl">Prioridade</span><strong>{{ '%.0f'|format(r.priority.score) }}/100</strong>
+      <span class="small muted">{% for k, v in r.priority.breakdown.items() if v %}{{ k|replace('_', ' ') }} +{{ '%.0f'|format(v) }}{% if not loop.last %} · {% endif %}{% endfor %}</span></div>
+    <div><span class="lbl">Publicada</span>{{ r.published|date_br }} <span class="small muted">· atualizada {{ r.lastModified|date_br }}</span></div>
+  </div>
+  <span data-pagefind-filter="severidade" hidden>{{ sev_pt(r._cvss.severity) if r._cvss else 'sem CVSS' }}</span>
+  {% for v in r._vendors[:5] %}<span data-pagefind-filter="fabricante" hidden>{{ v }}</span>{% endfor %}
+  {% if r.kev %}<span data-pagefind-filter="kev" hidden>sim</span>{% endif %}
+  <p><button type="button" class="fav-btn" data-fav="{{ r._vendors[:1]|join('') }}">☆ Acompanhar {{ r._vendors[:1]|join('') or 'tecnologia' }}</button></p>
+
+  <section class="box ai">
+    <h2>Resumo em linguagem simples
+      {% if r.ai.generator == 'llm' %}<span class="badge k-ai" title="Gerado por {{ r.ai.model }} em {{ r.ai.generatedAt|datetime_br }}">Gerado por IA</span>
+      {% else %}<span class="badge k-auto" title="Texto montado automaticamente a partir dos dados oficiais, sem IA">Automático</span>{% endif %}</h2>
+    <p>{{ r.ai.summary_simple }}</p>
+    {% if r.ai.technical_explanation %}<h3>Explicação técnica</h3><p>{{ r.ai.technical_explanation }}</p>{% endif %}
+    {% if r.ai.impact %}<h3>Impactos possíveis para empresas</h3><ul>
+      <li><strong>Técnico:</strong> {{ r.ai.impact.technical }}</li>
+      <li><strong>Financeiro:</strong> {{ r.ai.impact.financial }}</li>
+      <li><strong>Operacional:</strong> {{ r.ai.impact.operational }}</li></ul>{% endif %}
+    {% if r.ai.if_not_fixed %}<h3>Se não for corrigida</h3><p>{{ r.ai.if_not_fixed }}</p>{% endif %}
+    <h3>Recomendações</h3>
+    <ul>{% for rec in r.ai.recommendations %}<li><strong>{{ {'prevention':'Prevenção','mitigation':'Mitigação','remediation':'Correção'}[rec.kind] }}:</strong> {{ rec.text }}
+      {% if rec.sourceUrl %}(<a href="{{ rec.sourceUrl }}" rel="noopener">fonte</a>){% endif %}</li>{% endfor %}</ul>
+    {% if r.ai.generator == 'llm' %}<p class="small muted">Texto gerado por IA ({{ r.ai.model }}) com base apenas nos dados oficiais abaixo. Pode conter erros: confirme no aviso do fabricante.</p>{% endif %}
+  </section>
+
+  {% if r.kev %}<section class="box official">
+    <h2>Exploração ativa <span class="badge k-official">Oficial · CISA</span></h2>
+    <ul><li>Incluída no KEV em {{ r.kev.dateAdded }}; prazo federal dos EUA: {{ r.kev.dueDate }}.</li>
+      {% if r.kev.knownRansomwareCampaignUse == 'Known' %}<li><strong>Uso conhecido em ransomware.</strong></li>{% endif %}
+      <li lang="en">Ação exigida: {{ r.kev.requiredAction }}</li></ul>
+  </section>{% endif %}
+
+  {% if r.signals %}<section class="box">
+    <h2>Ferramentas públicas conhecidas</h2>
+    <p class="small muted">Indica que já existe código público ligado a esta CVE — aumenta a chance de ataques automatizados e também permite testar a exposição do seu ambiente (com autorização).</p>
+    <ul>
+      {% if r.signals.nuclei %}<li><strong>Template de detecção Nuclei</strong> — <a href="{{ r.signals.nuclei }}" rel="noopener nofollow">ver no GitHub</a> (MIT)</li>{% endif %}
+      {% for m in r.signals.msf or [] %}<li><strong>Módulo Metasploit ({{ 'exploração' if m.type == 'exploit' else 'auxiliar' }})</strong>: {{ m.name }} — <a href="{{ m.url }}" rel="noopener nofollow">ver no GitHub</a></li>{% endfor %}
+    </ul>
+  </section>{% endif %}
+
+  <section class="box official">
+    <h2>Descrição oficial <span class="badge k-official">Oficial</span></h2>
+    <p lang="en">{{ r.description_official or 'não informado' }}</p>
+    {% if r.cwe %}<p class="small">Fraqueza: {% for c in r.cwe %}<a href="https://cwe.mitre.org/data/definitions/{{ c[4:] }}.html" rel="noopener">{{ c }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
+  </section>
+
+  {% if r.get('affected') or r.get('packages') %}<section class="box">
+    <h2>Sistemas e versões afetados</h2>
+    <ul>{% for a in (r.get('affected') or [])[:15] %}<li><strong>{{ a.vendor }}</strong> {{ a.product|replace('_', ' ') }}
+      {% for v in a.versions[:4] %}<span class="small muted">[{% for k, x in v.items() %}{{ {'versionStartIncluding':'≥','versionStartExcluding':'>','versionEndIncluding':'≤','versionEndExcluding':'<','exact':'='}[k] }} {{ x }} {% endfor %}]</span>{% endfor %}</li>{% endfor %}
+    {% for p in (r.get('packages') or [])[:15] %}<li><strong>{{ p.ecosystem }}</strong> {{ p.name }} <span class="small muted">vulnerável: {{ p.vulnerable }}{% if p.patched %} · corrigido em {{ p.patched }}{% endif %}</span></li>{% endfor %}</ul>
+  </section>{% endif %}
+
+  {% if r.cvss %}<section class="box"><h2>Pontuações CVSS</h2><ul>
+    {% for c in r.cvss %}<li>v{{ c.version }} — <strong>{{ c.baseScore }}</strong> ({{ c.assigner or '?' }}) <code class="small">{{ c.vector }}</code></li>{% endfor %}</ul></section>{% endif %}
+
+  {% if news %}<section class="box"><h2>Na imprensa <span class="badge k-news">Imprensa</span></h2><ul>
+    {% for n in news %}<li><a href="{{ n.url }}" rel="noopener nofollow">{{ n.title_pt or n.title }}</a> <span class="small muted">— {{ n.source }}, {{ n.published|date_br }}</span></li>{% endfor %}</ul></section>{% endif %}
+
+  <section class="box"><h2>Fontes e referências</h2><ul class="refs">
+    {% for s in r.sources %}<li><span class="badge k-{{ s.kind }}">{{ kind_label.get(s.kind, s.kind) }}</span> <a href="{{ s.url }}" rel="noopener">{{ s.name or s.url }}</a></li>{% endfor %}
+    {% for ref in r.references[:25] %}<li><span class="badge k-{{ ref.kind }}">{{ kind_label.get(ref.kind, ref.kind) }}</span> <a href="{{ ref.url }}" rel="noopener nofollow">{{ ref.url|truncate(90) }}</a></li>{% endfor %}</ul>
+  </section>
+  {% if site.feedback_url %}<p class="small"><a href="{{ site.feedback_url }}{{ '&' if '?' in site.feedback_url else '?' }}cve={{ r.id }}" rel="noopener">Encontrou um erro nesta página? Reporte</a></p>{% endif %}
+</article>
+{% endblock %}

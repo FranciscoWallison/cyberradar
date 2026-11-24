@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block mainattrs %}data-pagefind-ignore{% endblock %}
+{% block content %}
+<h1>Aprender</h1>
+<p class="muted">Cartões e questões originais com <strong>repetição espaçada (FSRS)</strong>. Seu progresso fica salvo apenas neste navegador.
+  Conteúdo alinhado a objetivos públicos de certificações, sem afiliação com CompTIA, ISC2, Microsoft ou Cisco e sem questões reais de prova.</p>
+<div class="learn-top">
+  <label>Baralho <select id="deck-select">{% for d in decks %}<option value="{{ d.slug }}" data-desc="{{ d.description }}">{{ d.title }} ({{ d.count }})</option>{% endfor %}</select></label>
+  <span id="learn-stats" class="small muted" aria-live="polite"></span>
+</div>
+<p id="deck-desc" class="small"></p>
+{% if not decks %}<p>Nenhum baralho publicado ainda.</p>{% endif %}
+<section id="card" class="flash" hidden>
+  <p class="small muted" id="card-meta"></p>
+  <div id="card-prompt" class="prompt"></div>
+  <div id="card-options" class="options"></div>
+  <button type="button" id="reveal">Mostrar resposta</button>
+  <div id="card-answer" class="answer" hidden></div>
+  <div id="grades" class="grades" hidden>
+    <span class="small">Como foi?</span>
+    <button type="button" data-g="1">Errei</button><button type="button" data-g="2">Difícil</button>
+    <button type="button" data-g="3">Bom</button><button type="button" data-g="4">Fácil</button>
+  </div>
+</section>
+<p id="done" hidden>🎉 Nada para revisar agora. Volte mais tarde — os cartões reaparecem no momento ideal para a memória.</p>
+<details class="small"><summary>Progresso e dados</summary>
+  <p>XP: <strong id="xp">0</strong> · Sequência: <strong id="streak">0</strong> dia(s)</p>
+  <button type="button" id="reset">Apagar meu progresso neste navegador</button>
+</details>
+{% endblock %}
+{% block scripts %}<script type="module" src="{{ base }}/static/js/learn.js"></script>{% endblock %}

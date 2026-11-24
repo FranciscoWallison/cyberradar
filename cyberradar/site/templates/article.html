@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="crumbs"><a href="{{ base }}/{{ section }}/">{{ 'Enciclopédia' if section == 'enciclopedia' else 'Boletins' }}</a> / {{ title }}</p>
+<article class="prose" data-pagefind-body>
+  {% if section == 'enciclopedia' %}<span data-pagefind-filter="tipo" hidden>enciclopédia</span>
+    {% if it.meta.revisado_por == 'humano' %}<p><span class="badge k-official">Revisado por humano</span> {% if it.meta.atualizado_em %}<span class="small muted">atualizado em {{ it.meta.atualizado_em }}</span>{% endif %}</p>
+    {% else %}<p><span class="badge k-ai">Rascunho — revisão pendente</span></p>{% endif %}
+  {% else %}<span data-pagefind-filter="tipo" hidden>boletim</span>{% endif %}
+  {{ it.html|safe }}
+  {% if it.related %}<h2>Vulnerabilidades recentes desta classe</h2>
+  <p class="small muted">Lista automática: CVEs rastreadas com as fraquezas {{ it.meta.cwe|join(', ') }}.</p>
+  <ul>{% for r in it.related %}<li>{% if r._detail %}<a href="{{ base }}/cve/{{ r.id }}/">{{ r.id }}</a>{% else %}<a href="https://nvd.nist.gov/vuln/detail/{{ r.id }}" rel="noopener">{{ r.id }}</a>{% endif %}
+    — {{ (r._products[:2]|map('prod')|join(', ')) or 'produto não informado' }} {% if r.kev %}<span class="badge k-kev">KEV</span>{% endif %}</li>{% endfor %}</ul>{% endif %}
+  {% if it.meta.fontes %}<h2>Fontes</h2><ul>{% for f in it.meta.fontes %}<li><a href="{{ f }}" rel="noopener">{{ f }}</a></li>{% endfor %}</ul>{% endif %}
+</article>
+{% endblock %}

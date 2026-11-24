@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block mainattrs %}data-pagefind-ignore{% endblock %}
+{% block content %}
+<h1>Vulnerabilidades</h1>
+<p class="muted">{{ total }} itens rastreados (janela recente + todas do KEV + priorizadas). Os filtros funcionam no seu navegador.</p>
+<form id="filters" class="filters" role="search">
+  <label>Buscar <input type="search" name="q" placeholder="CVE, produto, fabricante…" autocomplete="off"></label>
+  <label>Severidade
+    <select name="s"><option value="">Todas</option><option value="CRITICAL">Crítica</option><option value="HIGH">Alta</option>
+      <option value="MEDIUM">Média</option><option value="LOW">Baixa</option><option value="-">Sem CVSS</option></select></label>
+  <label>Prioridade mínima <input type="number" name="pr" min="0" max="100" step="5" value="0"></label>
+  <label class="chk"><input type="checkbox" name="k"> Só KEV</label>
+  <label class="chk"><input type="checkbox" name="x"> Com exploit público</label>
+  <label class="chk"><input type="checkbox" name="fav"> Só minhas tecnologias</label>
+  <label>Ordenar
+    <select name="o"><option value="pr">Prioridade</option><option value="p">Mais recentes</option><option value="e">EPSS</option><option value="c">CVSS</option></select></label>
+</form>
+<details class="favs">
+  <summary>Minhas tecnologias (<span id="fav-count">0</span>)</summary>
+  <p class="small muted">Digite fabricantes ou produtos (ex.: <code>fortinet</code>, <code>wordpress</code>, <code>exchange</code>). Fica salvo só neste navegador.</p>
+  <form id="fav-form"><input name="fav" placeholder="adicionar tecnologia" autocomplete="off"> <button type="submit">Adicionar</button></form>
+  <ul id="fav-tags" class="tags"></ul>
+</details>
+<p id="result-count" class="small muted" aria-live="polite"></p>
+<div class="tablewrap"><table class="t" id="cve-table">
+  <thead><tr><th>CVE</th><th>Resumo</th><th>Produtos</th><th>Severidade</th><th>EPSS</th><th>Prioridade</th><th>Publicada</th></tr></thead>
+  <tbody><tr><td colspan="7">Carregando…</td></tr></tbody>
+</table></div>
+<p><button id="more" type="button" hidden>Mostrar mais</button></p>
+<noscript><p>Ative o JavaScript para filtrar. A lista também está em <a href="{{ base }}/data/vulns.json">JSON</a>.</p></noscript>
+{% endblock %}
+{% block scripts %}<script src="{{ base }}/static/js/cves.js" defer></script>{% endblock %}

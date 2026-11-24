@@ -1,0 +1,20 @@
+---
+titulo: Nome do conceito
+resumo: Uma frase que explica o conceito.
+nivel: iniciante
+categorias: [web, appsec]
+cwe: [CWE-000]
+revisado_por: pendente
+atualizado_em: AAAA-MM-DD
+fontes: [https://fonte-oficial-1, https://fonte-oficial-2]
+---
+# Nome do conceito
+
+## Em uma frase
+## Explicação técnica
+## Exemplo prático
+## Onde aparece no mercado
+## Riscos e impactos
+## Como se proteger
+## Exercícios
+Renomeie para .md e mude revisado_por para 'humano' após revisar.

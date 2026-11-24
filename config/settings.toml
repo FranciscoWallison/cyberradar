@@ -1,0 +1,191 @@
+# Configuração do CyberRadar. Segredos NÃO ficam aqui: use variáveis de ambiente
+# (GitHub Secrets). Veja CONFIGURACAO.md e .env.example.
+
+[site]
+title = "CyberRadar BR"
+tagline = "Vulnerabilidades e ameaças que importam — em português"
+lang = "pt-BR"
+# URL pública e caminho base. Sobrescreva com as variáveis SITE_URL e SITE_BASE_PATH.
+# GitHub Pages de projeto: url = "https://USUARIO.github.io", base_path = "/NOME-DO-REPO"
+url = "http://localhost:8000"
+base_path = ""
+# Mostrar no site CVEs modificadas nos últimos N dias (KEV e priorizadas ficam sempre).
+window_days = 45
+# Link de formulário para "reportar erro" (ex.: Tally). Vazio = não exibe. Sobrescreva com FEEDBACK_URL.
+feedback_url = ""
+# Gerar página própria só para CVEs com prioridade >= este valor (ou que estão no KEV).
+detail_page_min_priority = 45
+
+[collect]
+# Primeira execução: quantos dias para trás buscar no NVD (máx. 120 por janela).
+nvd_initial_days = 7
+nvd_page_size = 2000
+ghsa_pages = 2
+rss_max_items_per_feed = 30
+# Entradas do KEV adicionadas nos últimos N dias ganham registro mesmo sem atualização no NVD.
+kev_seed_days = 30
+# Baixa diariamente os índices públicos do Nuclei (MIT) e do Metasploit (BSD-3) para sinalizar exploit/detecção.
+exploit_signals = true
+kev_seed_max_per_run = 20
+kev_seed_max_attempts = 3
+# Notícias mais antigas que isso são ignoradas.
+news_max_age_days = 14
+
+[retention]
+# CVEs fora do KEV e com prioridade abaixo de keep_min_priority são removidas após N dias.
+prune_after_days = 120
+keep_min_priority = 50
+
+[scoring]
+# prioridade = soma dos pesos (0–100). Documentado em docs 05 §3.4.
+version = "1"
+w_kev = 40
+w_epss_percentile = 25
+w_cvss = 20
+w_public_exploit = 10
+w_popular = 5
+# Fabricantes/produtos "populares" (minúsculas, como aparecem no CPE).
+popular = [
+  "microsoft", "apple", "google", "cisco", "fortinet", "paloaltonetworks", "ivanti",
+  "vmware", "citrix", "oracle", "linux", "apache", "atlassian", "sap", "adobe",
+  "mozilla", "wordpress", "jenkins", "gitlab", "openssl", "sonicwall", "f5",
+  "juniper", "zyxel", "progress", "veeam", "kubernetes", "docker", "nginx", "php"
+]
+
+[alerts]
+# Notifica CVEs novas com prioridade >= min_priority e toda nova entrada no KEV.
+min_priority = 70
+max_per_run = 8
+
+[ai]
+enabled = true
+# Máximo de análises por execução (o pipeline roda de hora em hora).
+max_cve_per_run = 6
+max_news_batches_per_run = 3
+news_batch_size = 8
+# Só CVEs com prioridade >= isto recebem análise por IA. As demais usam template.
+min_priority = 55
+temperature = 0.2
+timeout_seconds = 60
+
+# ⚠ Nomes de modelos mudam com frequência: confira no painel de cada provedor.
+# Cadeia de provedores, na ordem. Todos usam a API compatível com OpenAI.
+# Um provedor é pulado se a variável api_key_env não estiver definida.
+# daily_limit: deixe ABAIXO do limite real informado no painel do provedor.
+# allow_private_data = false → nunca recebe dados de clientes (fase 2+).
+[[ai.providers]]
+name = "groq"
+base_url = "https://api.groq.com/openai/v1"
+model = "openai/gpt-oss-120b"
+api_key_env = "GROQ_API_KEY"
+daily_limit = 800
+json_mode = true
+
+[[ai.providers]]
+name = "openrouter"
+base_url = "https://openrouter.ai/api/v1"
+model = "openai/gpt-oss-20b:free"
+api_key_env = "OPENROUTER_API_KEY"
+daily_limit = 45
+json_mode = true
+
+[[ai.providers]]
+name = "gemini"
+base_url = "https://generativelanguage.googleapis.com/v1beta/openai"
+model = "gemini-flash-latest"
+api_key_env = "GEMINI_API_KEY"
+daily_limit = 15
+json_mode = true
+# O free tier do Gemini pode usar os prompts para treino: só dados públicos.
+public_data_only = true
+
+[[ai.providers]]
+name = "cloudflare"
+# {account_id} é substituído pela variável CLOUDFLARE_ACCOUNT_ID.
+base_url = "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/v1"
+model = "@cf/meta/llama-3.1-8b-instruct"
+api_key_env = "CLOUDFLARE_API_TOKEN"
+daily_limit = 60
+json_mode = false
+
+[[ai.providers]]
+name = "mistral"
+base_url = "https://api.mistral.ai/v1"
+model = "mistral-small-latest"
+api_key_env = "MISTRAL_API_KEY"
+daily_limit = 100
+json_mode = true
+
+[[ai.providers]]
+name = "ollama"
+# Local (seu PC) ou llama.cpp server no Actions. Defina OLLAMA_BASE_URL para ativar.
+base_url_env = "OLLAMA_BASE_URL"
+base_url = "http://localhost:11434/v1"
+model_env = "OLLAMA_MODEL"
+model = "qwen3:4b"
+api_key_env = "OLLAMA_BASE_URL"
+daily_limit = 100000
+json_mode = true
+
+# ---------------------------------------------------------------------------
+# Feeds RSS/Atom. kind: official | vendor | news | analysis
+# Revise as URLs (algumas fontes mudam de endereço). Itens com enabled=false são ignorados.
+[[feeds]]
+name = "CISA — Cybersecurity Advisories"
+url = "https://www.cisa.gov/cybersecurity-advisories/all.xml"
+kind = "official"
+lang = "en"
+
+[[feeds]]
+name = "CTIR Gov"
+# ⚠ URL do RSS não verificada. Confira em https://www.gov.br/ctir/pt-br/assuntos/alertas-e-recomendacoes
+url = "https://www.gov.br/ctir/pt-br/assuntos/alertas-e-recomendacoes/alertas/RSS"
+kind = "official"
+lang = "pt"
+enabled = false
+
+[[feeds]]
+name = "Microsoft Security Response Center"
+# ⚠ confira a URL do RSS em https://msrc.microsoft.com/update-guide
+url = "https://api.msrc.microsoft.com/update-guide/rss"
+kind = "vendor"
+lang = "en"
+
+[[feeds]]
+name = "BleepingComputer"
+url = "https://www.bleepingcomputer.com/feed/"
+kind = "news"
+lang = "en"
+
+[[feeds]]
+name = "The Hacker News"
+url = "https://feeds.feedburner.com/TheHackersNews"
+kind = "news"
+lang = "en"
+
+[[feeds]]
+name = "SecurityWeek"
+url = "https://www.securityweek.com/feed/"
+kind = "news"
+lang = "en"
+
+[[feeds]]
+name = "Krebs on Security"
+url = "https://krebsonsecurity.com/feed/"
+kind = "news"
+lang = "en"
+
+[[feeds]]
+name = "Google Project Zero"
+# ⚠ O blog migrou para https://projectzero.google — feed novo não verificado.
+url = "https://googleprojectzero.blogspot.com/feeds/posts/default"
+kind = "analysis"
+lang = "en"
+enabled = false
+
+[[feeds]]
+name = "GitHub Security Lab"
+# ⚠ confira a URL do feed
+url = "https://github.blog/tag/github-security-lab/feed/"
+kind = "analysis"
+lang = "en"

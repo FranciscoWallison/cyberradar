@@ -1,0 +1,161 @@
+{
+ "resultsPerPage": 3,
+ "startIndex": 0,
+ "totalResults": 3,
+ "vulnerabilities": [
+  {
+   "cve": {
+    "id": "CVE-2026-10001",
+    "published": "2026-11-20T10:15:00.000",
+    "lastModified": "2026-11-21T12:00:00.000",
+    "vulnStatus": "Analyzed",
+    "descriptions": [
+     {
+      "lang": "en",
+      "value": "A path traversal vulnerability in ExampleCorp VPN Gateway before 7.2.5 allows unauthenticated remote attackers to read arbitrary files."
+     }
+    ],
+    "metrics": {
+     "cvssMetricV31": [
+      {
+       "source": "psirt@examplecorp.com",
+       "type": "Secondary",
+       "cvssData": {
+        "version": "3.1",
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "baseScore": 9.8,
+        "baseSeverity": "CRITICAL"
+       }
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "cvssData": {
+        "version": "3.1",
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+        "baseScore": 7.5,
+        "baseSeverity": "HIGH"
+       }
+      }
+     ]
+    },
+    "weaknesses": [
+     {
+      "source": "nvd@nist.gov",
+      "type": "Primary",
+      "description": [
+       {
+        "lang": "en",
+        "value": "CWE-22"
+       }
+      ]
+     }
+    ],
+    "configurations": [
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:examplecorp:vpn_gateway:*:*:*:*:*:*:*:*",
+          "versionEndExcluding": "7.2.5"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "references": [
+     {
+      "url": "https://examplecorp.com/psirt/ADV-2026-01",
+      "source": "psirt@examplecorp.com",
+      "tags": [
+       "Vendor Advisory",
+       "Patch"
+      ]
+     },
+     {
+      "url": "https://github.com/someone/poc-cve-2026-10001",
+      "source": "nvd@nist.gov",
+      "tags": [
+       "Exploit",
+       "Third Party Advisory"
+      ]
+     }
+    ],
+    "cisaExploitAdd": "2026-11-21",
+    "cisaRequiredAction": "Apply mitigations per vendor instructions."
+   }
+  },
+  {
+   "cve": {
+    "id": "CVE-2026-10002",
+    "published": "2026-11-22T08:00:00.000",
+    "lastModified": "2026-11-22T08:00:00.000",
+    "vulnStatus": "Received",
+    "descriptions": [
+     {
+      "lang": "en",
+      "value": "Cross-site scripting in the comments plugin for ExampleCMS 3.x allows stored XSS."
+     },
+     {
+      "lang": "es",
+      "value": "XSS"
+     }
+    ],
+    "metrics": {
+     "cvssMetricV40": [
+      {
+       "source": "cna@examplecms.org",
+       "type": "Secondary",
+       "cvssData": {
+        "version": "4.0",
+        "vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N",
+        "baseScore": 5.1,
+        "baseSeverity": "MEDIUM"
+       }
+      }
+     ]
+    },
+    "weaknesses": [
+     {
+      "source": "cna@examplecms.org",
+      "type": "Secondary",
+      "description": [
+       {
+        "lang": "en",
+        "value": "CWE-79"
+       }
+      ]
+     }
+    ],
+    "references": [
+     {
+      "url": "https://examplecms.org/security/2026-02",
+      "source": "cna@examplecms.org",
+      "tags": []
+     }
+    ]
+   }
+  },
+  {
+   "cve": {
+    "id": "CVE-2026-10003",
+    "published": "2026-11-23T08:00:00.000",
+    "lastModified": "2026-11-23T08:00:00.000",
+    "vulnStatus": "Awaiting Analysis",
+    "descriptions": [
+     {
+      "lang": "en",
+      "value": "Unspecified vulnerability awaiting analysis."
+     }
+    ],
+    "metrics": {},
+    "references": []
+   }
+  }
+ ]
+}

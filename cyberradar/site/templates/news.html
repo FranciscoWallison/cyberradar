@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block mainattrs %}data-pagefind-ignore{% endblock %}
+{% block content %}
+<h1>Notícias</h1>
+<p class="muted">Notícias agrupadas por história (a mesma CVE ou título parecido). Mostramos título, trecho curto e link para a fonte original;
+  traduções e resumos marcados com <span class="badge k-ai">IA</span> são gerados automaticamente.</p>
+<p class="chips" id="cat-chips"><button type="button" data-cat="" class="on">Todas</button>
+  {% for c, n in cats %}<button type="button" data-cat="{{ c }}">{{ category_pt.get(c, c) }} ({{ n }})</button>{% endfor %}</p>
+<div id="stories">
+{% for s in stories %}<div class="story-wrap" data-cat="{{ s.category }}">{{ m.story(s) }}</div>{% else %}<p>Nenhuma notícia coletada ainda.</p>{% endfor %}
+</div>
+{% endblock %}
+{% block scripts %}<script src="{{ base }}/static/js/news.js" defer></script>{% endblock %}

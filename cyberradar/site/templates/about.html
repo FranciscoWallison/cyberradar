@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<article class="prose" data-pagefind-body>
+<h1>Sobre e metodologia</h1>
+<p>{{ site.title }} é um projeto gratuito e aberto que acompanha vulnerabilidades e ameaças e explica, em português, <strong>o que priorizar e por quê</strong>.</p>
+<h2>Como calculamos a prioridade (0–100)</h2>
+<table class="t"><thead><tr><th>Sinal</th><th>Peso</th><th>Por quê</th></tr></thead><tbody>
+<tr><td>Está no catálogo KEV da CISA</td><td>{{ scoring.w_kev }}</td><td>Exploração ativa confirmada é o sinal mais forte.</td></tr>
+<tr><td>Percentil EPSS</td><td>{{ scoring.w_epss_percentile }}</td><td>Probabilidade de tentativa de exploração nos próximos 30 dias.</td></tr>
+<tr><td>CVSS ÷ 10</td><td>{{ scoring.w_cvss }}</td><td>Gravidade técnica se explorada (não mede probabilidade).</td></tr>
+<tr><td>Exploit público, módulo Metasploit ou template Nuclei</td><td>{{ scoring.w_public_exploit }}</td><td>Ferramentas prontas facilitam ataques oportunistas (e também a detecção).</td></tr>
+<tr><td>Tecnologia amplamente usada</td><td>{{ scoring.w_popular }}</td><td>Maior superfície de ataque.</td></tr>
+</tbody></table>
+<p>Versão da fórmula: {{ scoring.version }}. A pontuação é uma ajuda para triagem; o contexto da sua empresa (exposição, ativos críticos) sempre vem antes.</p>
+<h2>De onde vem cada informação</h2>
+<ul><li><span class="badge k-official">Oficial</span> NVD, CVE, CISA, FIRST, GitHub Advisory, fabricantes.</li>
+<li><span class="badge k-news">Imprensa</span> veículos especializados — só título, trecho e link.</li>
+<li><span class="badge k-ai">IA</span> resumos e explicações gerados por modelos de linguagem a partir dos dados oficiais.</li>
+<li><span class="badge k-auto">Automático</span> texto montado por regras fixas, sem IA.</li></ul>
+<h2>Limitações</h2>
+<p>O NVD tem atraso de análise desde 2024; muitas CVEs ainda não têm CVSS ou produtos afetados. Usamos o CVSS do CNA (quem publicou a CVE) quando disponível.
+Nenhum conteúdo aqui substitui o aviso oficial do fabricante.</p>
+<h2>Aviso</h2>
+<p>Conteúdo educativo. Não somos afiliados a fabricantes, à MITRE, ao NIST, à CISA ou a certificadoras. Uso de marcas apenas descritivo.</p>
+</article>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block head %}<link rel="stylesheet" href="{{ base }}/pagefind/pagefind-ui.css">{% endblock %}
+{% block mainattrs %}data-pagefind-ignore{% endblock %}
+{% block content %}
+<h1>Busca</h1>
+<p class="muted">Busca em páginas de CVE priorizadas, enciclopédia e boletins. Para filtrar todas as CVEs, use <a href="{{ base }}/cves/">Vulnerabilidades</a>.</p>
+<div id="search"></div>
+<noscript>A busca precisa de JavaScript.</noscript>
+{% endblock %}
+{% block scripts %}<script src="{{ base }}/pagefind/pagefind-ui.js" defer></script><script src="{{ base }}/static/js/search.js" defer></script>{% endblock %}

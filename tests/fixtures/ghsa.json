@@ -1,0 +1,73 @@
+[
+ {
+  "ghsa_id": "GHSA-abcd-efgh-ijkl",
+  "cve_id": "CVE-2026-10002",
+  "summary": "Stored XSS in examplecms-comments",
+  "description": "desc",
+  "severity": "medium",
+  "cvss": {
+   "score": 5.4,
+   "vector_string": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
+  },
+  "cwes": [
+   {
+    "cwe_id": "CWE-79",
+    "name": "XSS"
+   }
+  ],
+  "vulnerabilities": [
+   {
+    "package": {
+     "ecosystem": "npm",
+     "name": "examplecms-comments"
+    },
+    "vulnerable_version_range": "< 3.4.1",
+    "first_patched_version": "3.4.1"
+   }
+  ],
+  "html_url": "https://github.com/advisories/GHSA-abcd-efgh-ijkl",
+  "published_at": "2026-11-22T09:00:00Z",
+  "updated_at": "2026-11-23T09:00:00Z",
+  "references": [
+   "https://examplecms.org/security/2026-02"
+  ]
+ },
+ {
+  "ghsa_id": "GHSA-mnop-qrst-uvwx",
+  "cve_id": null,
+  "summary": "Prototype pollution in tiny-merge",
+  "description": "desc2",
+  "severity": "high",
+  "cvss": {
+   "score": null,
+   "vector_string": null
+  },
+  "cvss_severities": {
+   "cvss_v3": {
+    "score": 7.3,
+    "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+   }
+  },
+  "cwes": [
+   {
+    "cwe_id": "CWE-1321"
+   }
+  ],
+  "vulnerabilities": [
+   {
+    "package": {
+     "ecosystem": "npm",
+     "name": "tiny-merge"
+    },
+    "vulnerable_version_range": "<= 1.2.0",
+    "first_patched_version": {
+     "identifier": "1.2.1"
+    }
+   }
+  ],
+  "html_url": "https://github.com/advisories/GHSA-mnop-qrst-uvwx",
+  "published_at": "2026-11-23T10:00:00Z",
+  "updated_at": "2026-11-23T10:00:00Z",
+  "references": []
+ }
+]

@@ -1,0 +1,535 @@
+{
+ "title": "Fundamentos de segurança (núcleo comum)",
+ "description": "Conceitos que aparecem em Security+, ISC2 CC e SC-900. Questões originais.",
+ "license": "CC BY 4.0 (conteúdo próprio do projeto)",
+ "note": "objectives.code usa temas internos; mapeie para os códigos oficiais (PDF de objetivos de cada exame) durante a revisão humana.",
+ "items": [
+  {
+   "id": "fund-001",
+   "type": "flashcard",
+   "prompt": "O que o EPSS estima?",
+   "answer": "A probabilidade de uma CVE sofrer tentativa de exploração nos próximos 30 dias.",
+   "explanation": "EPSS é probabilístico (0 a 1) e complementa o CVSS, que mede gravidade técnica.",
+   "difficulty": 1,
+   "objectives": [
+    {
+     "exam": "NUCLEO",
+     "code": "gestao-vulnerabilidades"
+    }
+   ],
+   "sources": [
+    "https://www.first.org/epss/"
+   ],
+   "origin": "human",
+   "status": "published"
+  },
+  {
+   "id": "fund-002",
+   "type": "multiple_choice",
+   "prompt": "Uma CVE tem CVSS 9.1 e EPSS 0,2%. Outra tem CVSS 7.5, está no KEV e tem EPSS 94%. Qual corrigir primeiro?",
+   "options": [
+    "A de CVSS 9.1, porque a nota é maior",
+    "A que está no KEV, porque já é explorada ativamente",
+    "Tanto faz, ambas são altas",
+    "Nenhuma, sem exploit público"
+   ],
+   "answer": 1,
+   "explanation": "O KEV indica exploração ativa confirmada; somado ao EPSS alto, o risco real é maior mesmo com CVSS menor.",
+   "difficulty": 2,
+   "objectives": [
+    {
+     "exam": "NUCLEO",
+     "code": "gestao-vulnerabilidades"
+    }
+   ],
+   "sources": [
+    "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+   ],
+   "origin": "human",
+   "status": "published"
+  },
+  {
+   "id": "fund-003",
+   "type": "flashcard",
+   "prompt": "O que é o catálogo KEV da CISA?",
+   "answer": "Uma lista de vulnerabilidades com exploração ativa confirmada.",
+   "explanation": "KEV = Known Exploited Vulnerabilities. Cada item traz a ação exigida e se há uso conhecido em ransomware.",
+   "difficulty": 1,
+   "objectives": [
+    {
+     "exam": "NUCLEO",
+     "code": "gestao-vulnerabilidades"
+    }
+   ],
+   "sources": [
+    "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+   ],
+   "origin": "human",
+   "status": "published"
+  },
+  {
+   "id": "fund-004",
+   "type": "multiple_choice",
+   "prompt": "O CVSS mede principalmente…",
+   "options": [
+    "A probabilidade de exploração",
+    "A gravidade técnica caso a falha seja explorada",
+    "O custo financeiro do incidente",
+    "Se existe patch"
+   ],
+   "answer": 1,
+   "explanation": "CVSS descreve características técnicas (vetor, complexidade, impacto). Não diz se alguém está explorando.",
+   "difficulty": 2,
+   "objectives": [
+    {
+     "exam": "NUCLEO",
+     "code": "gestao-vulnerabilidades"
+    }
+   ],
+   "sources": [
+    "https://www.first.org/cvss/"
+   ],
+   "origin": "human",
+   "status": "published"
+  },
+  {
+   "id": "fund-005",
+   "type": "multiple_choice",
+   "prompt": "Qual é a defesa principal contra SQL Injection?",
+   "options": [
+    "Esconder mensagens de erro",
+    "Consultas parametrizadas (prepared statements)",
+    "Usar HTTPS",
+    "Trocar a porta do banco"
+   ],
+   "answer": 1,
+   "explanation": "Parametrizar separa comando e dados; esconder erros só dificulta a exploração.",
+   "difficulty": 2,
+   "objectives": [
+    {
+     "exam": "NUCLEO",
+     "code": "appsec"
+    }
+   ],
+   "sources": [
+    "https://owasp.org/Top10/"
+   ],
+   "origin": "human",
+   "status": "published"
+  },
+  {
+   "id": "fund-006",
+   "type": "flashcard",
+   "prompt": "Qual CWE descreve Cross-Site Scripting?",
+   "answer": "CWE-79",
+   "explanation": "CWE-79: neutralização imprópria de entrada durante a geração de página web.",
+   "difficulty": 1,
+   "objectives": [
+    {
+     "exam": "NUCLEO",
+     "code": "appsec"
+    }
+   ],
+   "sources": [
+    "https://cwe.mitre.org/data/definitions/79.html"
+   ],
+   "origin": "human",
+   "status": "published"
+  },
+  {
+   "id": "fund-007",
+   "type": "multiple_choice",
+   "prompt": "Qual técnica de teste encontra uma biblioteca de terceiros com CVE conhecida?",
+   "options": [
+    "SAST",
+    "DAST",
+    "SCA",
+    "Pentest físico"
+   ],
+   "answer": 2,
+   "explanation": "SCA (Software Composition Analysis) compara dependências e versões com bases como OSV/GHSA.",
+   "difficulty": 2,
+   "objectives": [
+    {
+     "exam": "NUCLEO",
+     "code": "appsec"
+    }
+   ],
+   "sources": [
+    "https://google.github.io/osv.dev/"
+   ],
+   "origin": "human",
+   "status": "published"
+  },
+  {
+   "id": "fund-008",
+   "type": "multiple_choice",
+   "prompt": "Por que um código por SMS não protege totalmente contra phishing moderno?",
+   "options": [
+    "Porque SMS é caro",
+    "Porque kits com proxy reverso capturam a sessão após o login",
+    "Porque o código expira",
+    "Porque o SMS não é criptografado em nenhum caso"
+   ],
+   "answer": 1,
+   "explanation": "Ataques adversary-in-the-middle repassam o código em tempo real e roubam o cookie de sessão. FIDO2/passkeys vinculam a autenticação ao domínio.",
+   "difficulty": 2,
+   "objectives": [
+    {
+     "exam": "NUCLEO",
+     "code": "identidade"
+    }
+   ],
+   "sources": [
+    "https://attack.mitre.org/techniques/T1557/"
+   ],
+   "origin": "human",
+   "status": "published"
+  },
+  {
+   "id": "fund-009",
+   "type": "flashcard",
+   "prompt": "O que significa 'extorsão dupla' em ransomware?",
+   "answer": "Criptografar os dados E ameaçar vazá-los se o resgate não for pago.",
+   "explanation": "Por isso backup sozinho não resolve: o vazamento continua sendo um risco (inclusive LGPD).",
+   "difficulty": 1,
+   "objectives": [
+    {
+     "exam": "NUCLEO",
+     "code": "ameacas"
+    }
+   ],
+   "sources": [
+    "https://www.cisa.gov/stopransomware"
+   ],
+   "origin": "human",
+   "status": "published"
+  },
+  {
+   "id": "fund-010",
+   "type": "multiple_choice",
+   "prompt": "Qual prática de backup mais reduz o impacto de ransomware?",
+   "options": [
+    "Backup diário no mesmo servidor",
+    "Cópia offline ou imutável, com restauração testada",
+    "Sincronizar com pasta na nuvem",
+    "RAID 1"
+   ],
+   "answer": 1,
+   "explanation": "Atacantes procuram e apagam backups acessíveis pela rede. Cópia imutável/offline e testes de restauração são essenciais.",
+   "difficulty": 2,
+   "objectives": [
+    {
+     "exam": "NUCLEO",
+     "code": "ameacas"
+    }
+   ],
+   "sources": [
+    "https://www.cisa.gov/stopransomware"
+   ],
+   "origin": "human",
+   "status": "published"
+  },
+  {
+   "id": "fund-011",
+   "type": "flashcard",
+   "prompt": "Resuma Zero Trust em uma frase.",
+   "answer": "Nunca confie, sempre verifique: cada acesso é avaliado por identidade, dispositivo e contexto.",
+   "explanation": "Definido no NIST SP 800-207; estar na rede interna não concede acesso.",
+   "difficulty": 1,
+   "objectives": [
+    {
+     "exam": "NUCLEO",
+     "code": "arquitetura"
+    }
+   ],
+   "sources": [
+    "https://csrc.nist.gov/pubs/sp/800/207/final"
+   ],
+   "origin": "human",
+   "status": "published"
+  },
+  {
+   "id": "fund-012",
+   "type": "multiple_choice",
+   "prompt": "No modelo Zero Trust, o componente que DECIDE se o acesso é permitido é o…",
+   "options": [
+    "Policy Enforcement Point",
+    "Policy Decision Point",
+    "Firewall de borda",
+    "Proxy reverso"
+   ],
+   "answer": 1,
+   "explanation": "O PDP decide; o PEP aplica a decisão no caminho do acesso.",
+   "difficulty": 2,
+   "objectives": [
+    {
+     "exam": "NUCLEO",
+     "code": "arquitetura"
+    }
+   ],
+   "sources": [
+    "https://csrc.nist.gov/pubs/sp/800/207/final"
+   ],
+   "origin": "human",
+   "status": "published"
+  },
+  {
+   "id": "fund-013",
+   "type": "multiple_choice",
+   "prompt": "Desativar a validação de certificado TLS em um app facilita qual ataque?",
+   "options": [
+    "DDoS",
+    "Man-in-the-Middle",
+    "SQL Injection",
+    "Força bruta offline"
+   ],
+   "answer": 1,
+   "explanation": "Sem validar o certificado, qualquer intermediário pode apresentar um certificado próprio e ler o tráfego (CWE-295).",
+   "difficulty": 2,
+   "objectives": [
+    {
+     "exam": "NUCLEO",
+     "code": "rede"
+    }
+   ],
+   "sources": [
+    "https://cwe.mitre.org/data/definitions/295.html"
+   ],
+   "origin": "human",
+   "status": "published"
+  },
+  {
+   "id": "fund-014",
+   "type": "flashcard",
+   "prompt": "O que o cabeçalho HSTS faz?",
+   "answer": "Obriga o navegador a usar sempre HTTPS para o domínio, impedindo downgrade para HTTP.",
+   "explanation": "Strict-Transport-Security reduz ataques de SSL stripping.",
+   "difficulty": 1,
+   "objectives": [
+    {
+     "exam": "NUCLEO",
+     "code": "rede"
+    }
+   ],
+   "sources": [
+    "https://developer.mozilla.org/docs/Web/HTTP/Headers/Strict-Transport-Security"
+   ],
+   "origin": "human",
+   "status": "published"
+  },
+  {
+   "id": "fund-015",
+   "type": "multiple_choice",
+   "prompt": "Qual é a ordem correta das fases do ciclo de resposta a incidentes (modelo clássico do NIST)?",
+   "options": [
+    "Contenção → Preparação → Detecção → Lições aprendidas",
+    "Preparação → Detecção e análise → Contenção, erradicação e recuperação → Pós-incidente",
+    "Detecção → Recuperação → Preparação → Contenção",
+    "Erradicação → Detecção → Preparação → Recuperação"
+   ],
+   "answer": 1,
+   "explanation": "O modelo clássico do SP 800-61 tem 4 fases. A revisão 3 (2025) passou a alinhar o tema às funções do NIST CSF 2.0.",
+   "difficulty": 2,
+   "objectives": [
+    {
+     "exam": "NUCLEO",
+     "code": "resposta-incidentes"
+    }
+   ],
+   "sources": [
+    "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+   ],
+   "origin": "human",
+   "status": "published"
+  },
+  {
+   "id": "fund-016",
+   "type": "flashcard",
+   "prompt": "O que é um SIEM?",
+   "answer": "Plataforma que coleta, correlaciona e analisa logs e eventos de segurança para detectar incidentes.",
+   "explanation": "SIEM centraliza a visibilidade; SOAR automatiza respostas; EDR atua nos endpoints; XDR integra várias fontes.",
+   "difficulty": 1,
+   "objectives": [
+    {
+     "exam": "NUCLEO",
+     "code": "operacoes"
+    }
+   ],
+   "sources": [],
+   "origin": "human",
+   "status": "published"
+  },
+  {
+   "id": "fund-017",
+   "type": "multiple_choice",
+   "prompt": "Qual ferramenta atua principalmente no endpoint, detectando e respondendo a comportamento malicioso?",
+   "options": [
+    "SIEM",
+    "EDR",
+    "WAF",
+    "DLP de rede"
+   ],
+   "answer": 1,
+   "explanation": "EDR = Endpoint Detection and Response.",
+   "difficulty": 2,
+   "objectives": [
+    {
+     "exam": "NUCLEO",
+     "code": "operacoes"
+    }
+   ],
+   "sources": [],
+   "origin": "human",
+   "status": "published"
+  },
+  {
+   "id": "fund-018",
+   "type": "multiple_choice",
+   "prompt": "O DMARC ajuda a combater…",
+   "options": [
+    "Malware em anexos",
+    "Falsificação do domínio remetente em e-mails",
+    "Ataques DDoS",
+    "SQL Injection"
+   ],
+   "answer": 1,
+   "explanation": "DMARC usa SPF e DKIM para dizer aos destinatários o que fazer com mensagens que falsificam o seu domínio.",
+   "difficulty": 2,
+   "objectives": [
+    {
+     "exam": "NUCLEO",
+     "code": "email"
+    }
+   ],
+   "sources": [
+    "https://dmarc.org/"
+   ],
+   "origin": "human",
+   "status": "published"
+  },
+  {
+   "id": "fund-019",
+   "type": "flashcard",
+   "prompt": "O que é um zero-day?",
+   "answer": "Uma vulnerabilidade explorada antes de existir correção disponível (o fabricante teve 'zero dias').",
+   "explanation": "Mitigações e detecção comportamental são as defesas enquanto não há patch.",
+   "difficulty": 1,
+   "objectives": [
+    {
+     "exam": "NUCLEO",
+     "code": "ameacas"
+    }
+   ],
+   "sources": [],
+   "origin": "human",
+   "status": "published"
+  },
+  {
+   "id": "fund-020",
+   "type": "multiple_choice",
+   "prompt": "No modelo de responsabilidade compartilhada em IaaS, quem normalmente corrige o sistema operacional das VMs?",
+   "options": [
+    "O provedor de nuvem",
+    "O cliente",
+    "Ninguém, é automático",
+    "O fabricante do hardware"
+   ],
+   "answer": 1,
+   "explanation": "Em IaaS o provedor cuida da infraestrutura física e do hypervisor; SO, aplicações e dados são do cliente.",
+   "difficulty": 2,
+   "objectives": [
+    {
+     "exam": "NUCLEO",
+     "code": "nuvem"
+    }
+   ],
+   "sources": [],
+   "origin": "human",
+   "status": "published"
+  },
+  {
+   "id": "fund-021",
+   "type": "multiple_choice",
+   "prompt": "Qual opção descreve o princípio do privilégio mínimo?",
+   "options": [
+    "Todos os usuários são administradores para evitar chamados",
+    "Cada identidade recebe apenas as permissões necessárias para sua função, pelo tempo necessário",
+    "Senhas longas",
+    "Bloquear a internet"
+   ],
+   "answer": 1,
+   "explanation": "Reduz o impacto de contas comprometidas e erros.",
+   "difficulty": 2,
+   "objectives": [
+    {
+     "exam": "NUCLEO",
+     "code": "identidade"
+    }
+   ],
+   "sources": [],
+   "origin": "human",
+   "status": "published"
+  },
+  {
+   "id": "fund-022",
+   "type": "flashcard",
+   "prompt": "Diferença entre severidade e risco?",
+   "answer": "Severidade é a gravidade técnica da falha; risco combina probabilidade de exploração, impacto no negócio e exposição do ativo.",
+   "explanation": "Por isso a mesma CVE pode ser urgente numa empresa e irrelevante em outra.",
+   "difficulty": 1,
+   "objectives": [
+    {
+     "exam": "NUCLEO",
+     "code": "gestao-vulnerabilidades"
+    }
+   ],
+   "sources": [],
+   "origin": "human",
+   "status": "published"
+  },
+  {
+   "id": "fund-023",
+   "type": "multiple_choice",
+   "prompt": "Um e-mail do 'diretor' pede transferência urgente para um novo fornecedor. Qual a melhor ação?",
+   "options": [
+    "Pagar, pois é urgente",
+    "Confirmar por outro canal conhecido (telefone, pessoalmente) antes de qualquer pagamento",
+    "Responder pedindo os dados bancários de novo",
+    "Encaminhar para todos da empresa"
+   ],
+   "answer": 1,
+   "explanation": "É o padrão de BEC (Business Email Compromise). Verificação fora de banda quebra o golpe.",
+   "difficulty": 2,
+   "objectives": [
+    {
+     "exam": "NUCLEO",
+     "code": "email"
+    }
+   ],
+   "sources": [],
+   "origin": "human",
+   "status": "published"
+  },
+  {
+   "id": "fund-024",
+   "type": "flashcard",
+   "prompt": "O que é SBOM?",
+   "answer": "Software Bill of Materials: a lista de componentes e versões que compõem um software.",
+   "explanation": "Permite saber rapidamente se você usa uma biblioteca afetada por uma nova CVE (formatos CycloneDX e SPDX).",
+   "difficulty": 1,
+   "objectives": [
+    {
+     "exam": "NUCLEO",
+     "code": "appsec"
+    }
+   ],
+   "sources": [
+    "https://cyclonedx.org/",
+    "https://spdx.dev/"
+   ],
+   "origin": "human",
+   "status": "published"
+  }
+ ]
+}

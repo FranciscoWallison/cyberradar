@@ -1,0 +1,141 @@
+# Coleta → IA → alertas → commit dos dados → build → deploy no GitHub Pages.
+# Roda de hora em hora (minuto 17, fora do pico do :00) e às segundas gera o boletim semanal.
+# Para pausar sem apagar: Settings → Secrets and variables → Actions → Variables → PIPELINE_ENABLED = false
+name: pipeline
+
+on:
+  schedule:
+    - cron: "17 * * * *"     # coleta horária
+    - cron: "23 11 * * 1"    # boletim semanal (segunda, 11:23 UTC = 08:23 BRT)
+  workflow_dispatch:
+    inputs:
+      weekly:
+        description: "Gerar e anunciar o boletim semanal agora"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+
+env:
+  PYTHON_VERSION: "3.12"
+  SITE_URL: ${{ vars.SITE_URL }}
+  SITE_BASE_PATH: ${{ vars.SITE_BASE_PATH }}
+  FEEDBACK_URL: ${{ vars.FEEDBACK_URL }}
+
+jobs:
+  update:
+    if: vars.PIPELINE_ENABLED != 'false'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions:
+      contents: write   # commit de data/ e content/reports/
+    outputs:
+      weekly: ${{ steps.mode.outputs.weekly }}
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+      NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+      BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+      - run: pip install -r requirements.txt
+      - id: mode
+        run: |
+          if [ "${{ github.event.schedule }}" = "23 11 * * 1" ] || [ "${{ inputs.weekly }}" = "true" ]; then
+            echo "weekly=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "weekly=false" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Status (sem revelar segredos)
+        run: python -m cyberradar status
+      - name: Coletar e analisar
+        run: python -m cyberradar update
+      - name: Alertas
+        if: vars.ALERTS_ENABLED != 'false'
+        run: python -m cyberradar notify
+      - name: Boletim semanal
+        if: steps.mode.outputs.weekly == 'true'
+        run: python -m cyberradar report
+      - name: Commit dos dados
+        run: |
+          git config user.name "cyberradar-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data content/reports
+          if git diff --cached --quiet; then echo "sem mudanças"; exit 0; fi
+          git commit -m "data: atualização $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4; do
+            git push && exit 0
+            sleep $((i * 5)); git pull --rebase
+          done
+          exit 1
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.ref_name }}   # pega o commit de dados recém-enviado
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python -m cyberradar build
+      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
+
+  announce:
+    needs: [update, deploy]
+    if: needs.update.outputs.weekly == 'true' && vars.ALERTS_ENABLED != 'false'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Anunciar boletim (já publicado)
+        run: python -m cyberradar announce
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}

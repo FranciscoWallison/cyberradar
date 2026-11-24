@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block mainattrs %}data-pagefind-ignore{% endblock %}
+{% block content %}
+<h1>Página não encontrada</h1>
+<p>Talvez a CVE não tenha página própria (só as priorizadas têm). Procure em <a href="{{ base }}/cves/">Vulnerabilidades</a> ou na <a href="{{ base }}/busca/">Busca</a>.</p>
+{% endblock %}

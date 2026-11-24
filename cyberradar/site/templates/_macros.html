@@ -1,0 +1,41 @@
+{% macro sevbadge(pc) -%}
+{% if pc %}<span class="sev sev-{{ pc.severity|lower }}">{{ sev_pt(pc.severity) }} {{ '%.1f'|format(pc.baseScore) }}</span>{% else %}<span class="sev sev-none">sem CVSS</span>{% endif %}
+{%- endmacro %}
+
+{% macro cvelink(r) -%}
+{% if r._detail %}<a href="{{ base }}/cve/{{ r.id }}/">{{ r.id }}</a>{% else %}<a href="https://nvd.nist.gov/vuln/detail/{{ r.id }}" rel="noopener">{{ r.id }}</a>{% endif %}
+{%- endmacro %}
+
+{% macro cvetable(rows, show_epss=False) %}
+<div class="tablewrap"><table class="t">
+<thead><tr><th>CVE</th><th>Produto</th><th>Severidade</th>{% if show_epss %}<th>EPSS</th>{% endif %}<th title="0–100">Prioridade</th></tr></thead>
+<tbody>
+{% for r in rows %}
+<tr data-vendors="{{ r._vendors|join(' ') }}">
+  <td>{{ cvelink(r) }}{% if r.kev %} <span class="badge k-kev" title="Exploração ativa confirmada (CISA KEV)">KEV</span>{% endif %}</td>
+  <td>{{ (r._products[:2]|map('prod')|join(', ')) or '—' }}</td>
+  <td>{{ sevbadge(r._cvss) }}</td>
+  {% if show_epss %}<td>{{ r.epss.score|pct if r.epss else '—' }}</td>{% endif %}
+  <td><span class="prio">{{ '%.0f'|format(r.priority.score) }}</span></td>
+</tr>
+{% else %}
+<tr><td colspan="5">Sem itens no período.</td></tr>
+{% endfor %}
+</tbody></table></div>
+{% endmacro %}
+
+{% macro story(s) %}
+<article class="story"{% if not s.lead.title_pt and s.lead.lang == 'en' %} data-translate{% endif %}>
+  <div class="meta"><span class="badge k-{{ s.lead.kind }}">{{ kind_label.get(s.lead.kind, 'Imprensa') }}</span>
+    <span>{{ s.lead.source }}</span> · <time datetime="{{ s.published }}">{{ s.published|datetime_br }}</time>
+    {% if s.category %}· <span class="cat">{{ category_pt.get(s.category, s.category) }}</span>{% endif %}</div>
+  <h3><a href="{{ s.lead.url }}" rel="noopener nofollow" class="st-title">{{ s.lead.title_pt or s.lead.title }}</a></h3>
+  {% if s.lead.summary_pt %}<p>{{ s.lead.summary_pt }} <span class="badge k-ai" title="Resumo gerado por IA a partir do título e do trecho">IA</span></p>
+  {% elif s.lead.excerpt %}<p class="muted" lang="{{ s.lead.lang }}">{{ s.lead.excerpt }}</p>{% endif %}
+  {% if not s.lead.title_pt and s.lead.lang == 'en' %}<p class="small"><button type="button" class="tr-btn" hidden>Traduzir no navegador</button></p>{% endif %}
+  {% if s.lead.title_pt and s.lead.title_pt != s.lead.title %}<p class="small muted" lang="en">Original: {{ s.lead.title }}</p>{% endif %}
+  {% if s.cves %}<p class="small">CVEs: {% for c in s.cves[:6] %}<a href="{{ base }}/cves/?q={{ c }}">{{ c }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
+  {% if s.others %}<details class="small"><summary>Mais {{ s.others|length }} fonte(s) sobre esta história</summary><ul>
+    {% for o in s.others[:8] %}<li><a href="{{ o.url }}" rel="noopener nofollow">{{ o.source }}: {{ o.title }}</a></li>{% endfor %}</ul></details>{% endif %}
+</article>
+{% endmacro %}

@@ -1,0 +1,1 @@
+{"exploit_multi/http/example_vpn_traversal": {"name": "ExampleCorp VPN Path Traversal", "fullname": "exploit/multi/http/example_vpn_traversal", "type": "exploit", "references": ["CVE-2026-10001", "URL-https://example"], "path": "/modules/exploits/multi/http/example_vpn_traversal.rb"}, "payload_x": {"name": "p", "type": "payload", "references": ["CVE-2026-10001"], "path": "/x"}}

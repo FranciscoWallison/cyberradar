@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block mainattrs %}data-pagefind-ignore{% endblock %}
+{% block content %}
+<h1>{{ title }}</h1>
+<p class="muted">{{ intro }}</p>
+<ul class="cardlist">
+{% for it in items %}
+  <li><a href="{{ base }}/{{ section }}/{{ it.slug }}/"><strong>{{ it.meta.titulo or it.slug }}</strong></a>
+    {% if it.meta.resumo %}<br><span class="small">{{ it.meta.resumo }}</span>{% endif %}
+    {% if it.meta.nivel %}<span class="badge">{{ it.meta.nivel }}</span>{% endif %}
+    {% if it.meta.data %}<span class="small muted">{{ it.meta.data }}</span>{% endif %}</li>
+{% else %}
+  <li>Nada publicado ainda.</li>
+{% endfor %}
+</ul>
+{% endblock %}

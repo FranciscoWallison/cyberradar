@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block mainattrs %}data-pagefind-ignore{% endblock %}
+{% block content %}
+<section class="hero">
+  <h1>O que importa em segurança esta semana</h1>
+  <p class="lead">{{ site.tagline }}. Priorizamos pelo que está sendo <strong>explorado de verdade</strong> (KEV), pela
+    <strong>probabilidade de exploração</strong> (EPSS) e pela severidade (CVSS). <a href="{{ base }}/sobre/">Como calculamos</a>.</p>
+</section>
+
+<section class="cards" aria-label="Indicadores">
+  <div class="card"><div class="num">{{ stats.kev_30d }}</div><div>novas no KEV (30 dias)</div></div>
+  <div class="card"><div class="num">{{ stats.critical_7d }}</div><div>CVEs críticas (7 dias)</div></div>
+  <div class="card"><div class="num">{{ stats.cves_7d }}</div><div>CVEs publicadas (7 dias)</div></div>
+  <div class="card"><div class="num">{{ stats.news_7d }}</div><div>histórias na imprensa (7 dias)</div></div>
+</section>
+
+<section class="fav-box" id="fav-box" hidden>
+  <h2>Minhas tecnologias</h2>
+  <p class="small muted">Itens recentes que citam as tecnologias que você marcou (salvas só neste navegador).</p>
+  <div id="fav-list" class="small"></div>
+</section>
+
+<div class="grid2">
+  <section>
+    <h2>Exploradas ativamente — novas no KEV</h2>
+    {{ m.cvetable(kev_recent) }}
+  </section>
+  <section>
+    <h2>Maior prioridade publicadas na semana</h2>
+    {{ m.cvetable(top_week) }}
+  </section>
+  <section>
+    <h2>Maior probabilidade de exploração (EPSS)</h2>
+    {{ m.cvetable(top_epss, show_epss=True) }}
+  </section>
+  <section>
+    <h2>CVEs por dia (14 dias)</h2>
+    <svg class="chart" viewBox="0 0 {{ series|length * 24 }} 130" role="img" aria-label="CVEs publicadas por dia">
+      {% for p in series %}
+      {% set h = (p.n / series_max * 100)|round(1) %}
+      <g><title>{{ p.label }}: {{ p.n }}</title>
+      <rect x="{{ loop.index0 * 24 + 3 }}" y="{{ 105 - h }}" width="18" height="{{ h }}" rx="2" class="bar"/>
+      <text x="{{ loop.index0 * 24 + 12 }}" y="122" class="axis">{{ p.label[:2] }}</text></g>
+      {% endfor %}
+    </svg>
+    <h3 class="mt">Fabricantes mais citados (7 dias)</h3>
+    <ul class="hbars">
+      {% for v, n in vendors %}<li><span class="hb-l">{{ v }}</span><span class="hb-b"><span style="width: {{ (n / vendors_max * 100)|round(0) }}%"></span></span><span class="hb-n">{{ n }}</span></li>{% endfor %}
+    </ul>
+  </section>
+</div>
+
+<section>
+  <h2>Últimas histórias <a class="small" href="{{ base }}/noticias/">ver todas</a></h2>
+  {% for s in stories %}{{ m.story(s) }}{% else %}<p>Nenhuma notícia coletada ainda.</p>{% endfor %}
+</section>
+{% endblock %}
