@@ -1,5 +1,17 @@
 [
  {
+  "cluster": "735fcd710d408e0a",
+  "cves": [],
+  "excerpt": "It was not clear what specific information was compromised or who was responsible. The post An Unclassified CIA System Was Breached in a Cyberattack, AP Source Says appeared first on SecurityWeek .",
+  "id": "735fcd710d408e0a",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-24T22:41:58Z",
+  "source": "SecurityWeek",
+  "title": "An Unclassified CIA System Was Breached in a Cyberattack, AP Source Says",
+  "url": "https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says"
+ },
+ {
   "cluster": "f2aff67f475403e7",
   "cves": [],
   "excerpt": "Rackspace is shutting down its Rackspace Spot cloud platform after a security breach allowed hackers to access customer Kubernetes clusters and secrets, giving customers until December 8 to migrate their services and download their data. [...]",
@@ -352,6 +364,27 @@
   "title": "AutomationDirect C-More EA9 Programming Software",
   "title_pt": "Software de Programação AutomationDirect C-More EA9",
   "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-01"
+ },
+ {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
+  "cluster": "7b5dacba886b8db5",
+  "cves": [
+   "CVE-2026-131914",
+   "CVE-2026-132165",
+   "CVE-2026-132224"
+  ],
+  "excerpt": "CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-131914 Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability CVE-2026-132165 Drupal Core Remote Code Execution…",
+  "id": "165729c3cbfbb2e3",
+  "kind": "official",
+  "lang": "en",
+  "published": "2026-11-24T12:00:00Z",
+  "source": "CISA — Cybersecurity Advisories",
+  "summary_pt": "A CISA incluiu três novas vulnerabilidades ao catálogo KEV, evidenciando exploração ativa, como CVE‑2026‑131914, CVE‑2026‑132165 e outras.",
+  "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+  "title_pt": "CISA adiciona três vulnerabilidades conhecidas exploradas ao catálogo",
+  "url": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog"
  },
  {
   "cluster": "11d7d6584ec1d002",
@@ -871,7 +904,7 @@
   "ai_model": "groq/openai/gpt-oss-120b",
   "ai_prompt": "news-2026-11-a",
   "category": "vulnerabilidade",
-  "cluster": "659149ed49d822a8",
+  "cluster": "7b5dacba886b8db5",
   "cves": [
    "CVE-2026-131914"
   ],
@@ -1057,6 +1090,9 @@
   "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "patch",
   "cluster": "b44c0a854e15b185",
   "cves": [
    "CVE-2026-23871"
@@ -1067,7 +1103,9 @@
   "lang": "en",
   "published": "2026-11-20T17:57:20Z",
   "source": "The Hacker News",
+  "summary_pt": "O WhatsApp lançou correções para três vulnerabilidades, entre elas a CVE‑2026‑23871 no Android, que pode ter sido usada em mensagens fraudulentas.",
   "title": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
+  "title_pt": "WhatsApp corrige 3 falhas de segurança, incluindo bug Android suspeito de uso em golpes",
   "url": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html"
  },
  {
@@ -1083,6 +1121,9 @@
   "url": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "c7b209f2aed89407",
   "cves": [
    "CVE-2026-99312"
@@ -1093,7 +1134,9 @@
   "lang": "en",
   "published": "2026-11-20T12:20:00Z",
   "source": "The Hacker News",
+  "summary_pt": "Uma vulnerabilidade no hipervisor KVM permite que máquinas virtuais leiam até 127 GB da memória do servidor, potencialmente expondo dados de outras VMs em ambientes de nuvem compartilhada.",
   "title": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
+  "title_pt": "Falha no Linux KVM (CVE‑2026‑99312) permite que VMs convidadas acessem memória do host em servidores AMD",
   "url": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html"
  },
  {
@@ -1143,6 +1186,9 @@
   "url": "https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "7b5dacba886b8db5",
   "cves": [
    "CVE-2026-76466"
@@ -1153,10 +1199,15 @@
   "lang": "en",
   "published": "2026-11-20T10:32:50Z",
   "source": "The Hacker News",
+  "summary_pt": "Atores maliciosos usaram a vulnerabilidade CVE‑2026‑76466 no Cisco Expressway para invadir uma organização russa, comprometendo quatro dispositivos e obtendo acesso à rede interna.",
   "title": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
+  "title_pt": "Hackers exploram falha crítica no Cisco Expressway, comprometem quatro dispositivos e acessam rede interna",
   "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "cc0e8ba3fbf777d5",
   "cves": [
    "CVE-2024-7533"
@@ -1167,10 +1218,15 @@
   "lang": "en",
   "published": "2026-11-20T09:06:50Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "Foi divulgada informação sobre a vulnerabilidade CVE‑2024‑7533, que envolve uso após liberação (use‑after‑free) no módulo de compartilhamento do Chromium.",
   "title": "Chromium: CVE-2024-7533 Use after free in Sharing",
+  "title_pt": "Chromium: CVE‑2024‑7533 uso após liberação em recurso de compartilhamento",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-7532"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "cc0e8ba3fbf777d5",
   "cves": [
    "CVE-2023-1531"
@@ -1181,10 +1237,15 @@
   "lang": "en",
   "published": "2026-11-20T09:05:37Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "Informação publicada descreve a vulnerabilidade CVE‑2023‑1531, que permite uso após liberação no componente ANGLE do Chromium.",
   "title": "Chromium: CVE-2023-1531 Use after free in ANGLE",
+  "title_pt": "Chromium: CVE‑2023‑1531 uso após liberação no ANGLE",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-1531"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "28a52ce8afc34b91",
   "cves": [
    "CVE-2026-105584"
@@ -1195,10 +1256,15 @@
   "lang": "en",
   "published": "2026-11-19T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "Atualização informativa indica a existência da vulnerabilidade CVE‑2026‑105584, que pode expor dados do backup de inventário do Windows.",
   "title": "CVE-2026-105584 Windows Inventory Backup Information Disclosure Vulnerability",
+  "title_pt": "CVE‑2026‑105584 vulnerabilidade de divulgação de informações no backup de inventário do Windows",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105584"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "82c26b576f6fc72b",
   "cves": [
    "CVE-2026-95874"
@@ -1209,10 +1275,15 @@
   "lang": "en",
   "published": "2026-11-19T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "Atualização informativa registra a vulnerabilidade CVE‑2026‑95874, que permite elevação de privilégios nos serviços de jogos do Xbox.",
   "title": "CVE-2026-95874 Xbox Gaming Services Elevation of Privilege Vulnerability",
+  "title_pt": "CVE‑2026‑95874 vulnerabilidade de elevação de privilégio nos serviços de jogos do Xbox",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95874"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "39462054894aa9f3",
   "cves": [
    "CVE-2026-95989"
@@ -1223,10 +1294,15 @@
   "lang": "en",
   "published": "2026-11-19T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento da vulnerabilidade, informando que se trata apenas de uma mudança informativa.",
   "title": "CVE-2026-95989 vhdmp.sys Elevation of Privilege Vulnerability",
+  "title_pt": "CVE-2026-95989 Vulnerabilidade de Elevação de Privilégio no vhdmp.sys",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95989"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "3b0882abb60ec56c",
   "cves": [
    "CVE-2026-96082"
@@ -1237,10 +1313,15 @@
   "lang": "en",
   "published": "2026-11-19T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento da vulnerabilidade, informando que se trata apenas de uma mudança informativa.",
   "title": "CVE-2026-96082 Windows Kerberos Denial of Service Vulnerability",
+  "title_pt": "CVE-2026-96082 Vulnerabilidade de Negação de Serviço no Kerberos do Windows",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96082"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "8421e487cff8489e",
   "cves": [
    "CVE-2026-113817"
@@ -1251,10 +1332,15 @@
   "lang": "en",
   "published": "2026-11-19T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento da vulnerabilidade, informando que se trata apenas de uma mudança informativa.",
   "title": "CVE-2026-113817 Windows Devices Human Interface Elevation of Privilege Vulnerability",
+  "title_pt": "CVE-2026-113817 Vulnerabilidade de Elevação de Privilégio na Interface Humana de Dispositivos Windows",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-113817"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "25d65b7a80ba6be4",
   "cves": [
    "CVE-2026-121669"
@@ -1265,10 +1351,15 @@
   "lang": "en",
   "published": "2026-11-19T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento da vulnerabilidade, informando que se trata apenas de uma mudança informativa.",
   "title": "CVE-2026-121669 PowerShell Information Disclosure Vulnerability",
+  "title_pt": "CVE-2026-121669 Vulnerabilidade de Divulgação de Informação no PowerShell",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-121669"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "d3fd9ed59ab31855",
   "cves": [
    "CVE-2026-118302"
@@ -1279,10 +1370,15 @@
   "lang": "en",
   "published": "2026-11-19T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento da vulnerabilidade, informando que se trata apenas de uma mudança informativa.",
   "title": "CVE-2026-118302 Microsoft Office Excel Remote Code Execution Vulnerability",
+  "title_pt": "CVE-2026-118302 Vulnerabilidade de Execução Remota de Código no Microsoft Office Excel",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118302"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "d3fd9ed59ab31855",
   "cves": [
    "CVE-2026-69370"
@@ -1293,10 +1389,15 @@
   "lang": "en",
   "published": "2026-11-19T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento da vulnerabilidade, informando que se trata apenas de uma mudança informativa.",
   "title": "CVE-2026-69370 Visual Studio Code Remote Code Execution Vulnerability",
+  "title_pt": "CVE-2026-69370 Vulnerabilidade de Execução Remota de Código no Visual Studio Code",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69370"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "39462054894aa9f3",
   "cves": [
    "CVE-2026-69918"
@@ -1307,10 +1408,15 @@
   "lang": "en",
   "published": "2026-11-19T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento da vulnerabilidade, informando que se trata apenas de uma mudança informativa.",
   "title": "CVE-2026-69918 Windows Core Messaging Elevation of Privilege Vulnerability",
+  "title_pt": "CVE-2026-69918 Vulnerabilidade de Elevação de Privilégio no Windows Core Messaging",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69918"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "39462054894aa9f3",
   "cves": [
    "CVE-2026-70223"
@@ -1321,10 +1427,15 @@
   "lang": "en",
   "published": "2026-11-19T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento da vulnerabilidade, informando que se trata apenas de uma mudança informativa.",
   "title": "CVE-2026-70223 Windows Console Driver Elevation of Privilege Vulnerability",
+  "title_pt": "CVE-2026-70223 Vulnerabilidade de Elevação de Privilégio no Driver de Console do Windows",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70223"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "59d4eedd365fa04d",
   "cves": [
    "CVE-2026-83722"
@@ -1335,10 +1446,15 @@
   "lang": "en",
   "published": "2026-11-19T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento desta vulnerabilidade, informando que se trata apenas de uma mudança informativa.",
   "title": "CVE-2026-83722 Microsoft Local Security Authority (LSA) Server Elevation of Privilege Vulnerability",
+  "title_pt": "CVE-2026-83722 Vulnerabilidade de Elevação de Privilégio no Servidor Local Security Authority (LSA) da Microsoft",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83722"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "1ade92a7e8ff7f2e",
   "cves": [
    "CVE-2026-83753"
@@ -1349,10 +1465,15 @@
   "lang": "en",
   "published": "2026-11-19T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento desta vulnerabilidade, informando que se trata apenas de uma mudança informativa.",
   "title": "CVE-2026-83753 Windows Camera Frame Server Monitor Elevation of Privilege Vulnerability",
+  "title_pt": "CVE-2026-83753 Vulnerabilidade de Elevação de Privilégio no Monitor do Servidor de Quadros da Câmera do Windows",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83753"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "605d38a62a8cad44",
   "cves": [
    "CVE-2026-83760"
@@ -1363,10 +1484,15 @@
   "lang": "en",
   "published": "2026-11-19T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento desta vulnerabilidade, informando que se trata apenas de uma mudança informativa.",
   "title": "CVE-2026-83760 Microsoft Bluetooth Driver Information Disclosure Vulnerability",
+  "title_pt": "CVE-2026-83760 Vulnerabilidade de Divulgação de Informação no Driver Bluetooth da Microsoft",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83760"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "bc06551d117a2c58",
   "cves": [
    "CVE-2026-84015"
@@ -1377,10 +1503,15 @@
   "lang": "en",
   "published": "2026-11-19T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento desta vulnerabilidade, informando que se trata apenas de uma mudança informativa.",
   "title": "CVE-2026-84015 Remote Access Point-to-Point Protocol (PPP) EAP-TLS Remote Code Execution Vulnerability",
+  "title_pt": "CVE-2026-84015 Vulnerabilidade de Execução Remota de Código em EAP-TLS do Protocolo PPP de Acesso Remoto",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84015"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "39462054894aa9f3",
   "cves": [
    "CVE-2026-84016"
@@ -1391,10 +1522,15 @@
   "lang": "en",
   "published": "2026-11-19T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento desta vulnerabilidade, informando que se trata apenas de uma mudança informativa.",
   "title": "CVE-2026-84016 Windows EAPHost Service Elevation of Privilege Vulnerability",
+  "title_pt": "CVE-2026-84016 Vulnerabilidade de Elevação de Privilégio no Serviço EAPHost do Windows",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84016"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "39462054894aa9f3",
   "cves": [
    "CVE-2026-84020"
@@ -1405,10 +1541,15 @@
   "lang": "en",
   "published": "2026-11-19T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento desta vulnerabilidade, informando que se trata apenas de uma mudança informativa.",
   "title": "CVE-2026-84020 Windows Routing and Remote Access Service (RRAS) Elevation of Privilege Vulnerability",
+  "title_pt": "CVE-2026-84020 Vulnerabilidade de Elevação de Privilégio no Serviço de Roteamento e Acesso Remoto (RRAS) do Windows",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84020"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "39462054894aa9f3",
   "cves": [
    "CVE-2026-85794"
@@ -1419,10 +1560,15 @@
   "lang": "en",
   "published": "2026-11-19T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento desta vulnerabilidade, informando que se trata apenas de uma mudança informativa.",
   "title": "CVE-2026-85794 Windows Routing and Remote Access Service (RRAS) Information Disclosure Vulnerability",
+  "title_pt": "CVE-2026-85794 Vulnerabilidade de Divulgação de Informação no Serviço de Roteamento e Acesso Remoto (RRAS) do Windows",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85794"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "b3a86c55538daf7b",
   "cves": [
    "CVE-2026-85846"
@@ -1433,7 +1579,9 @@
   "lang": "en",
   "published": "2026-11-19T16:00:00Z",
   "source": "Microsoft Security Response Center",
+  "summary_pt": "A Microsoft atualizou o reconhecimento desta vulnerabilidade, informando que se trata apenas de uma mudança informativa.",
   "title": "CVE-2026-85846 Web Account Manager Elevation of Privilege Vulnerability",
+  "title_pt": "CVE-2026-85846 Vulnerabilidade de Elevação de Privilégio no Gerenciador de Contas Web",
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85846"
  },
  {
