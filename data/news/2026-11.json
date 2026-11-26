@@ -2,6 +2,113 @@
  {
   "ai_model": "groq/openai/gpt-oss-120b",
   "ai_prompt": "news-2026-11-a",
+  "category": "patch",
+  "cluster": "56a74088527af968",
+  "cves": [],
+  "excerpt": "Drupal warns that its previous installer patch left some websites vulnerable to takeover, with attackers already exploiting the gap. The post Drupal Installer Patch Left a Gap Attackers Are Already Exploiting appeared first on SecurityWeek .",
+  "id": "56a74088527af968",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-26T09:12:26Z",
+  "source": "SecurityWeek",
+  "summary_pt": "O patch anterior do instalador do Drupal não corrigiu totalmente a falha, deixando sites vulneráveis que já estão sendo alvo de ataques.",
+  "title": "Drupal Installer Patch Left a Gap Attackers Are Already Exploiting",
+  "title_pt": "Patch do instalador do Drupal deixou brecha que atacantes já estão explorando",
+  "url": "https://www.securityweek.com/drupal-installer-patch-left-a-gap-attackers-are-already-exploiting"
+ },
+ {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vazamento",
+  "cluster": "1b6ec2368eae77ff",
+  "cves": [],
+  "excerpt": "A hacker used a compromised employee GitHub account to push malicious code and steal customer records, but vaults were not accessed. The post 1Password Breach Exposes Customer Data, Internal Source Code appeared first on SecurityWeek .",
+  "id": "ccd06b47066e272e",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-26T08:32:10Z",
+  "source": "SecurityWeek",
+  "summary_pt": "Um invasor comprometeu uma conta de funcionário no GitHub, inseriu código malicioso e roubou registros de clientes e o código-fonte interno da 1Password, embora os cofres não tenham sido acessados.",
+  "title": "1Password Breach Exposes Customer Data, Internal Source Code",
+  "title_pt": "Vazamento da 1Password expõe dados de clientes e código-fonte interno",
+  "url": "https://www.securityweek.com/1password-breach-exposes-customer-data-internal-source-code"
+ },
+ {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
+  "cluster": "7b5dacba886b8db5",
+  "cves": [
+   "CVE-2026-136716",
+   "CVE-2026-132165"
+  ],
+  "excerpt": "Drupal has warned of a new \"highly critical\" security flaw impacting Drupal core that it said has been exploited in the wild. The vulnerability, tracked as CVE-2026-136716 (CVSS score: N/A), has been described as a case of improper checking for unusual or exceptional conditions.…",
+  "id": "61e3be14c2b6cad9",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-26T07:02:34Z",
+  "source": "The Hacker News",
+  "summary_pt": "Drupal informou que uma falha crítica no núcleo, identificada como CVE-2026-136716, está sendo ativamente explorada para tomar controle de sites.",
+  "title": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
+  "title_pt": "Drupal alerta sobre nova vulnerabilidade crítica de tomada de controle de site em exploração ativa",
+  "url": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html"
+ },
+ {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
+  "cluster": "7b5dacba886b8db5",
+  "cves": [
+   "CVE-2026-133275"
+  ],
+  "excerpt": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added 10 security flaws to its Known Exploited Vulnerabilities (KEV) catalog, including five vulnerabilities impacting Mitel MiCollab that were disclosed last week. The Mitel MiCollab vulnerabilities…",
+  "id": "451f3a785e324bf1",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-26T06:44:46Z",
+  "source": "The Hacker News",
+  "summary_pt": "A CISA adicionou ao catálogo KEV dez vulnerabilidades, incluindo cinco no Mitel MiCollab, que já foram exploradas por hackers em produtos de várias empresas.",
+  "title": "Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products",
+  "title_pt": "Hackers exploram 10 vulnerabilidades em produtos da Mitel, Juniper, Vates e Danfoss",
+  "url": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html"
+ },
+ {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vazamento",
+  "cluster": "1b6ec2368eae77ff",
+  "cves": [],
+  "excerpt": "Popular password management software 1Password on Wednesday disclosed a security incident involving its backend systems that led to the unauthorized access of some customer information, but emphasized that customer password vaults and other secrets were not accessed. \"While we…",
+  "id": "5e5b0d3bb248d414",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-26T04:20:22Z",
+  "source": "The Hacker News",
+  "summary_pt": "A 1Password divulgou que um incidente em seus sistemas backend permitiu acesso não autorizado a informações de clientes e ao código-fonte, mas os cofres de senhas permaneceram seguros.",
+  "title": "1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach",
+  "title_pt": "1Password hackeado: dados de clientes e código-fonte roubados em violação de conta GitHub",
+  "url": "https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html"
+ },
+ {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "malware",
+  "cluster": "8720d53f46442204",
+  "cves": [],
+  "excerpt": "Cybersecurity researchers have discovered 13 malicious NuGet packages that are designed to target Windows .NET developers under the guise of a fake take-home job assessment. \"Most of the packages pose as WinUI 3 and WPF [Windows Presentation Foundation] button controls,\" Socket…",
+  "id": "8720d53f46442204",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-26T03:48:52Z",
+  "source": "The Hacker News",
+  "summary_pt": "Pesquisadores encontraram 13 pacotes NuGet maliciosos que se apresentam como componentes de avaliações de emprego .NET, usando-os para distribuir malware a desenvolvedores Windows.",
+  "title": "13 Malicious NuGet Packages Turn Fake .NET Job Assessments Into Malware Delivery Traps",
+  "title_pt": "13 pacotes NuGet maliciosos transformam avaliações falsas de emprego .NET em armadilhas de entrega de malware",
+  "url": "https://thehackernews.com/2026/11/13-malicious-nuget-packages-turn-fake.html"
+ },
+ {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
   "category": "vulnerabilidade",
   "cluster": "3668d7ed9e523305",
   "cves": [],
@@ -891,6 +998,9 @@
   "url": "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "outro",
   "cluster": "446e0a68acf81067",
   "cves": [],
   "excerpt": "What if your biggest SOC budget problem isn't how much you spend, but how much analyst time you lose? According to ANY.RUN's estimates, SOC teams could recover 450 analyst hours per 1,000 investigated alerts through faster threat analysis and IOC research. That's a significant…",
@@ -899,7 +1009,9 @@
   "lang": "en",
   "published": "2026-11-24T12:01:54Z",
   "source": "The Hacker News",
+  "summary_pt": "Estudos apontam que equipes de SOC podem ganhar até 450 horas de analista por mil alertas ao melhorar a análise de ameaças e a pesquisa de IOCs, reduzindo custos e riscos.",
   "title": "2027 SOC Budget Reset: 5 Priorities to Cut Costs and Reduce Cyber Risk",
+  "title_pt": "Revisão de orçamento do SOC 2027: 5 prioridades para cortar custos e reduzir risco cibernético",
   "url": "https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html"
  },
  {
@@ -981,6 +1093,9 @@
   "url": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vazamento",
   "cluster": "11d7d6584ec1d002",
   "cves": [],
   "excerpt": "Hackers stole personal information from the company’s customer portal and supplier relationship management platform. The post 1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO appeared first on SecurityWeek .",
@@ -989,10 +1104,15 @@
   "lang": "en",
   "published": "2026-11-24T11:50:21Z",
   "source": "SecurityWeek",
+  "summary_pt": "Hackers invadiram o portal de clientes e a plataforma de gestão de fornecedores da KEPCO, expondo informações pessoais de cerca de 1,5 milhão de pessoas.",
   "title": "1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO",
+  "title_pt": "1,5 milhão de pessoas afetadas por vazamento de dados na empresa elétrica sul-coreana KEPCO",
   "url": "https://www.securityweek.com/1-5-million-impacted-by-data-breach-at-south-korean-electric-company-kepco"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "47c6e40ac66c9d3b",
   "cves": [],
   "excerpt": "Norway's National Security Authority (NSM) has disclosed that it became aware of a security vulnerability in Microsoft's Azure API Management (APIM) that has affected multiple businesses in the country, including energy companies Equinor and Skagerak Energi. \"An unknown actor…",
@@ -1001,10 +1121,15 @@
   "lang": "en",
   "published": "2026-11-24T10:44:49Z",
   "source": "The Hacker News",
+  "summary_pt": "Autoridades norueguesas revelaram que uma vulnerabilidade no Azure API Management afetou empresas como Equinor e Skagerak Energi, permitindo que um agente desconhecido acessasse segredos de clientes.",
   "title": "Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
+  "title_pt": "Microsoft corrige falha no Azure API Management Classic enquanto ator mira segredos de clientes",
   "url": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "8e94987797ee0959",
   "cves": [],
   "excerpt": "Critical Bluetooth flaws in Elecbrakes controllers could let nearby attackers force trailer braking, potentially causing accidents. The post Elecbrakes Bluetooth Vulnerabilities Expose Trailers to Forced Braking appeared first on SecurityWeek .",
@@ -1013,10 +1138,15 @@
   "lang": "en",
   "published": "2026-11-24T10:44:44Z",
   "source": "SecurityWeek",
+  "summary_pt": "Falhas críticas de Bluetooth nos controladores Elecbrakes podem permitir que atacantes próximos forcem a frenagem de reboques, gerando risco de acidentes.",
   "title": "Elecbrakes Bluetooth Vulnerabilities Expose Trailers to Forced Braking",
+  "title_pt": "Vulnerabilidades Bluetooth da Elecbrakes expõem reboques a frenagem forçada",
   "url": "https://www.securityweek.com/elecbrakes-bluetooth-vulnerabilities-expose-trailers-to-forced-braking"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "outro",
   "cluster": "13aac15fdd3f1ab0",
   "cves": [],
   "excerpt": "The company told the ASX that a cybersecurity incident at its Wyoming uranium project would temporarily affect operations. The post Peninsula Energy Halts Trading After Cyber Incident Hits US Uranium Mine appeared first on SecurityWeek .",
@@ -1025,10 +1155,15 @@
   "lang": "en",
   "published": "2026-11-24T10:35:04Z",
   "source": "SecurityWeek",
+  "summary_pt": "A empresa informou que um incidente de cibersegurança em seu projeto de urânio em Wyoming interromperá temporariamente as operações e afetará a negociação de suas ações.",
   "title": "Peninsula Energy Halts Trading After Cyber Incident Hits US Uranium Mine",
+  "title_pt": "Peninsula Energy suspende negociações após incidente cibernético atingir mina de urânio nos EUA",
   "url": "https://www.securityweek.com/peninsula-energy-halts-trading-after-cyber-incident-hits-us-uranium-mine"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "63045753ac008998",
   "cves": [],
   "excerpt": "A flaw in WHMCS's shopping cart, the billing and automation platform many web hosting companies use to run their businesses, could allow anyone on the internet to retrieve customer records and administrator password hashes from an installation's database. No login is needed. The…",
@@ -1037,10 +1172,15 @@
   "lang": "en",
   "published": "2026-11-24T08:34:20Z",
   "source": "The Hacker News",
+  "summary_pt": "Uma falha no carrinho de compras do WHMCS permite que qualquer pessoa recupere registros de clientes e hashes de senhas de administradores diretamente do banco de dados, sem necessidade de autenticação.",
   "title": "WHMCS SQL Injection Could Expose Customer Data and Admin Password Hashes without Login",
+  "title_pt": "Injeção SQL no WHMCS pode expor dados de clientes e hashes de senhas de admin sem login",
   "url": "https://thehackernews.com/2026/11/whmcs-sql-injection-flaw-could-expose.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "pesquisa",
   "cluster": "b0d72916ebeceea8",
   "cves": [],
   "excerpt": "OpenAI and Cisco have teamed up to launch Shirudo (meaning \"shield\" in Japanese), an open-source Linux runtime that allows artificial intelligence (AI) agents to defend systems without downtime. \"It lets agents write dynamic eBPF controls to shield systems from exploits, giving…",
@@ -1049,7 +1189,9 @@
   "lang": "en",
   "published": "2026-11-24T06:02:57Z",
   "source": "The Hacker News",
+  "summary_pt": "A parceria criou o Shirudo, um runtime Linux de código aberto que usa agentes de IA para gerar controles eBPF dinâmicos, protegendo sistemas contra exploits sem causar downtime.",
   "title": "OpenAI and Cisco Unveil AI-Assisted Linux Security Tool to Block Exploits Before Patching",
+  "title_pt": "OpenAI e Cisco lançam ferramenta de segurança Linux assistida por IA para bloquear exploits antes de aplicar patches",
   "url": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html"
  },
  {
@@ -1072,6 +1214,9 @@
   "url": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vazamento",
   "cluster": "11d7d6584ec1d002",
   "cves": [],
   "excerpt": "A threat actor breached the internal network of Korea Electric Power Corporation (KEPCO) and accessed two systems containing customer, employee, and contractor data. [...]",
@@ -1080,10 +1225,15 @@
   "lang": "en",
   "published": "2026-11-23T20:54:51Z",
   "source": "BleepingComputer",
+  "summary_pt": "Um ator malicioso invadiu a rede interna da KEPCO e acessou sistemas contendo dados de clientes, funcionários e contratados, comprometendo cerca de 1,5 milhão de registros.",
   "title": "South Korea’s power giant KEPCO confirms data breach impacting 1.5 million",
+  "title_pt": "Gigante de energia da Coreia do Sul, KEPCO, confirma vazamento de dados que afetou 1,5 milhão",
   "url": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "politica-regulacao",
   "cluster": "e95e27eb950ea737",
   "cves": [],
   "excerpt": "OpenRouter removed three AI providers from its platform after discovering that they had violated their stated data-handling policies and exposed sensitive data. [...]",
@@ -1092,10 +1242,15 @@
   "lang": "en",
   "published": "2026-11-23T20:00:20Z",
   "source": "BleepingComputer",
+  "summary_pt": "A plataforma excluiu três provedores de IA após detectar violação das políticas de tratamento de dados, que resultou na exposição de prompts e informações sensíveis.",
   "title": "OpenRouter drops AI providers over leaked prompts and secrets",
+  "title_pt": "OpenRouter remove provedores de IA por vazamento de prompts e segredos",
   "url": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "a0de9d3c092a62fb",
   "cves": [],
   "excerpt": "Microsoft is warning customers that a security vulnerability in Azure API Management (APIM) Classic tiers was exploited to steal stored API credentials, with Norwegian authorities linking the flaw to cyberattacks against energy companies. [...]",
@@ -1104,10 +1259,15 @@
   "lang": "en",
   "published": "2026-11-23T19:42:20Z",
   "source": "BleepingComputer",
+  "summary_pt": "A Microsoft alertou que a vulnerabilidade no Azure API Management Classic foi usada para furtar credenciais de API armazenadas, com autoridades norueguesas vinculando o ataque a empresas de energia.",
   "title": "Microsoft Azure flaw exploited to steal customers' API credentials",
+  "title_pt": "Falha no Microsoft Azure explorada para roubar credenciais de API de clientes",
   "url": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vazamento",
   "cluster": "6fd89acf9e3aa36a",
   "cves": [],
   "excerpt": "LaLiga, Spain's top men's football league, disclosed a data breach that exposed personal information belonging to users of its services and those of some affiliated clubs. [...]",
@@ -1116,10 +1276,15 @@
   "lang": "en",
   "published": "2026-11-23T18:38:40Z",
   "source": "BleepingComputer",
+  "summary_pt": "A LaLiga revelou que uma violação de dados expôs informações pessoais de usuários de seus serviços e de alguns clubes afiliados.",
   "title": "Spanish LaLiga confirms hackers stole soccer fans’ personal data",
+  "title_pt": "LaLiga espanhola confirma que hackers roubaram dados pessoais de torcedores de futebol",
   "url": "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "apt-espionagem",
   "cluster": "5495a06dee26529f",
   "cves": [],
   "excerpt": "The China-aligned threat actor known as Webworm is suspected to be using a custom version of the open-source SoftEther VPN Bridge tool in an attempt to remove recognizable detection fingerprints, while disguising it as network-monitoring software to establish covert remote…",
@@ -1128,10 +1293,15 @@
   "lang": "en",
   "published": "2026-11-23T17:45:15Z",
   "source": "The Hacker News",
+  "summary_pt": "O grupo de ameaças Webworm estaria usando uma versão modificada do SoftEther VPN Bridge, camuflando-o como software de monitoramento de rede para eliminar rastros e manter acesso remoto oculto.",
   "title": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
+  "title_pt": "Webworm suspeito de modificar o SoftEther VPN para evadir detecção e ocultar acesso remoto",
   "url": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "outro",
   "cluster": "36c59e697c49ac4d",
   "cves": [],
   "excerpt": "A cyberattack disrupted operations at B2B top-up solutions provider GlobeTopper, causing an estimated $2.5 million in lost revenue, while the attacker redeemed digital gift cards worth $70,000. [...]",
@@ -1140,7 +1310,9 @@
   "lang": "en",
   "published": "2026-11-23T16:50:01Z",
   "source": "BleepingComputer",
+  "summary_pt": "Um ataque cibernético interrompeu as operações da GlobeTopper, resultando em perdas estimadas de US$ 2,5 milhões e no resgate de cartões-presente no valor de US$ 70 mil.",
   "title": "GlobeTopper loses $2.5 million after hackers steal $70k in gift cards",
+  "title_pt": "GlobeTopper perde US$ 2,5 milhões após hackers roubarem US$ 70 mil em cartões-presente",
   "url": "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards"
  },
  {
@@ -1334,6 +1506,9 @@
   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119848"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "dc0bf632906413a2",
   "cves": [],
   "excerpt": "Microsoft closed an Azure API Management flaw exploited to target secrets at Norwegian energy companies, with other sectors also affected. The post Azure Flaw Exploited to Target Secrets at Norwegian Energy Firms appeared first on SecurityWeek .",
@@ -1342,10 +1517,15 @@
   "lang": "en",
   "published": "2026-11-23T15:47:40Z",
   "source": "SecurityWeek",
+  "summary_pt": "A Microsoft corrigiu uma vulnerabilidade na API Management do Azure que havia sido explorada para roubar segredos de empresas norueguesas de energia, afetando também outros setores.",
   "title": "Azure Flaw Exploited to Target Secrets at Norwegian Energy Firms",
+  "title_pt": "Falha no Azure explorada para atingir segredos em empresas de energia norueguesas",
   "url": "https://www.securityweek.com/azure-flaw-exploited-to-target-secrets-at-norwegian-energy-firms"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "a75fd36abba00688",
   "cves": [],
   "excerpt": "A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open. This week's stories show how quickly…",
@@ -1354,10 +1534,15 @@
   "lang": "en",
   "published": "2026-11-23T15:10:48Z",
   "source": "The Hacker News",
+  "summary_pt": "A edição semanal destaca diversas vulnerabilidades críticas, como VMware 0-Day e Java4Shell, demonstrando a rapidez com que novas falhas são exploradas.",
   "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
+  "title_pt": "⚡ Resumo semanal: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell e muitos problemas de shell",
   "url": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "patch",
   "cluster": "e41ccef1ec479ff7",
   "cves": [],
   "excerpt": "The company has restored access to the affected services and continues to monitor the affected environments. The post N-able Patches Critical Flaw Discovered After Mail Assure Cyberattack appeared first on SecurityWeek .",
@@ -1366,10 +1551,15 @@
   "lang": "en",
   "published": "2026-11-23T15:06:49Z",
   "source": "SecurityWeek",
+  "summary_pt": "A N-able aplicou um patch para corrigir uma falha crítica identificada após o ataque cibernético ao Mail Assure, restabelecendo o acesso aos serviços afetados.",
   "title": "N-able Patches Critical Flaw Discovered After Mail Assure Cyberattack",
+  "title_pt": "N-able corrige falha crítica descoberta após ataque cibernético ao Mail Assure",
   "url": "https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "pesquisa",
   "cluster": "c17e236901f89624",
   "cves": [],
   "excerpt": "AI agents operate across multiple platforms, creating security gaps when no single vendor can see or control their actions. Token Security examines the shared responsibility problem and explains how organizations can better manage agent identities, permissions, and…",
@@ -1378,10 +1568,15 @@
   "lang": "en",
   "published": "2026-11-23T15:00:10Z",
   "source": "BleepingComputer",
+  "summary_pt": "Especialistas analisam como agentes de IA que atuam em múltiplas plataformas geram lacunas de segurança, dificultando a atribuição de responsabilidade entre fornecedores.",
   "title": "AI Agents Are Creating a Shared Responsibility Gap",
+  "title_pt": "Agentes de IA estão criando uma lacuna de responsabilidade compartilhada",
   "url": "https://www.bleepingcomputer.com/news/security/ai-agents-are-creating-a-shared-responsibility-gap"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "666c9425a09bfe91",
   "cves": [],
   "excerpt": "If a session overwrite operation is interrupted, an attacker who controls the fresh data could trigger data deserialization and RCE. The post phpAfterShell Vulnerability Revives PHP2Shell’s Attack Path appeared first on SecurityWeek .",
@@ -1390,7 +1585,9 @@
   "lang": "en",
   "published": "2026-11-23T13:58:07Z",
   "source": "SecurityWeek",
+  "summary_pt": "A vulnerabilidade phpAfterShell permite que, ao interromper uma operação de sobrescrita de sessão, um atacante induza desserialização de dados e execução remota de código.",
   "title": "phpAfterShell Vulnerability Revives PHP2Shell’s Attack Path",
+  "title_pt": "Vulnerabilidade phpAfterShell revive o caminho de ataque do PHP2Shell",
   "url": "https://www.securityweek.com/phpaftershell-vulnerability-revives-php2shells-attack-path"
  },
  {
