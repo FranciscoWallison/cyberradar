@@ -2,6 +2,161 @@
  {
   "ai_model": "groq/openai/gpt-oss-120b",
   "ai_prompt": "news-2026-11-a",
+  "category": "outro",
+  "cluster": "e80748e5e9c4caf1",
+  "cves": [],
+  "excerpt": "NordVPN's 2026 Black Friday and Cyber Monday deal is now live, offering savings of up to 78% on VPN subscriptions, plus three extra months of protection. [...]",
+  "id": "e80748e5e9c4caf1",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-26T17:58:42Z",
+  "source": "BleepingComputer",
+  "summary_pt": "A NordVPN lançou uma promoção de Black Friday e Cyber Monday oferecendo até 78% de desconto e três meses extras de proteção nas assinaturas de VPN.",
+  "title": "NordVPN Black Friday Deal: Get 78% off VPN plans in 2026",
+  "title_pt": "Oferta de Black Friday da NordVPN: Até 78% de Desconto em Planos 2026",
+  "url": "https://www.bleepingcomputer.com/news/security/nordvpn-black-friday-deal-get-78-percent-off-vpn-plans-in-2026"
+ },
+ {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "phishing",
+  "cluster": "08c326dd24dcd490",
+  "cves": [],
+  "excerpt": "An ongoing phishing campaign dubbed \"GoodGuys\" impersonates major brands, including Google, Nvidia, Accenture, and SpaceX, to steal corporate Google and Okta credentials using fake invitations to paid expert interviews and webinars. [...]",
+  "id": "08c326dd24dcd490",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-26T17:15:27Z",
+  "source": "BleepingComputer",
+  "summary_pt": "O esquema finge convites para entrevistas e webinars de especialistas, imitando marcas como Google, Nvidia, Accenture e SpaceX, para capturar credenciais corporativas do Google e Okta.",
+  "title": "Fake paid expert interviews impersonate brands to steal Google logins",
+  "title_pt": "Campanha de Phishing 'GoodGuys' Usa Entrevistas Pagas Falsas para Roubar Credenciais do Google",
+  "url": "https://www.bleepingcomputer.com/news/apple/fake-paid-expert-interviews-impersonate-brands-to-steal-google-logins"
+ },
+ {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vazamento",
+  "cluster": "e424a6c10fc1b866",
+  "cves": [],
+  "excerpt": "FIFA didn’t say when the cyberattack took place, or the precise nature of the hacked information. The post FIFA Says It Has Been Victim of a Cyberattack Accessing ‘Personal and Business Information’ appeared first on SecurityWeek .",
+  "id": "e424a6c10fc1b866",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-26T17:06:55Z",
+  "source": "SecurityWeek",
+  "summary_pt": "A FIFA informou que sofreu um ataque cibernético, mas não detalhou quando ocorreu nem quais dados foram comprometidos.",
+  "title": "FIFA Says It Has Been Victim of a Cyberattack Accessing ‘Personal and Business Information’",
+  "title_pt": "FIFA Confirma Ciberataque que Acessou 'Informações Pessoais e Comerciais'",
+  "url": "https://www.securityweek.com/fifa-says-it-has-been-victim-of-a-cyberattack-accessing-personal-and-business-information"
+ },
+ {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "malware",
+  "cluster": "928a41a9b2193962",
+  "cves": [],
+  "excerpt": "The Remus infostealer is stealing Gmail messages through a stealthy malicious Chrome extension, a capability the malware operators marketed as a zero-day exploit in Google's email service. [...]",
+  "id": "928a41a9b2193962",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-26T15:23:28Z",
+  "source": "BleepingComputer",
+  "summary_pt": "O infostealer Remus utiliza uma extensão maliciosa do Chrome para interceptar e exfiltrar mensagens do Gmail, alegando explorar uma vulnerabilidade zero‑day no serviço de e‑mail do Google.",
+  "title": "Remus malware steals Gmail messages via fake Google Sheets extension",
+  "title_pt": "Malware Remus Rouba Mensagens do Gmail via Extensão Falsa do Google Sheets",
+  "url": "https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension"
+ },
+ {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "supply-chain",
+  "cluster": "0574110d7d17666e",
+  "cves": [],
+  "excerpt": "The threat actors behind the PolinRider campaign have been observed planting a Python loader in GitHub repositories, as evidence emerges that the activity may have started as far back as February 2025. \"The loader hides in a small utils package or in conftest.py,\" SafeDep said…",
+  "id": "0574110d7d17666e",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-26T15:13:41Z",
+  "source": "The Hacker News",
+  "summary_pt": "O grupo PolinRider inseriu um carregador Python em pacotes de utilitários e arquivos conftest.py de milhares de repositórios, espalhando malware através da cadeia de suprimentos.",
+  "title": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
+  "title_pt": "PolinRider, Ligado à Coreia do Norte, Contamina Mais de 7.600 Repositórios no GitHub com Malware",
+  "url": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html"
+ },
+ {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
+  "cluster": "7b5dacba886b8db5",
+  "cves": [
+   "CVE-2026-103406"
+  ],
+  "excerpt": "Tracked as CVE-2026-103406, the vulnerability allows remote attackers to execute arbitrary commands as root. The post Critical Juniper Session Smart Conductor Flaw Exploited in Attacks appeared first on SecurityWeek .",
+  "id": "a179a17c70a588b1",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-26T13:04:06Z",
+  "source": "SecurityWeek",
+  "summary_pt": "A vulnerabilidade CVE‑2026‑103406 permite que atacantes remotos executem comandos arbitrários como root, e já está sendo usada em campanhas de ataque.",
+  "title": "Critical Juniper Session Smart Conductor Flaw Exploited in Attacks",
+  "title_pt": "Falha Crítica no Juniper Session Smart Conductor é Explorada em Ataques",
+  "url": "https://www.securityweek.com/critical-juniper-session-smart-conductor-flaw-exploited-in-attacks"
+ },
+ {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "malware",
+  "cluster": "92401dca047c23f9",
+  "cves": [],
+  "excerpt": "A new version of the SYS01 infostealer malware delivered through Meta ads is enrolling browsers into enterprise-style management to force the installation of an extension that steals sensitive data, including Gmail and Outlook emails. [...]",
+  "id": "92401dca047c23f9",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-26T11:50:17Z",
+  "source": "BleepingComputer",
+  "summary_pt": "A nova variante do infostealer SYS01, distribuída via anúncios no Meta, força a instalação de extensões que coletam e‑mails do Gmail e Outlook ao enrolar navegadores em gerenciamento corporativo.",
+  "title": "SYS010 malware abuses browser management to spy on Gmail, Outlook",
+  "title_pt": "Malware SYS010 Abusa da Gestão de Navegadores para Espionar Gmail e Outlook",
+  "url": "https://www.bleepingcomputer.com/news/security/sys010-malware-abuses-browser-management-to-spy-on-gmail-outlook"
+ },
+ {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
+  "cluster": "5b03a45cee39b79a",
+  "cves": [],
+  "excerpt": "Accenture says hackers exploited MiCollab flaws before Mitel’s advisory, likely aided by AI, in a suspected extortion campaign. The post Mitel MiCollab Zero-Days Exploited in Suspected AI-Assisted Attacks appeared first on SecurityWeek .",
+  "id": "5b03a45cee39b79a",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-26T11:35:25Z",
+  "source": "SecurityWeek",
+  "summary_pt": "Hackers exploraram vulnerabilidades no MiCollab da Mitel antes de qualquer aviso oficial, possivelmente usando IA, em uma campanha suspeita de extorsão.",
+  "title": "Mitel MiCollab Zero-Days Exploited in Suspected AI-Assisted Attacks",
+  "title_pt": "Zero‑Days do Mitel MiCollab Explorados em Ataques Possivelmente Assistidos por IA",
+  "url": "https://www.securityweek.com/mitel-micollab-zero-days-exploited-in-suspected-ai-assisted-attacks"
+ },
+ {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "phishing",
+  "cluster": "54cc21ceab246c65",
+  "cves": [],
+  "excerpt": "Every phishing attack has to get past email security, web filtering, and safe browsing before it reaches an employee. Some kits manage that far more often than others, and those are the kits that security teams need to know about. At Push Security, we measure this as…",
+  "id": "54cc21ceab246c65",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-26T10:57:55Z",
+  "source": "The Hacker News",
+  "summary_pt": "O artigo analisa quais kits de phishing conseguem driblar filtros de e‑mail, web e navegação segura, destacando os mais eficazes que as equipes de segurança precisam monitorar.",
+  "title": "Most Wanted: The Phishing Kits and Techniques Getting Past Security Controls",
+  "title_pt": "Mais Procurados: Kits e Técnicas de Phishing que Contornam Controles de Segurança",
+  "url": "https://thehackernews.com/2026/11/most-wanted-phishing-kits-and.html"
+ },
+ {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
   "category": "patch",
   "cluster": "56a74088527af968",
   "cves": [],
@@ -1591,6 +1746,9 @@
   "url": "https://www.securityweek.com/phpaftershell-vulnerability-revives-php2shells-attack-path"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "patch",
   "cluster": "7e0ab8486aa30ee5",
   "cves": [],
   "excerpt": "Microsoft is working to fix a long-standing Windows issue that has been causing significant audio quality drops for Bluetooth headphone users. [...]",
@@ -1599,7 +1757,9 @@
   "lang": "en",
   "published": "2026-11-23T13:28:45Z",
   "source": "BleepingComputer",
+  "summary_pt": "A Microsoft está testando uma atualização que visa resolver o problema de perda de qualidade de áudio em fones Bluetooth que afeta usuários do Windows 11.",
   "title": "Microsoft testing fix for Windows 11 Bluetooth audio quality drops",
+  "title_pt": "Microsoft testa correção para queda de qualidade de áudio Bluetooth no Windows 11",
   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-fix-for-windows-11-bluetooth-audio-quality-drops"
  },
  {
@@ -1660,6 +1820,9 @@
   "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "outro",
   "cluster": "1162383657bf3738",
   "cves": [],
   "excerpt": "A Peruvian call center operator was sentenced to eight years in prison for helping steal millions of dollars from over 30,000 Spanish-speaking US residents in a years-long government-impersonation fraud scheme. [...]",
@@ -1668,7 +1831,9 @@
   "lang": "en",
   "published": "2026-11-23T12:02:23Z",
   "source": "BleepingComputer",
+  "summary_pt": "Um operador peruano de call center foi condenado a oito anos de prisão por participar de um esquema de fraude que se passou por governo e lesou mais de 30 mil residentes dos EUA.",
   "title": "Call center operator gets 8 years for helping scam 30,000 Americans",
+  "title_pt": "Operador de call center recebe 8 anos de prisão por ajudar a fraudar 30 mil americanos",
   "url": "https://www.bleepingcomputer.com/news/security/call-center-operator-gets-8-years-for-helping-scam-30-000-americans"
  },
  {
@@ -1711,6 +1876,9 @@
   "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "outro",
   "cluster": "1c9fa573637bd95c",
   "cves": [],
   "excerpt": "Microsoft confirmed printing issues on systems running Forcepoint DLP software after installing the KB5132043 November 2026 Windows 11 hotpatch. [...]",
@@ -1719,10 +1887,15 @@
   "lang": "en",
   "published": "2026-11-23T09:11:15Z",
   "source": "BleepingComputer",
+  "summary_pt": "A Microsoft reconheceu que a atualização KB5132043 do Windows 11 causa falhas de impressão em sistemas que utilizam o software DLP da Forcepoint.",
   "title": "Microsoft confirms Windows printing issues affecting Forcepoint users",
+  "title_pt": "Microsoft confirma problemas de impressão no Windows que afetam usuários do Forcepoint",
   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "86d05566c7a214bc",
   "cves": [],
   "excerpt": "Hackers exploited a vulnerability in GL.iNet's GoodCloud remote management service to install malware on some customer routers and KVM devices, the maker of travel routers and remote-access KVM hardware said in a security notice updated today. The company identified and fixed…",
@@ -1731,10 +1904,15 @@
   "lang": "en",
   "published": "2026-11-23T09:04:08Z",
   "source": "The Hacker News",
+  "summary_pt": "Uma vulnerabilidade no serviço GoodCloud de gerenciamento remoto da GL.iNet foi usada por hackers para inserir malware em roteadores de viagem e dispositivos KVM.",
   "title": "Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices",
+  "title_pt": "Hackers exploram falha na nuvem da GL.iNet para instalar malware em roteadores e dispositivos KVM",
   "url": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "outro",
   "cluster": "3077523564b045f2",
   "cves": [],
   "excerpt": "The Indian Computer Emergency Response Team (CERT-In) has warned that threat actors are carrying out artificial intelligence (AI)-assisted cyber attacks targeting information and communication technology (ICT) assets in the country. This unsanctioned activity has resulted in…",
@@ -1743,10 +1921,15 @@
   "lang": "en",
   "published": "2026-11-23T08:24:15Z",
   "source": "The Hacker News",
+  "summary_pt": "O CERT‑In alertou que atores maliciosos estão usando IA para conduzir ataques que resultam em transferências indevidas em instituições financeiras da Índia.",
   "title": "AI-Assisted Cyber Attacks Trigger Unauthorized Payments at Indian Banks and Fintech Firms",
+  "title_pt": "Ataques cibernéticos assistidos por IA provocam pagamentos não autorizados em bancos e fintechs indianas",
   "url": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "66af9006c5e3cf3f",
   "cves": [],
   "excerpt": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers are now exploiting a recently patched critical Cisco Expressway vulnerability in the wild. [...]",
@@ -1755,10 +1938,15 @@
   "lang": "en",
   "published": "2026-11-23T07:44:19Z",
   "source": "BleepingComputer",
+  "summary_pt": "A agência CISA avisou que a vulnerabilidade de execução remota de código no Cisco Expressway, já corrigida, está sendo usada em ataques contra agências federais.",
   "title": "CISA flags critical Cisco RCE flaw as actively exploited in attacks",
+  "title_pt": "CISA sinaliza falha crítica de RCE da Cisco como ativamente explorada em ataques",
   "url": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "86d05566c7a214bc",
   "cves": [],
   "excerpt": "GL.iNet has confirmed that hackers exploited a vulnerability in its cloud remote management services to install custom malware on customers' routers and KVM devices, with some affected users reporting backdoors and reverse shells giving remote access to infected devices. [...]",
@@ -1767,10 +1955,15 @@
   "lang": "en",
   "published": "2026-11-22T18:45:37Z",
   "source": "BleepingComputer",
+  "summary_pt": "A GL.iNet confirmou que a exploração de sua vulnerabilidade de gerenciamento remoto permitiu a instalação de malware, incluindo backdoors e shells reversos, em roteadores e dispositivos KVM de clientes.",
   "title": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
+  "title_pt": "Hackers exploram falha na nuvem da GL.iNet para infectar roteadores e dispositivos KVM",
   "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vazamento",
   "cluster": "6d087c898942cc0c",
   "cves": [],
   "excerpt": "Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week. Some of the stolen requests were flagged as Zero Data Retention, the setting that is…",
@@ -1779,10 +1972,15 @@
   "lang": "en",
   "published": "2026-11-22T05:06:55Z",
   "source": "The Hacker News",
+  "summary_pt": "Pesquisadores descobriram que atacantes furtaram solicitações de IA de três provedores por vários meses, sem que as empresas soubessem.",
   "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
+  "title_pt": "OpenRouter remove 3 provedores após pesquisadores detectarem meses de roubo de prompts em empresas de hospedagem de IA",
   "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "a3c63e958cb92eef",
   "cves": [],
   "excerpt": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it. Ghostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other…",
@@ -1791,10 +1989,15 @@
   "lang": "en",
   "published": "2026-11-22T05:03:41Z",
   "source": "The Hacker News",
+  "summary_pt": "Uma falha no Ghostscript permitia que arquivos especialmente criados escapassem da sandbox e executassem comandos no servidor que processa PDFs, sendo agora corrigida.",
   "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
+  "title_pt": "Pesquisadores demonstram fuga de sandbox e execução remota de código no Ghostscript via uploads de arquivos manipulados em aplicativos populares",
   "url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "059e30cfca7341a0",
   "cves": [],
   "excerpt": "A malicious webpage could extract a Meta Muse user's private conversations and stored memories from the assistant without triggering any approval prompt, researchers have shown. The same attack could be extended to reach the credentials Muse stores for the user's connected…",
@@ -1803,7 +2006,9 @@
   "lang": "en",
   "published": "2026-11-21T11:53:07Z",
   "source": "The Hacker News",
+  "summary_pt": "Uma página web criada por pesquisadores pode extrair conversas privadas e memórias armazenadas no assistente Meta Muse sem solicitar aprovação ao usuário.",
   "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
+  "title_pt": "Uma única página web maliciosa permite que pesquisadores sequestram o Meta Muse e acessem chats privados",
   "url": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html"
  },
  {
@@ -1826,6 +2031,9 @@
   "url": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
   "cluster": "31de93106fde76af",
   "cves": [],
   "excerpt": "Suspected China-linked hackers used autonomous AI agents to find a previously unknown flaw in MONAI Label, an open-source medical imaging server, and gain root access to a university server, Amazon Threat Intelligence said this week. The flaw allows an attacker with no account…",
@@ -1834,10 +2042,15 @@
   "lang": "en",
   "published": "2026-11-21T11:03:17Z",
   "source": "The Hacker News",
+  "summary_pt": "Hackers ligados à China usaram agentes autônomos de IA para descobrir uma falha desconhecida no MONAI Label, permitindo acesso root a um servidor universitário.",
   "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
+  "title_pt": "Agentes de IA dos atacantes encontraram uma vulnerabilidade zero-day em software de imagem médica e obtiveram acesso root",
   "url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "outro",
   "cluster": "c5410e0ea07b3ca7",
   "cves": [],
   "excerpt": "Signal has announced that it will restrict screenshots by default to stop artificial intelligence (AI) agents from reading private chats on Android and iOS devices, but conceded that the protection is \"incomplete.\" The feature applies to agentic systems built into iOS 27 and on…",
@@ -1846,7 +2059,9 @@
   "lang": "en",
   "published": "2026-11-21T08:49:20Z",
   "source": "The Hacker News",
+  "summary_pt": "Signal passou a restringir capturas de tela por padrão para impedir que agentes de IA leiam conversas privadas, embora reconheça que a proteção ainda é incompleta.",
   "title": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
+  "title_pt": "Signal bloqueia agentes de IA de lerem chats privados via capturas de tela no Android e iOS",
   "url": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html"
  },
  {
@@ -1869,6 +2084,9 @@
   "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "ransomware",
   "cluster": "10886014bf917685",
   "cves": [],
   "excerpt": "The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use \"advanced cryptographic tools\" to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found the company was simply…",
@@ -1877,7 +2095,9 @@
   "lang": "en",
   "published": "2026-11-21T00:36:39Z",
   "source": "Krebs on Security",
+  "summary_pt": "O diretor de tecnologia da empresa ransomwarehelp.com, que alegava usar ferramentas criptográficas avançadas para restaurar dados, foi acusado de fraude eletrônica após operação do FBI revelar que o serviço era enganoso.",
   "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
+  "title_pt": "CTO da ‘RansomwareHelp’ é indiciado por fraude eletrônica",
   "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud"
  },
  {
@@ -1900,6 +2120,9 @@
   "url": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "malware",
   "cluster": "0b4042589720c604",
   "cves": [],
   "excerpt": "Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model (LLM) integration for victim management and control at scale. Dutch mobile security company ThreatFabric said it discovered the…",
@@ -1908,7 +2131,9 @@
   "lang": "en",
   "published": "2026-11-20T16:58:16Z",
   "source": "The Hacker News",
+  "summary_pt": "Pesquisadores revelaram o framework Android Bazuka, que incorpora LLMs para gerenciamento de vítimas e utiliza sobreposições de tela falsas para furtivamente roubar credenciais e assumir o controle do aparelho.",
   "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
+  "title_pt": "Malware Android Bazuka usa sobreposições de tela falsas para ocultar roubo de credenciais e controle do dispositivo",
   "url": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html"
  },
  {
@@ -1953,6 +2178,9 @@
   "url": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog"
  },
  {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
+  "category": "pesquisa",
   "cluster": "b18719ed382d67da",
   "cves": [],
   "excerpt": "Security leaders are about to hand AI agents a lot more authority. In a recent a16z survey of CISOs at organizations with more than 1,000 employees, 36% said they are comfortable today letting AI agents act autonomously on low-risk security actions. In 12 months from now, 60%…",
@@ -1961,7 +2189,9 @@
   "lang": "en",
   "published": "2026-11-20T12:00:00Z",
   "source": "The Hacker News",
+  "summary_pt": "Uma pesquisa da a16z indica que 36% dos CISOs de grandes empresas já confiam em agentes de IA para ações de segurança de baixo risco, e essa confiança deve subir para 60% nos próximos doze meses.",
   "title": "The Path to AI Autonomy in the SOC",
+  "title_pt": "O caminho para a autonomia de IA no SOC",
   "url": "https://thehackernews.com/2026/11/the-path-to-ai-autonomy-in-soc.html"
  },
  {
@@ -2586,7 +2816,7 @@
   "ai_model": "groq/openai/gpt-oss-120b",
   "ai_prompt": "news-2026-11-a",
   "category": "patch",
-  "cluster": "89146ff5418730c2",
+  "cluster": "91475641f52fb30d",
   "cves": [
    "CVE-2026-111497"
   ],
@@ -2681,7 +2911,7 @@
   "ai_model": "groq/openai/gpt-oss-120b",
   "ai_prompt": "news-2026-11-a",
   "category": "vulnerabilidade",
-  "cluster": "89146ff5418730c2",
+  "cluster": "91475641f52fb30d",
   "cves": [
    "CVE-2026-111497"
   ],
@@ -2700,7 +2930,7 @@
   "ai_model": "groq/openai/gpt-oss-120b",
   "ai_prompt": "news-2026-11-a",
   "category": "vulnerabilidade",
-  "cluster": "89146ff5418730c2",
+  "cluster": "b408794a3196e1df",
   "cves": [
    "CVE-2026-106175"
   ],
