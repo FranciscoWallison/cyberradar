@@ -1,15 +1,15 @@
 {
  "ai_usage": {
   "2026-11-27": {
-   "groq": 8,
-   "openrouter": 9
+   "groq": 13,
+   "openrouter": 13
   }
  },
  "cursors": {
   "epss_day": "2026-11-27",
   "exploits_day": "2026-11-27",
-  "ghsa": "2026-11-27T12:15:58Z",
-  "nvd": "2026-11-27T12:15:58Z"
+  "ghsa": "2026-11-27T21:22:57Z",
+  "nvd": "2026-11-27T21:22:57Z"
  },
  "feed_cache": {
   "https://api.msrc.microsoft.com/update-guide/rss": {
@@ -17,18 +17,18 @@
    "modified": "Fri, 27 Nov 2026 08:03:00 GMT"
   },
   "https://feeds.feedburner.com/TheHackersNews": {
-   "modified": "Fri, 27 Nov 2026 11:45:28 GMT"
+   "modified": "Fri, 27 Nov 2026 20:55:18 GMT"
   },
   "https://github.blog/tag/github-security-lab/feed/": {
    "etag": "W/\"4be869134215f375cc5cdb38b1431f09\"",
    "modified": "Wed, 25 Nov 2026 22:19:24 GMT"
   },
   "https://krebsonsecurity.com/feed/": {
-   "modified": "Fri, 27 Nov 2026 12:06:35 GMT"
+   "modified": "Fri, 27 Nov 2026 21:19:06 GMT"
   },
   "https://www.bleepingcomputer.com/feed/": {
-   "etag": "cce5f157e50dcebdb8bce19fb9de009d",
-   "modified": "Fri, 27 Nov 2026 12:08:58 GMT"
+   "etag": "721e3fa31f7a5b649bed843d2509efbb",
+   "modified": "Fri, 27 Nov 2026 21:16:10 GMT"
   },
   "https://www.cisa.gov/cybersecurity-advisories/all.xml": {},
   "https://www.securityweek.com/feed/": {
@@ -2016,18 +2016,34 @@
    "nvd_changed": 139,
    "pruned": 0,
    "started": "2026-11-27T12:15:58Z"
+  },
+  {
+   "ai_providers": [
+    "groq",
+    "openrouter",
+    "gemini",
+    "cloudflare"
+   ],
+   "cve_analyzed": 6,
+   "finished": "2026-11-27T21:25:08Z",
+   "kev_new": 0,
+   "news_new": 9,
+   "news_translated": 9,
+   "nvd_changed": 483,
+   "pruned": 0,
+   "started": "2026-11-27T21:22:57Z"
   }
  ],
  "sources_status": {
   "BleepingComputer": {
    "failures": 0,
    "last_error": null,
-   "last_ok": "2026-11-27T12:16:01Z"
+   "last_ok": "2026-11-27T21:22:59Z"
   },
   "CISA — Cybersecurity Advisories": {
    "failures": 0,
    "last_error": null,
-   "last_ok": "2026-11-27T12:15:59Z"
+   "last_ok": "2026-11-27T21:22:59Z"
   },
   "EPSS": {
    "failures": 0,
@@ -2037,27 +2053,27 @@
   "GitHub Advisory": {
    "failures": 0,
    "last_error": null,
-   "last_ok": "2026-11-27T12:15:59Z"
+   "last_ok": "2026-11-27T21:22:58Z"
   },
   "GitHub Security Lab": {
    "failures": 0,
    "last_error": null,
-   "last_ok": "2026-11-27T12:16:01Z"
+   "last_ok": "2026-11-27T21:23:00Z"
   },
   "Krebs on Security": {
    "failures": 0,
    "last_error": null,
-   "last_ok": "2026-11-27T12:16:01Z"
+   "last_ok": "2026-11-27T21:23:00Z"
   },
   "Microsoft Security Response Center": {
    "failures": 0,
    "last_error": null,
-   "last_ok": "2026-11-27T12:16:01Z"
+   "last_ok": "2026-11-27T21:22:59Z"
   },
   "NVD": {
    "failures": 0,
    "last_error": null,
-   "last_ok": "2026-11-27T12:15:58Z"
+   "last_ok": "2026-11-27T21:22:57Z"
   },
   "Nuclei/Metasploit": {
    "failures": 0,
@@ -2067,12 +2083,12 @@
   "SecurityWeek": {
    "failures": 0,
    "last_error": null,
-   "last_ok": "2026-11-27T12:16:01Z"
+   "last_ok": "2026-11-27T21:22:59Z"
   },
   "The Hacker News": {
    "failures": 0,
    "last_error": null,
-   "last_ok": "2026-11-27T12:16:01Z"
+   "last_ok": "2026-11-27T21:22:59Z"
   }
  }
 }
