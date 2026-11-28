@@ -2,6 +2,23 @@
  {
   "ai_model": "groq/openai/gpt-oss-120b",
   "ai_prompt": "news-2026-11-a",
+  "category": "vulnerabilidade",
+  "cluster": "98be6a877e816947",
+  "cves": [],
+  "excerpt": "Cross-platform password manager pCloud Pass has confirmed it was targeted by a cyber attack after users reported seeing unknown devices being connected to their accounts. \"A cyber attack targeting pCloud Pass occurred, which was promptly contained by the pCloud team,\" the Swiss…",
+  "id": "98be6a877e816947",
+  "kind": "news",
+  "lang": "en",
+  "published": "2026-11-28T08:08:11Z",
+  "source": "The Hacker News",
+  "summary_pt": "O gerenciador de senhas pCloud Pass confirmou ter sido alvo de um ataque que expôs endereços de email e gerou tentativas de login a partir de dispositivos desconhecidos, mas a equipe conseguiu conter a ameaça rapidamente.",
+  "title": "pCloud Password Manager Hit by Cyber Attack Involving Email Address Exposure and Login Attempts",
+  "title_pt": "Gerenciador de Senhas pCloud Sofre Ataque Cibernético com Exposição de Endereços de Email e Tentativas de Login",
+  "url": "https://thehackernews.com/2026/11/pcloud-password-manager-hit-by-cyber.html"
+ },
+ {
+  "ai_model": "groq/openai/gpt-oss-120b",
+  "ai_prompt": "news-2026-11-a",
   "category": "vazamento",
   "cluster": "e522b3c7e5486b06",
   "cves": [],
